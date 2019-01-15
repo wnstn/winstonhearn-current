@@ -1,3 +1,10 @@
 <section id="sharing">
-
+  <h2>Sharing</h2>
+  <ul>
+    {{ with .Site.GetPage "section" "sharing" }}
+      {{ range .Pages }}
+        {{ partial "share.html" . }}
+      {{ end }}
+    {{ end }}
+  </ul>
 </section>

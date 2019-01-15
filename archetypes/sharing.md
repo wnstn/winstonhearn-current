@@ -4,7 +4,8 @@ date: {{ .Date }}
 draft: true
 category: sharing
 share:
-  - name: ""
-    url: ""
+  name: ""
+  url: ""
 ---
 
+*short description here*

@@ -1,0 +1,13 @@
+<li>
+  {{ with .Params.book }}
+    {{ if isset . "url" }}
+      <h3><a href="{{ .url }}">{{ .title }}</a></h3>
+    {{ else }}
+      <h3>{{ .title }}</h3>
+    {{ end }}
+    <h4><em>by {{ .author }}</em></h4>
+    {{ if (and (isset . "publisher") (isset . "publish_year")) }}
+      <p>Published {{ .publish_year }} by {{ .publisher }}</p>
+    {{ end }}
+  {{ end }}
+</li>
