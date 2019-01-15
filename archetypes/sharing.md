@@ -2,8 +2,8 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-category: writing
-referenced:
+category: sharing
+share:
   - name: ""
     url: ""
 ---
