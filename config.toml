@@ -1,3 +1,4 @@
-baseURL = "http://winstonhearn.com/"
+baseURL = "https://winstonhearn.com/"
 languageCode = "en-us"
 title = "Winston the third"
+theme = "bloggin"

@@ -2,11 +2,9 @@
   <h2>Reading</h2>
   <ul>
     {{ with .Site.GetPage "section" "reading" }}
-    {{ range .Pages.ByDate.Reverse }}
-      {{ partial "book.html" . }}
+      {{ range .Pages.ByDate.Reverse }}
+        {{ partial "book.html" . }}
+      {{ end }}
     {{ end }}
-    {{ end }}
-
   </ul>
-
 </section>
