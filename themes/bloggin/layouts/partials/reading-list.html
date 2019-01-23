@@ -1,8 +1,12 @@
+{{ $showImages := (.Scratch.Get "showImages")}}
+
 <section id="reading">
   <h2>Reading</h2>
   <ul>
     {{ with .Site.GetPage "section" "reading" }}
       {{ range .Pages.ByDate.Reverse }}
+        {{ .Scratch.Set "showImages" $showImages }}
+        {{ .Scratch.Set "showNotes" true }}
         {{ partial "book.html" . }}
       {{ end }}
     {{ end }}

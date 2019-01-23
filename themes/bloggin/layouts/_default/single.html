@@ -1,7 +1,29 @@
 {{ define "main" }}
 
-  <h2>{{ .Title }}</h2>
+  <section class="post-header">
+    <h2>{{ .Title }}</h2>
+    <p>Posted {{ .Date.Format "Jan 1, 2018" }}</p>
+  </section>
 
-  {{ .Content }}
+
+  {{ $hasBook := isset .Params "linked_book" }}
+  {{ if $hasBook }}
+  <ul class="post-book">
+    {{ $book := .Params.Linked_book }}
+    {{ with .GetPage "reading" }}
+        {{ with .GetPage $book }}
+          {{ .Scratch.Set "showImages" true }}
+          {{ .Scratch.Set "showNotes" false }}
+          {{ partial "book.html" . }}
+        {{ end }}
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  <article class="{{ cond $hasBook "with-book" "without-book" }}">
+    {{ .Content }}
+  </article>
+
+  {{ partial "recent-books" . }}
 
 {{ end }}

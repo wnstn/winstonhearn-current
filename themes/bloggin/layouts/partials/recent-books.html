@@ -1,0 +1,12 @@
+<section class="recent-books">
+  <h4>What I've been reading recently</h4>
+<ul>
+{{ with .Site.GetPage "section" "reading" }}
+{{ range first 3 .Pages.ByDate.Reverse }}
+  {{ .Scratch.Set "showImages" true }}
+  {{ .Scratch.Set "showNotes" true }}
+  {{ partial "book" . }}
+{{ end }}
+{{ end }}
+</ul>
+</section>

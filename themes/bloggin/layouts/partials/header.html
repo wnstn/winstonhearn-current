@@ -1,0 +1,9 @@
+<nav>
+<ul>
+{{ $active := .Page.CurrentSection }}
+{{ range .Site.Sections }}
+  {{ $class := cond (eq $active.Title .Title) "active header-link" "header-link" }}
+  <li class="{{ $class }}"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
+</nav>

@@ -1,10 +1,30 @@
 <li>
+  {{ $showImages := .Scratch.Get "showImages" }}
+  {{ if $showImages }}
+    {{ $img := (.Resources.GetMatch "cover") }}
+    <img src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
+  {{ end }}
+
+
+
   {{ with .Params.book }}
     {{ if isset . "url" }}
       <h3><a href="{{ .url }}">{{ .title }}</a></h3>
     {{ else }}
       <h3>{{ .title }}</h3>
     {{ end }}
+  {{ end }}
+
+  {{ if (and (.Params.notes) (.Scratch.Get "showNotes")) }}
+    {{ $page := .Params.notes }}
+    {{ with .GetPage "/writing" }}
+      {{ with .GetPage $page }}
+        <a href="{{ .Permalink }}" class="post-notes">My reading notes</a>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ with .Params.book }}
     <h4><em>by {{ .author }}</em></h4>
     {{ if (and (isset . "publisher") (isset . "publish_year")) }}
       <p>Published {{ .publish_year }} by {{ .publisher }}</p>

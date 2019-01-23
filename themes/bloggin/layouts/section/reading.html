@@ -1,0 +1,9 @@
+
+{{ define "main" }}
+
+{{- partial "bio.html" . -}}
+
+{{ .Scratch.Set "showImages" true }}
+{{- partial "reading-list.html" . -}}
+
+{{ end }}
