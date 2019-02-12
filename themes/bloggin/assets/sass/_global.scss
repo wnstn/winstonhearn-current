@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+body * {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #604863;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+h2 {
+  color: $headers;
+}
+
+a {
+  color: $links;
+  text-decoration: none;
+  border-bottom: 1px dotted $links;
+  padding-bottom: 0;
+  transition: padding-bottom .1s ease-out;
+
+  &:active,
+  &:hover {
+    padding-bottom: 1px;
+    border-bottom: 1px solid $links;
+  }
+
+  &:visited {
+    color: darken($purple, 10%);
+  }
+}
+
+*:focus {
+  outline: $purple dotted 2px;
+  outline-offset: 2px;
+}
+
+.content {
+  max-width: 1072px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+@media screen and (min-width:600px) {
+  .content {
+    padding: 0 24px;
+  }
+}

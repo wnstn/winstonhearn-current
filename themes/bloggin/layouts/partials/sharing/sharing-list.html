@@ -3,7 +3,7 @@
   <ul>
     {{ with .Site.GetPage "section" "sharing" }}
       {{ range .Pages }}
-        {{ partial "share.html" . }}
+        {{ partial "sharing/share.html" . }}
       {{ end }}
     {{ end }}
   </ul>

@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>winston the third</title>
+  <meta name="description" content="{{ .Description }}">
+
+  <meta property="og:title" content="{{ .Site.Title }}" />
+
+  <meta property="og:site_name" content="winstonhearn.com" />
+  <meta property="og:url" content="http://winstonhearn.com" />
+  <meta property="og:description" content="{{ .Description }}">
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@suchwinston" />
+  <meta name="twitter:site:id" content="15059001" />
+
+  {{ $options := (dict "targetPath" "css/winston-the-stylesheet.css" "enableSourceMap" true) }}
+  {{ $style := resources.Get "sass/makeup.scss" | toCSS $options }}
+
+  {{ if not (.Site.IsServer) }}
+    {{ $style := $style | minify }}
+  {{ end }}
+
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,800" rel="stylesheet">
+  <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
+
+</head>

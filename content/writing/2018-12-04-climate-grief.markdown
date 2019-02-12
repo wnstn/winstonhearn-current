@@ -1,7 +1,7 @@
 ---
    title:  Climate Grief
    permalink: /climate-grief/
-   date: 2018-12-04 10:19:33
+   date: "2018-12-04"
    category: writing
    description: "Holding space for grieving what we are losing because of climate change, to help us find create space for imagining the future."
 ---

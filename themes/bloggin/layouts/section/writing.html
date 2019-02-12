@@ -1,7 +1,8 @@
 {{ define "main" }}
 
+{{ .Scratch.Set "bioMinimal" true }}
 {{- partial "bio.html" . -}}
 
-{{- partial "writing-list.html" . -}}
+{{- partial "writing/writing-list.html" . -}}
 
 {{ end }}

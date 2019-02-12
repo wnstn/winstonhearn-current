@@ -1,4 +1,5 @@
 baseURL = "https://winstonhearn.com/"
 languageCode = "en-us"
 title = "Winston the third"
+description = "Winston Hearn's person blogging website dedicated to reading and such."
 theme = "bloggin"

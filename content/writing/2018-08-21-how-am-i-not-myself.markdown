@@ -1,7 +1,7 @@
 ---
    title:  "How Am I Not Myself?"
    permalink: /how-am-i-not-myself/
-   date: 2018-08-21 21:13:36
+   date: "2018-08-21"
    category: writing
    description: "Two years ago next month I became single, although I’ve not felt like that was the truth until a few months ago. Single, after 10 years of being in a monogamous relationship; but I was only single 6 months prior to that and I’d been in a year long toxic relationship before then."
 ---

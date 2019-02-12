@@ -1,7 +1,7 @@
 ---
   title:  "What's best for users"
   permalink: /the-incentives-shaping-the-web-amp-google/
-  date: 2018-09-10 9:35:19
+  date: "2018-09-10"
   category: writing
   description: "It’s important to critically examine what incentives have been in place in the past few decades that may have led to a web like we have."
   references:

@@ -1,9 +1,12 @@
 <nav>
-<ul>
-{{ $active := .Page.CurrentSection }}
-{{ range .Site.Sections }}
-  {{ $class := cond (eq $active.Title .Title) "active header-link" "header-link" }}
-  <li class="{{ $class }}"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-{{ end }}
-</ul>
+  <div class="left-nav">
+    <h3 class="site-title">winston the third</h3>
+  </div>
+  <ul>
+    {{ $active := .Page.CurrentSection }}
+    {{ range .Site.Sections }}
+      {{ $class := cond (eq $active.Title .Title) "active header-link" "header-link" }}
+      <li class="{{ $class }}"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
 </nav>

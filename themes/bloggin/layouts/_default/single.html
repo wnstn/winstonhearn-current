@@ -5,25 +5,24 @@
     <p>Posted {{ .Date.Format "Jan 1, 2018" }}</p>
   </section>
 
-
   {{ $hasBook := isset .Params "linked_book" }}
-  {{ if $hasBook }}
-  <ul class="post-book">
-    {{ $book := .Params.Linked_book }}
-    {{ with .GetPage "reading" }}
-        {{ with .GetPage $book }}
-          {{ .Scratch.Set "showImages" true }}
-          {{ .Scratch.Set "showNotes" false }}
-          {{ partial "book.html" . }}
-        {{ end }}
-    {{ end }}
-  </ul>
+    {{ if $hasBook }}
+    <ul class="post-book">
+      {{ $book := .Params.LinkedBook }}
+      {{ with .GetPage "reading" }}
+          {{ with .GetPage $book }}
+            {{ .Scratch.Set "showImages" true }}
+            {{ .Scratch.Set "showNotes" false }}
+            {{ partial "reading/book.html" . }}
+          {{ end }}
+      {{ end }}
+    </ul>
   {{ end }}
 
   <article class="{{ cond $hasBook "with-book" "without-book" }}">
     {{ .Content }}
   </article>
 
-  {{ partial "recent-books" . }}
+  {{ partial "reading/recent-books" . }}
 
 {{ end }}

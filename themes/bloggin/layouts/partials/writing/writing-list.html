@@ -1,0 +1,16 @@
+<section id="writing">
+  <h2>Writing</h2>
+  <ul>
+  {{ with .Site.GetPage "section" "writing" }}
+    {{ range first 5 .Pages }}
+      {{ .Scratch.Set "minimal" false }}
+      {{ partial "writing/post-link.html" . }}
+    {{ end }}
+
+    {{ range after 5 .Pages }}
+      {{ .Scratch.Set "minimal" true }}
+      {{ partial "writing/post-link.html" . }}
+    {{ end }}
+  {{ end }}
+  </ul>
+</section>

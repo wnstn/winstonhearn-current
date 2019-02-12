@@ -1,7 +1,7 @@
 ---
   title:  "The first half of 2018 in reading"
   permalink: /early-2018-reading-list/
-  date: 2018-09-04 9:43:55
+  date: "2018-09-04"
   category: writing
   description: "In the first half of this year I read 26 books, and I have a feeling I will at least double that by the end of the year so I don’t want to wait until then to record what I’ve read and call out notable books."
   book:

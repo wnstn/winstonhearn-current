@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body class="{{ .Type }}">
-    {{- partial "header.html" . -}}
-    <main id="page-content">
-      {{- block "main" . }}{{- end }}
-    </main>
-    {{- partial "footer.html" . -}}
+  <body class="{{ .Type }} {{ .Params.BodyClass }}">
+    <div class="visual-fun"></div>
+    <div class="content">
+      {{- partial "header.html" . -}}
+      <main id="page-content">
+        {{- block "main" . }}{{- end }}
+      </main>
+      {{- partial "footer.html" . -}}
+    </div>
   </body>
 </html>

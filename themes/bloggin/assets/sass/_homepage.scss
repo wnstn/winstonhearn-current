@@ -1,0 +1,43 @@
+.winstons-homepage {
+
+  #page-content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 34.5px;
+    margin-bottom: 69px;
+
+    &:after {
+      content: "";
+      height: 1px;
+      margin-top: 10px;
+      background-color: $headers;
+      width: 80%;
+      display: block;
+      transform: rotate(-5deg);
+      transition: height .1s ease-out;
+    }
+  }
+
+  #writing {
+    display: flex;
+    flex: 1 2 60%;
+    margin-right: 9%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  #reading {
+    display: flex;
+    flex: 1 1 31%;
+    flex-wrap: wrap;
+
+    ul li {
+      flex: 1 1 100%;
+    }
+  }
+
+}

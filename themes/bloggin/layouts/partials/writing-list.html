@@ -1,8 +1,0 @@
-<section id="writing">
-  <h2>Writing</h2>
-  {{ with .Site.GetPage "section" "writing" }}
-    {{ range .Pages }}
-      {{ partial "post-link.html" . }}
-    {{ end }}
-  {{ end }}
-</section>

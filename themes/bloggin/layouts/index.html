@@ -1,13 +1,15 @@
 
+
 {{ define "main" }}
 
+  {{ .Scratch.Set "bioMinimal" false }}
   {{- partial "bio.html" . -}}
 
-  {{- partial "writing-list.html" . -}}
+  {{- partial "writing/writing-list.html" . -}}
 
   {{ .Scratch.Set "showNotes" true }}
-  {{- partial "reading-list.html" . -}}
+  {{- partial "reading/reading-list.html" . -}}
 
-  {{- partial "sharing-list.html" . -}}
+  {{- partial "sharing/sharing-list.html" . -}}
 
 {{ end }}

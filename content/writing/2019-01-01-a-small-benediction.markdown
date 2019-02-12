@@ -1,7 +1,7 @@
 ---
   title:  "A small benediction"
   permalink: /a-small-benediction-2019/
-  date: 2019-01-01 10:25:19
+  date: "2019-01-01"
   category: writing
   description: "2018 was a motherfucker."
 ---
