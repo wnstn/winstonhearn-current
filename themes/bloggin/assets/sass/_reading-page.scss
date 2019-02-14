@@ -1,70 +1,25 @@
-.reading {
+#reading {
 
   h2 {
     margin-bottom: 69px;
   }
 
-}
+  h3 {
+    margin-bottom: 34.5px;
+    text-align: center;
 
-#reading ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-}
-
-.book {
-  flex: 1 1 100%;
-  margin-bottom: .69em;
-  margin-left: 30px;
-  position: relative;
-
-  @media screen and (min-width: 500px) {
-    flex: 1 1 50%;
+    @media screen and (min-width: 650px) {
+      text-align: left;
+    }
   }
 
-  @media screen and (min-width: 650px) {
-    flex: 1 1 33%;
-    margin-bottom: 1.5em;
+
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
   }
 
-  @media screen and (min-width: 900px) {
-    flex: 1 1 25%;
-  }
-
-  img {
-
-  }
-
-  .glasses-icon {
-    background: no-repeat url(/img/glasses.svg) 100% center;
-    background-size: 100%;
-    display: inline-block;
-    position: absolute;
-    left: -35px;
-    top: 10px;
-    width: 25px;
-    height: 10px;
-    fill: #fff;
-    margin-right: 5px;
-    transform: rotate(-9deg);
-  }
-
-  .book-title {
-    line-height: 1.5;
-  }
-
-  .book-notes {
-    margin-bottom: 1em;
-  }
-
-  .book-author {
-    font-weight: 300;
-    font-size: 13px;
-    margin-left: .5em;
-  }
-
-  .book-publisher {
-
-  }
 }

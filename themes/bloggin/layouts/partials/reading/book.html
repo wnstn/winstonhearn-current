@@ -1,5 +1,6 @@
-<li class="book">
-  {{ $showImages := .Scratch.Get "showImages" }}
+{{ $showImages := default false (.Scratch.Get "showImages") }}
+
+<li class="{{ cond $showImages "book with-image" "book"}}">
   {{ if $showImages }}
     {{ $img := (.Resources.GetMatch "cover") }}
     <img src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
@@ -7,15 +8,19 @@
 
   {{ with .Params.book }}
     {{ if isset . "url" }}
-      <h3 class="book-title">
-        <span class="glasses-icon"></span>
+      <h4 class="book-title">
+        {{ if not $showImages }}
+          <span class="glasses-icon"></span>
+        {{ end }}
         <a href="{{ .url }}">{{ .title }}</a>
-      </h3>
+      </h4>
     {{ else }}
-      <h3 class="book-title">
-        <span class="glasses-icon"></span>
+      <h4 class="book-title">
+        {{ if not $showImages }}
+          <span class="glasses-icon"></span>
+        {{ end }}
         {{ .title }}
-      </h3>
+      </h4>
     {{ end }}
   {{ end }}
 

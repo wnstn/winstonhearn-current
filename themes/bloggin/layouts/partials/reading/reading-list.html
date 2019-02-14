@@ -2,13 +2,24 @@
 
 <section id="reading">
   <h2>Recently read</h2>
-  <ul>
-    {{ with .Site.GetPage "section" "reading" }}
-      {{ range .Pages.ByDate.Reverse }}
+
+  {{ with .Site.GetPage "section" "reading" }}
+    <h3>2019</h3>
+    <ul>
+    {{ range where .Pages.ByDate.Reverse "Params.book.year_read" 2019 }}
+      {{ .Scratch.Set "showImages" $showImages }}
+      {{ .Scratch.Set "showNotes" true }}
+      {{ partial "reading/book.html" . }}
+    {{ end }}
+    </ul>
+    <h3>2018</h3>
+    <ul>
+      {{ range where .Pages.ByDate.Reverse "Params.book.year_read" 2018 }}
         {{ .Scratch.Set "showImages" $showImages }}
         {{ .Scratch.Set "showNotes" true }}
         {{ partial "reading/book.html" . }}
       {{ end }}
-    {{ end }}
-  </ul>
+    </ul>
+
+  {{ end }}
 </section>
