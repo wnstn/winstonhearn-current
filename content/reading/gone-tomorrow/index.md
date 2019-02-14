@@ -1,7 +1,6 @@
 ---
 title: "Gone Tomorrow"
 date: 2019-01-15T00:13:58-05:00
-draft: true
 category: reading
 notes: ""
 book:

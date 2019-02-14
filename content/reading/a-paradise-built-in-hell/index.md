@@ -1,7 +1,6 @@
 ---
 title: "A Paradise Built in Hell"
 date: 2019-02-13T23:17:39-05:00
-draft: true
 category: reading
 notes: ""
 book:

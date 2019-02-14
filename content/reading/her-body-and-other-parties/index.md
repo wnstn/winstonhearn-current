@@ -1,7 +1,6 @@
 ---
 title: "Her Body and Other Parties"
 date: 2019-02-13T23:15:59-05:00
-draft: true
 category: reading
 notes: ""
 book:

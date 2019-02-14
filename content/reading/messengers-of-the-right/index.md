@@ -1,7 +1,6 @@
 ---
 title: "Messengers of the Right"
 date: 2019-01-15T17:59:23-05:00
-draft: true
 category: reading
 notes: ""
 book:

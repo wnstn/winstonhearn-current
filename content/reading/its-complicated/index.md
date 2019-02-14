@@ -1,7 +1,6 @@
 ---
 title: "Its Complicated"
 date: 2019-01-15T18:06:23-05:00
-draft: true
 category: reading
 notes: ""
 book:

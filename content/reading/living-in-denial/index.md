@@ -1,7 +1,6 @@
 ---
 title: "Living in Denial"
 date: 2019-01-23T09:01:11-05:00
-draft: true
 category: reading
 notes: ""
 book:

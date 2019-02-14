@@ -1,7 +1,6 @@
 ---
 title: "Emergent Strategy"
 date: 2019-01-23T08:41:34-05:00
-draft: true
 category: reading
 notes: ""
 book:

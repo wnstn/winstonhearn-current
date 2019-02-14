@@ -1,7 +1,6 @@
 ---
 title: "Bury What We Cannot Take"
 date: 2019-01-14T23:59:48-05:00
-draft: true
 category: reading
 notes: ""
 book:

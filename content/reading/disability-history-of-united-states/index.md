@@ -1,7 +1,6 @@
 ---
 title: "Disability History of United States"
 date: 2018-01-22T23:41:01-05:00
-draft: true
 category: reading
 notes: "2017-02-17-book-disability-history-of-the-us"
 book:

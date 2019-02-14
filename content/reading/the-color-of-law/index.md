@@ -1,7 +1,6 @@
 ---
 title: "The Color of Law"
 date: 2019-01-14T23:55:13-05:00
-draft: true
 category: reading
 notes: ""
 book:

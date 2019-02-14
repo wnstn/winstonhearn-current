@@ -1,7 +1,6 @@
 ---
 title: "World Without Ice"
 date: 2019-01-15T17:44:19-05:00
-draft: true
 category: reading
 notes: ""
 book:

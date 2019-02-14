@@ -1,7 +1,6 @@
 ---
 title: "Fun Home"
 date: 2019-01-14T23:56:54-05:00
-draft: true
 category: reading
 notes: ""
 book:

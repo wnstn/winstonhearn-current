@@ -1,7 +1,6 @@
 ---
 title: "The Dark Forest"
 date: 2019-01-23T08:58:26-05:00
-draft: true
 category: reading
 notes: ""
 book:

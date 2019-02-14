@@ -1,7 +1,6 @@
 ---
 title: "Things Fall Apart"
 date: 2019-01-15T17:05:27-05:00
-draft: true
 category: reading
 notes: ""
 book:

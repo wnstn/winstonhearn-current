@@ -1,7 +1,6 @@
 ---
 title: "Bad Blood"
 date: 2019-01-15T18:02:22-05:00
-draft: true
 category: reading
 notes: ""
 book:

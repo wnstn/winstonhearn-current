@@ -1,7 +1,6 @@
 ---
 title: "Automating Inequality"
 date: 2019-01-23T08:47:41-05:00
-draft: true
 category: reading
 notes: ""
 book:

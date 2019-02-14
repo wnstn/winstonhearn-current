@@ -1,7 +1,6 @@
 ---
 title: "Indigenous Peoples History"
 date: 2019-01-15T17:52:10-05:00
-draft: true
 category: reading
 notes: ""
 book:

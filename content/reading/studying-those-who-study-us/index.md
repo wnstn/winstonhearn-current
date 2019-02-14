@@ -1,7 +1,6 @@
 ---
 title: "Studying Those Who Study Us"
 date: 2019-01-23T08:46:40-05:00
-draft: true
 category: reading
 notes: ""
 book:

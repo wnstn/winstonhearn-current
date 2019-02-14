@@ -1,7 +1,6 @@
 ---
 title: "Unknown Error of Our Lives"
 date: 2019-01-15T17:57:02-05:00
-draft: true
 category: reading
 notes: ""
 book:

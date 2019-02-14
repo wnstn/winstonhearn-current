@@ -1,7 +1,6 @@
 ---
 title: "The Three Body Problem"
 date: 2019-01-23T08:56:54-05:00
-draft: true
 category: reading
 notes: ""
 book:

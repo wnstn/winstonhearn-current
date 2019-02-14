@@ -1,7 +1,6 @@
 ---
 title: "The Namesake"
 date: 2019-01-15T00:11:43-05:00
-draft: true
 category: reading
 notes: ""
 book:

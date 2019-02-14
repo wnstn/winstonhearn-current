@@ -1,7 +1,6 @@
 ---
 title: "Reset"
 date: 2019-01-15T18:05:37-05:00
-draft: true
 category: reading
 notes: ""
 book:

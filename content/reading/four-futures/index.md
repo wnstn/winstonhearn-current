@@ -1,7 +1,6 @@
 ---
 title: "Four Futures"
 date: 2019-01-23T08:50:06-05:00
-draft: true
 category: reading
 notes: ""
 book:

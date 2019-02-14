@@ -1,7 +1,6 @@
 ---
 title: "Platform Capitalism"
 date: 2019-01-15T17:54:51-05:00
-draft: true
 category: reading
 notes: ""
 book:

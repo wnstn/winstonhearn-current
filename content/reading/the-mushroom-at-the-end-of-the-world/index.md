@@ -1,7 +1,6 @@
 ---
 title: "The Mushroom at the End of the World"
 date: 2019-01-14T23:53:36-05:00
-draft: true
 category: reading
 notes: ""
 book:

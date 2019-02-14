@@ -1,7 +1,6 @@
 ---
 title: "The People's Platform"
 date: 2019-01-23T08:51:19-05:00
-draft: true
 category: reading
 notes: ""
 book:

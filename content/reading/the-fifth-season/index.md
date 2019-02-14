@@ -1,7 +1,6 @@
 ---
 title: "The Fifth Season"
 date: 2019-01-15T00:09:32-05:00
-draft: true
 category: reading
 notes: ""
 book:

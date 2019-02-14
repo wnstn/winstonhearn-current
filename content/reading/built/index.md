@@ -1,7 +1,6 @@
 ---
 title: "Built"
 date: 2019-01-23T08:38:32-05:00
-draft: true
 category: reading
 notes: ""
 book:

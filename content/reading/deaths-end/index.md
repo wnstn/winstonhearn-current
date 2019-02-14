@@ -1,7 +1,6 @@
 ---
 title: "Deaths End"
 date: 2019-02-13T23:17:25-05:00
-draft: true
 category: reading
 notes: ""
 book:

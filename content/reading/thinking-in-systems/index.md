@@ -1,7 +1,6 @@
 ---
 title: "Thinking in Systems"
 date: 2019-01-23T08:44:17-05:00
-draft: true
 category: reading
 notes: ""
 book:

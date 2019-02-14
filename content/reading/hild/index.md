@@ -1,7 +1,6 @@
 ---
 title: "Hild"
 date: 2019-01-23T08:59:47-05:00
-draft: true
 category: reading
 notes: ""
 book:

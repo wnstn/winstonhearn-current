@@ -1,7 +1,6 @@
 ---
 title: "The Stone Sky"
 date: 2019-01-15T17:17:22-05:00
-draft: true
 category: reading
 notes: ""
 book:

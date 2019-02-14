@@ -1,4 +1,5 @@
 {{ $showImages := default false (.Scratch.Get "showImages") }}
+{{ $showNotes := default false (.Scratch.Get "showNotes") }}
 
 <li class="{{ cond $showImages "book with-image" "book"}}">
   {{ if $showImages }}
@@ -34,7 +35,7 @@
     {{ end }}
   {{ end }}
 
-  {{ if (and (.Params.notes) (.Scratch.Get "showNotes")) }}
+  {{ if (and .Params.notes $showNotes) }}
     {{ $page := .Params.notes }}
     {{ with .GetPage "/writing" }}
     {{ with .GetPage $page }}

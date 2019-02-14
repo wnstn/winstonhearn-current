@@ -1,7 +1,6 @@
 ---
 title: "The World in a Grain"
 date: 2019-01-15T17:32:17-05:00
-draft: true
 category: reading
 notes: ""
 book:

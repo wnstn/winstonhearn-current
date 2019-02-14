@@ -12,12 +12,22 @@
       {{ partial "reading/book.html" . }}
     {{ end }}
     </ul>
+
     <h3>2018</h3>
     <ul>
       {{ range where .Pages.ByDate.Reverse "Params.book.year_read" 2018 }}
         {{ .Scratch.Set "showImages" $showImages }}
         {{ .Scratch.Set "showNotes" true }}
         {{ partial "reading/book.html" . }}
+      {{ end }}
+    </ul>
+
+    <h3>2017</h3>
+    <ul>
+      {{ range where .Pages.ByDate.Reverse "Params.book.year_read" 2017 }}
+      {{ .Scratch.Set "showImages" $showImages }}
+      {{ .Scratch.Set "showNotes" true }}
+      {{ partial "reading/book.html" . }}
       {{ end }}
     </ul>
 

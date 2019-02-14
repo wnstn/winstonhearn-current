@@ -1,7 +1,6 @@
 ---
 title: "So You Want to Talk About Race"
 date: 2019-01-14T23:49:21-05:00
-draft: true
 category: reading
 notes: ""
 book:
