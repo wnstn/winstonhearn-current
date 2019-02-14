@@ -5,31 +5,36 @@
     <img src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
   {{ end }}
 
-
-
   {{ with .Params.book }}
     {{ if isset . "url" }}
-      <h3 class="book-title"><a href="{{ .url }}">{{ .title }}</a></h3>
+      <h3 class="book-title">
+        <span class="glasses-icon"></span>
+        <a href="{{ .url }}">{{ .title }}</a>
+      </h3>
     {{ else }}
-      <h3 class="book-title">{{ .title }}</h3>
+      <h3 class="book-title">
+        <span class="glasses-icon"></span>
+        {{ .title }}
+      </h3>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Params.book }}
+    <h4 class="book-author"><em>by {{ .author }}</em></h4>
+
+    {{ if $showImages }}
+      {{ if (and (isset . "publisher") (isset . "publish_year")) }}
+        <p class="book-publisher">Published {{ .publish_year }} by {{ .publisher }}</p>
+      {{ end }}
     {{ end }}
   {{ end }}
 
   {{ if (and (.Params.notes) (.Scratch.Get "showNotes")) }}
     {{ $page := .Params.notes }}
     {{ with .GetPage "/writing" }}
-      {{ with .GetPage $page }}
-        <a href="{{ .Permalink }}" class="book-notes">My reading notes</a>
-      {{ end }}
+    {{ with .GetPage $page }}
+    <p class="book-notes"><a href="{{ .Permalink }}">my notes</a></p>
     {{ end }}
-  {{ end }}
-
-  {{ with .Params.book }}
-    <h4 class="book-author"><em>by {{ .author }}</em></h4>
-    {{ if $showImages }}
-      {{ if (and (isset . "publisher") (isset . "publish_year")) }}
-        <p class="book-publisher">Published {{ .publish_year }} by {{ .publisher }}</p>
-      {{ end }}
     {{ end }}
   {{ end }}
 </li>

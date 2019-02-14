@@ -23,6 +23,20 @@ nav {
     padding-right: 10px;
     color: #999;
 
+    a:link,
+    a:visited {
+      color: #999;
+    }
+
+    a:hover,
+    a:active {
+      border-bottom: 1px solid $purple;
+    }
+
+    a:after {
+      display: none;
+    }
+
     &:before {
       content: "";
       height: 1px;
@@ -61,7 +75,7 @@ nav {
 
   a {
     text-decoration: none;
-    color: $purple;
+    color: $links;
     position:relative;
     padding-right: 10px;
     border-bottom: none;
@@ -80,7 +94,7 @@ nav {
       content: "";
       height: 1px;
       margin-top: 5px;
-      background-color: $purple;
+      background-color: $links;
       width: 100%;
       display: block;
       transform: rotate(-5deg);
@@ -88,7 +102,7 @@ nav {
     }
 
     &:visited {
-      color: $purple;
+      color: $links;
     }
   }
 

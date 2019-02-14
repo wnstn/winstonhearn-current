@@ -1,7 +1,7 @@
 {{ $minimal := .Scratch.Get "minimal" }}
 
 <li class="{{ cond $minimal "post-link" "post-link minimal"}}">
-  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3><time datetime="{{ .Date.Format "2018-18-01" }}"><em>{{ .Date.Format "Jan 01, 2018" }}</em></time>
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3><time datetime="{{ dateFormat "2018-18-01" .Date }}"><em>{{ dateFormat "Jan 1, 2006" .Date }}</em></time>
   <p></p>
   {{ if not $minimal }}
     {{ if .Description }}

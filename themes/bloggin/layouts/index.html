@@ -2,14 +2,24 @@
 
 {{ define "main" }}
 
-  {{ .Scratch.Set "bioMinimal" false }}
-  {{- partial "bio.html" . -}}
+{{ .Scratch.Set "bioMinimal" false }}
+{{- partial "bio.html" . -}}
 
-  {{- partial "writing/writing-list.html" . -}}
+  <section class="writing-section featured-recent">
+    <h2>Recent posts</h2>
+    {{- partial "writing/writing-featured.html" . -}}
+  </section>
+
+  {{- partial "sharing/sharing-list-recent.html" . -}}
+
+  <section class="writing-section full-archives">
+    <h2>Full archives</h2>
+    {{- partial "writing/writing-archives.html" . -}}
+  </section>
 
   {{ .Scratch.Set "showNotes" true }}
   {{- partial "reading/reading-list.html" . -}}
 
-  {{- partial "sharing/sharing-list.html" . -}}
+
 
 {{ end }}

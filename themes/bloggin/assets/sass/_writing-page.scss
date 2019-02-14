@@ -1,8 +1,85 @@
-#writing {
+.writing-section {
+  display: flex;
+  z-index: 10;
+
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .post-link {
+    margin-bottom: .69em;
+  }
+
+  @media screen and (min-width: 768px) {
+    h3 {
+      font-size: 25px;
+    }
+
+    .post-link {
+      margin-bottom: 2em;
+    }
+  }
 
 
-}
+  &.featured-recent {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
 
-.post-link {
-  margin-bottom: 2em;
+    .post-link {
+      margin-bottom: 3em;
+    }
+
+    h3 {
+      font-size: 25px;
+      line-height: 1.5
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+
+      .post-link {
+        width: 45%;
+        margin-right: 8%;
+        margin-left: 1%;
+        margin-bottom: 3rem;
+
+        &:nth-child(even) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &.full-archives {
+    flex: 1 2 50%;
+    margin-right: 9%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    li {
+      width: 100%;
+    }
+  }
+
+
+  .post-link {
+
+    > * {
+      margin-bottom: .6rem;
+    }
+
+    time {
+      font-size: 12px;
+      font-style: italic;
+    }
+
+  }
+
 }

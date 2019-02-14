@@ -1,9 +1,8 @@
 ---
   title:  "The second half of 2018 in reading"
   permalink: /late-2018-reading-list/
-  date: "2019-01-02"
+  date: 2019-01-02T08:42:45-05:00
   category: writing
-  draft: true
   description: "Oh wow I read a bunch more books this year."
 ---
 

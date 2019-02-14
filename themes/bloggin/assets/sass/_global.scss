@@ -2,11 +2,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: $background;
+}
+
 html,
 body,
 body * {
   font-family: 'Nanum Gothic', sans-serif;
-  color: #604863;
+  color: $text;
 }
 
 h1,
@@ -16,44 +20,91 @@ h4,
 h5,
 h6 {
   font-weight: 800;
+
+  :after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 h2 {
   color: $headers;
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 34.5px;
+  display: inline-block;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    border-bottom: 3px dotted $headers;
+    bottom: -13px;
+    display: block;
+  }
+
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    border-bottom: 3px solid $headers;
+    width: 31%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+    margin-bottom: calc(69px * 1.5);
+  }
 }
 
 a {
   color: $links;
   text-decoration: none;
-  border-bottom: 1px dotted $links;
+  border-bottom: 2px dotted $links;
   padding-bottom: 0;
   transition: padding-bottom .1s ease-out;
 
   &:active,
   &:hover {
-    padding-bottom: 1px;
-    border-bottom: 1px solid $links;
+    padding-bottom: 2px;
+    border-bottom: 2px solid $links;
   }
 
   &:visited {
-    color: darken($purple, 10%);
+    border-bottom: 2px solid $links;
   }
 }
 
 *:focus {
-  outline: $purple dotted 2px;
+  outline: $links dotted 2px;
   outline-offset: 2px;
+  border-bottom: none;
 }
 
 .content {
   max-width: 1072px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   padding: 0 8px;
+  overflow: hidden;
 }
 
 @media screen and (min-width:600px) {
   .content {
     padding: 0 24px;
   }
+}
+
+footer {
+  margin: 2em 0 4em;
+}
+
+.credits {
+  font-size: 10px;
 }

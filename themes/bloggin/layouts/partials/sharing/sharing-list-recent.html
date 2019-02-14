@@ -1,0 +1,14 @@
+<section class="recommendations">
+  <h2>I recommend</h2>
+  <p>linkblogging is still a thing right?</p>
+  <ul class="highlighted">
+    {{ with .Site.GetPage "section" "sharing" }}
+    {{ range first 3 .Pages }}
+    {{ partial "sharing/share.html" . }}
+    {{ end }}
+    {{ end }}
+  </ul>
+  <div class="actions">
+    <a href="/sharing">See more</a>
+  </div>
+</section>
