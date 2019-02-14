@@ -1,18 +1,125 @@
-.writing .content article {
+.writing .content {
 
-  p {
-    font-size: 15px;
-    margin-bottom: 1.5rem;
-    line-height: 1.4;
+  .post-header {
+    margin-bottom: 69px;
+    h2 {
+      margin-bottom: 1em;
+    }
+
+    .post-date {
+
+    }
   }
+
+
+  article {
+    margin: 0 auto 10rem;
+    position: relative;
+    width: 95%;
+
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
+
+
+    &:after {
+      content: "";
+      width: 40%;
+      height: 10px;
+      position: absolute;
+      border-top: 2px dotted $purple;
+      left: 30%;
+      bottom: -5rem;
+      transform: rotate(-6deg);
+    }
+
+    &:before {
+      content: "";
+      width: 40%;
+      height: 10px;
+      position: absolute;
+      border-top: 2px dotted $purple;
+      left: 30%;
+      bottom: -5rem;
+      transform: rotate(6deg);
+    }
+
+
+    p {
+      font-size: 15px;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+
+    hr {
+      border: none;
+      border-bottom: 2px dotted $headers;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 10%;
+        border-top: 2px solid $headers;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &:before {
+        content: "";
+        width: 10%;
+        border-top: 2px solid $headers;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    blockquote {
+      border-left: 10px solid $flourish;
+      padding-left: 5px;
+    }
+
+    h3 {
+      color: $headers;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      font-size: 22px;
+      display: inline-block;
+    }
+
+    strong {
+      font-weight: 800;
+    }
+
+    ul {
+      list-style: circle;
+      margin-left: 1em;
+    }
+
+    li {
+      margin-bottom: .69em;
+      font-size: 15px;
+    }
 
 
   @media screen and (min-width: 768px) {
     p {
-      font-size: 20px;
+      font-size: 23px;
       margin: 0 auto 2rem;
-      max-width: 80%;
+      line-height: 1.4;
+    }
+
+    blockquote {
+      padding-left: 15px;
+    }
+
+    li {
+      font-size: 20px;
     }
   }
+}
 
 }
