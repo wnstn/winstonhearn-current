@@ -28,7 +28,8 @@ h6 {
   }
 }
 
-h2 {
+h2,
+.small-header {
   color: $headers;
   position: relative;
   font-size: 30px;
@@ -56,10 +57,18 @@ h2 {
   }
 }
 
+.small-header {
+  font-size: 18px;
+}
+
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 40px;
     margin-bottom: calc(69px * 1.5);
+  }
+
+  .small-header {
+    font-size: 22px;
   }
 }
 

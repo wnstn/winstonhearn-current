@@ -39,7 +39,7 @@
     {{ $page := .Params.notes }}
     {{ with .GetPage "/writing" }}
     {{ with .GetPage $page }}
-    <p class="book-notes"><a href="{{ .Permalink }}">my notes</a></p>
+    <p class="book-notes"><a href="{{ .Permalink }}">My reading notes</a></p>
     {{ end }}
     {{ end }}
   {{ end }}
