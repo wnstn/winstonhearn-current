@@ -352,7 +352,7 @@ nav {
     bottom: -5rem;
     transform: rotate(6deg); }
   .writing .content article p {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 1.5rem;
     line-height: 1.4; }
   .writing .content article hr {
