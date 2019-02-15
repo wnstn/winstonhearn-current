@@ -16,7 +16,7 @@
   <meta name="twitter:site" content="@suchwinston" />
   <meta name="twitter:site:id" content="15059001" />
 
-  {{ $options := (dict "targetPath" "css/winston-the-stylesheet.css" "enableSourceMap" true) }}
+  {{ $options := (dict "targetPath" "css/makeup.css" "enableSourceMap" true) }}
   {{ $style := resources.Get "sass/makeup.scss" | toCSS $options }}
 
   {{ if not (.Site.IsServer) }}
