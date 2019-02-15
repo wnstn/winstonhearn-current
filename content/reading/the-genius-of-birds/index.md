@@ -1,7 +1,6 @@
 ---
 title: "The Genius of Birds"
 date: 2019-02-14T12:44:59-05:00
-draft: true
 category: reading
 notes: ""
 book:

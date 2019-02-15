@@ -1,7 +1,6 @@
 ---
 title: "The Struggle for Black Equality"
 date: 2019-02-14T12:44:18-05:00
-draft: true
 category: reading
 notes: ""
 book:

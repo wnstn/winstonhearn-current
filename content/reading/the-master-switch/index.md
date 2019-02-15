@@ -1,7 +1,6 @@
 ---
 title: "The Master Switch"
 date: 2019-02-14T12:42:39-05:00
-draft: true
 category: reading
 notes: ""
 book:

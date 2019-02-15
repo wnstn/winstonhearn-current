@@ -1,7 +1,6 @@
 ---
 title: "Speak"
 date: 2019-02-14T10:03:49-05:00
-draft: true
 category: reading
 notes: ""
 book:

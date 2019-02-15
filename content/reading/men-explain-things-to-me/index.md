@@ -1,7 +1,6 @@
 ---
 title: "Men Explain Things to Me"
 date: 2019-02-14T12:44:38-05:00
-draft: true
 category: reading
 notes: ""
 book:

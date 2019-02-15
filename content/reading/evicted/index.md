@@ -1,7 +1,6 @@
 ---
 title: "Evicted"
 date: 2019-02-14T12:43:55-05:00
-draft: true
 category: reading
 notes: ""
 book:

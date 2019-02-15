@@ -1,7 +1,6 @@
 ---
 title: "Warmth of Other Suns"
 date: 2019-02-14T12:43:33-05:00
-draft: true
 category: reading
 notes: ""
 book:

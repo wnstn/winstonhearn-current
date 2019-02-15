@@ -1,7 +1,6 @@
 ---
 title: "Technically Wrong"
 date: 2019-02-14T12:44:46-05:00
-draft: true
 category: reading
 notes: ""
 book:

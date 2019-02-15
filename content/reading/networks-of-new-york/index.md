@@ -1,7 +1,6 @@
 ---
 title: "Networks of New York"
 date: 2019-02-14T12:42:27-05:00
-draft: true
 category: reading
 notes: ""
 book:

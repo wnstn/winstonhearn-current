@@ -1,7 +1,6 @@
 ---
 title: "Counting Descent"
 date: 2019-02-14T12:44:01-05:00
-draft: true
 category: reading
 notes: ""
 book:

@@ -1,7 +1,6 @@
 ---
 title: "The Peripheral"
 date: 2019-02-14T12:45:05-05:00
-draft: true
 category: reading
 notes: ""
 book:

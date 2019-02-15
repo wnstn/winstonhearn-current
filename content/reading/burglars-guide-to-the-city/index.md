@@ -1,7 +1,6 @@
 ---
 title: "Burglars Guide to the City"
 date: 2019-02-14T12:43:08-05:00
-draft: true
 category: reading
 notes: ""
 book:

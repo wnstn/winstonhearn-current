@@ -1,7 +1,6 @@
 ---
 title: "The Lathe of Heaven"
 date: 2019-02-14T12:44:52-05:00
-draft: true
 category: reading
 notes: ""
 book:

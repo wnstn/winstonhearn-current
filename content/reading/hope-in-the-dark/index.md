@@ -1,7 +1,6 @@
 ---
 title: "Hope in the Dark"
 date: 2019-02-14T12:42:33-05:00
-draft: true
 category: reading
 notes: ""
 book:

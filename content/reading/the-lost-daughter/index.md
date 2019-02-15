@@ -1,7 +1,6 @@
 ---
 title: "The Lost Daughter"
 date: 2019-02-14T12:43:49-05:00
-draft: true
 category: reading
 notes: ""
 book:

@@ -1,7 +1,6 @@
 ---
 title: "Parable of the Sower"
 date: 2019-02-14T12:43:41-05:00
-draft: true
 category: reading
 notes: ""
 book:

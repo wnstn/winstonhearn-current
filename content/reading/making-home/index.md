@@ -1,7 +1,6 @@
 ---
 title: "Making Home"
 date: 2019-02-14T12:44:28-05:00
-draft: true
 category: reading
 notes: ""
 book:
