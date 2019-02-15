@@ -310,8 +310,9 @@ nav {
   align-content: flex-start; }
   .winstons-homepage #reading ul {
     margin-left: 1em; }
-  .winstons-homepage #reading ul li {
-    flex: 1 1 100%; }
+  .winstons-homepage #reading .book {
+    flex: 1 1 100%;
+    max-width: 100%; }
 
 @media screen and (min-width: 768px) {
   .winstons-homepage #reading {
