@@ -3,6 +3,7 @@
   permalink: /late-2018-reading-list/
   date: 2019-01-02T08:42:45-05:00
   category: wrote
+  draft: true
   description: "Oh wow I read a bunch more books this year."
 ---
 
