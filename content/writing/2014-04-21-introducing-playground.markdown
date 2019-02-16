@@ -14,7 +14,7 @@ Yesterday I released a thing. It's not very revolutionary but it is helpful for 
 
 Playground is not very complicated: it's a Sinatra app that's got a core set of tools already installed and working so that playing with new frameworks or languages or tools or just seeing if you can get a thing to work is not hindered by any environment obstacle. Just spin up your playground and start coding. Easy peasy!
 
-![easy peasy](http://bukk.it/crosswalk.gif)
+![easy peasy](https://bukk.it/crosswalk.gif)
 
 The Github hopefully has everything you need to get started, and I think it is simple enough to add or customize to your liking. Version 0.1 of Playground has my favorite tools installed to make playing with new things as fun as possible:
 

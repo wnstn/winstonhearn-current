@@ -1,7 +1,7 @@
 ---
    title:  "Notes from Let's End Gerrymandering Meeting by Fair Districts PA"
    permalink: /pa-end-gerrymandering-fair-districts/
-   date: 2017-01-26 10:9:4
+   date: 2017-01-26T00:00:00.000Z
    category: writing
    description: "Last night (January 25, 2017) I attended the first Philadelphia area meeting to end Gerrymandering, put on by Fair Districts PA. There were easily 300+ people in attendance. Fair Districts PA is a volunteer led organization attempting to start a citizens movement for reforming the way district maps are drawn up in Pennsylvania. This post has my notes from the fantastic presentation given by Carol Kuniholm about the topic of Gerrymandering and how Pennsylvania's system currently works."
 ---

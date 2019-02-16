@@ -1,7 +1,7 @@
 ---
   title:  "The Intellect of Woman"
   permalink: /video-quote-intellect-of-woman/
-  date: 2017-02-07 9:48:9
+  date: 2017-02-07T00:00:00.000Z
   category: writing
   description: "I am reading _A Disability History of the United States_ currently and in it Kim Nielsen, the author, briefly covers the story of Agatha Tiegel. Her story caught my eye so I did a bit further research. "
   video: Gvv_aIoDP_I

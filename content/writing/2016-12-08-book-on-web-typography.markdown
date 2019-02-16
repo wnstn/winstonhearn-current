@@ -1,7 +1,7 @@
 ---
    title:  "On Web Typography"
    permalink: /book-on-web-typography/
-   date: 2016-12-08 21:9:27
+   date: 2016-12-08T00:00:00.000Z
    category: writing
    description: A small, incredibly informative book that gives you a simple education on the importance of typography, the language of typography, and then a great deal of practical advice for choosing and using typefaces. Jason knows his shit and knows how to teach you what he knows.
 ---

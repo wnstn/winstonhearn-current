@@ -1,7 +1,7 @@
 ---
    title:  "The Empathy Exams"
    permalink: /book-empathy-exams/
-   date: 2016-12-08 22:8:41
+   date: 2016-12-08T00:00:00.000Z
    category: writing
    description: A fantastic collection of essays meditating on our humanity and the ways that we relate to others. Jamison is interested in what exactly empathy is; how we are constantly being shaped by it; how we delude ourselves into faking empathy.
 ---

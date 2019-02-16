@@ -1,7 +1,7 @@
 ---
   title:  "Design for Real Life"
   permalink: /book-design-for-real-life/
-  date: 2016-3-10 17:31:17
+  date: 2016-03-10T00:00:00.000Z
   category: writing
   description: A book that helps one recenter the consequences of our product design decisions by building empathy and imagination for the myriad contexts people may use the things we build. A must-read for anyone creating things that other humans will use.
 ---

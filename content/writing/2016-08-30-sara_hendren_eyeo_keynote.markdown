@@ -1,7 +1,7 @@
 ---
   title:  "Sara Hendren's eyeo Keynote"
   permalink: /sara-hendren-keynote-talk/
-  date: 2016-8-30 11:36:40
+  date: 2016-08-30T00:00:00.000Z
   category: writing
   description: Sara Hendren's recent eyeo keynote talk, "Design for Know-Nothings, Dilettantes, and Melancholy Interlopers" is well worth watching and considering.
   video: 179040817

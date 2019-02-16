@@ -6,7 +6,7 @@
   description: This past week Facebook released (proudly!) a peer-reviewed paper about a study they conducted in 2012. This study has been covered a great deal because it's kind of creepy. What did they study? Whether or not they can manipulate the emotional state of their users!
 ---
 
-![emotions.gif](http://bukk.it/emotions.gif)
+![emotions.gif](https://bukk.it/emotions.gif)
 
 This past week Facebook released (proudly!) a peer-reviewed paper about a study they conducted in 2012. This study [has been covered a great deal](http://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/) because it's kind of creepy. What did they study? Whether or not they can manipulate the emotional state of their users!
 
