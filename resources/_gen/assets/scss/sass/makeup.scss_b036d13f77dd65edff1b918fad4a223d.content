@@ -46,6 +46,9 @@ body * {
 strong {
   font-weight: 700; }
 
+em {
+  font-style: italic; }
+
 h1,
 h2,
 h3,
