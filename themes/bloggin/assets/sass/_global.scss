@@ -9,8 +9,13 @@ body {
 html,
 body,
 body * {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
   color: $text;
+}
+
+strong {
+  font-weight: 700;
 }
 
 h1,
@@ -20,6 +25,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
+  font-family: 'Nanum Gothic', sans-serif;
 
   :after {
     content: "";

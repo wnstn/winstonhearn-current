@@ -37,6 +37,11 @@
   .book-title {
     line-height: 1.5;
     margin-bottom: 13.8px;
+    font-size: 18px;
+
+    a {
+      font-weight: 700;
+    }
   }
 
   .book-notes {
@@ -47,7 +52,7 @@
     font-weight: 300;
     font-size: 14px;
     margin-left: .5em;
-    margin-bottom: 13.8px;
+    margin-bottom: 5px;
   }
 
   .book-publisher {
