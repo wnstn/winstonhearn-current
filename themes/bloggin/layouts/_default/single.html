@@ -22,6 +22,17 @@
     {{ end }}
 
     {{ .Content }}
+
+    {{ if isset .Params "references" }}
+      <div class="post-references">
+      <h3>References</h3>
+      <ul >
+      {{ range .Params.references }}
+          <li><a href="{{ .url }}">{{ .title }}</a></li>
+      {{ end }}
+      </ul>
+      </div>
+    {{ end }}
   </article>
 
   {{ partial "reading/recent-books" . }}

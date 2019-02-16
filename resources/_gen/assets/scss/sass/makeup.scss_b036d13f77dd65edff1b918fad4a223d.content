@@ -41,7 +41,7 @@ body,
 body * {
   font-family: 'Source Serif Pro', serif;
   font-weight: 400;
-  color: #ccc; }
+  color: #b0aba1; }
 
 strong {
   font-weight: 700; }
@@ -380,7 +380,8 @@ nav {
     margin-left: 1em; }
   .writing .content article li {
     margin-bottom: .69em;
-    font-size: 15px; }
+    font-size: 15px;
+    line-height: 1.5; }
   @media screen and (min-width: 768px) {
     .writing .content article p {
       font-size: 23px;

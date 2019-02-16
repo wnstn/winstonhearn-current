@@ -3,7 +3,8 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 category: writing
-referenced:
+linked_book: "directory-of-book"
+references:
   - name: ""
     url: ""
 ---

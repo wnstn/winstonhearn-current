@@ -1,9 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
 category: reading
-notes: ""
+notes: "post-file-name"
 book:
   author: ""
   url: ""
