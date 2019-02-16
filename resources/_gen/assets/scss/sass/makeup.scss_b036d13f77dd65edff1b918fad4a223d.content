@@ -454,8 +454,8 @@ footer {
   position: relative; }
   @media screen and (min-width: 500px) {
     .book {
-      flex: 1 1 50%;
-      max-width: 50%; } }
+      flex: 1 1 47%;
+      max-width: 47%; } }
   @media screen and (min-width: 650px) {
     .book {
       flex: 1 1 33%;
