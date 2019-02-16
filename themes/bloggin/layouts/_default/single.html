@@ -15,7 +15,7 @@
       {{ with .GetPage $book }}
       {{ .Scratch.Set "showImages" true }}
       {{ .Scratch.Set "showNotes" false }}
-      {{ partial "reading/book.html" . }}
+      {{ partial "read/single.html" . }}
       {{ end }}
       {{ end }}
     </ul>
@@ -35,6 +35,6 @@
     {{ end }}
   </article>
 
-  {{ partial "reading/recent-books" . }}
+  {{ partial "read/recent-books" . }}
 
 {{ end }}

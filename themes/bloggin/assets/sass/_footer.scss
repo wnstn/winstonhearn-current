@@ -1,0 +1,34 @@
+
+footer {
+  margin: 2em 0 4em;
+  background: linear-gradient(to bottom, #251b2d, $background);
+  padding: 1em;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  li {
+    width: 100%;
+    padding: .5em 0;
+  }
+}
+
+@media screen and (min-width:600px) {
+  .footer-links {
+    display: flex;
+    margin-bottom: 3rem;
+
+    li {
+      width: auto;
+      max-width: 25%;
+      padding: 1em;
+    }
+  }
+}
+
+.credits {
+  font-size: 10px;
+}

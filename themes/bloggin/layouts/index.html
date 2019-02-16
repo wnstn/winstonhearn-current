@@ -5,13 +5,13 @@
 
   <section class="writing-section featured-recent">
     <h2>Recent posts</h2>
-    {{- partial "writing/writing-featured.html" . -}}
+    {{- partial "wrote/featured.html" . -}}
   </section>
 
-  {{- partial "sharing/sharing-list-recent.html" . -}}
+  {{- partial "shared/recent.html" . -}}
 
   {{ .Scratch.Set "showNotes" true }}
   {{ .Scratch.Set "showImages" true }}
-  {{- partial "reading/reading-past-12.html" . -}}
+  {{- partial "read/last-12.html" . -}}
 
 {{ end }}

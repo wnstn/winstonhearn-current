@@ -1,12 +1,12 @@
 <ul>
-  {{ with .Site.GetPage "section" "writing" }}
+  {{ with .Site.GetPage "section" "wrote" }}
     {{ range first 6 .Pages }}
     {{ .Scratch.Set "minimal" false }}
-    {{ partial "writing/post-link.html" . }}
+    {{ partial "wrote/single.html" . }}
     {{ end }}
   {{ end }}
 </ul>
 
 <div class="actions">
-  <a href="/writing">full archives</a>
+  <a href="/wrote">full archives</a>
 </div>

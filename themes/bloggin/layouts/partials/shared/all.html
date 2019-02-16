@@ -2,9 +2,9 @@
   <h2>Sharing</h2>
   <p>If I were a linkblogger, this would be where I linkblogged. These are things I think are awesome.</p>
   <ul>
-    {{ with .Site.GetPage "section" "sharing" }}
+    {{ with .Site.GetPage "section" "shared" }}
       {{ range .Pages }}
-        {{ partial "sharing/share.html" . }}
+        {{ partial "shared/single.html" . }}
       {{ end }}
     {{ end }}
   </ul>

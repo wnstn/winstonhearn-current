@@ -3,13 +3,13 @@
 <section id="reading">
   <h2>Recently read</h2>
 
-  {{ with .Site.GetPage "section" "reading" }}
+  {{ with .Site.GetPage "section" "read" }}
     <h3>2019</h3>
     <ul>
     {{ range where .Pages.ByDate.Reverse "Params.book.year_read" 2019 }}
       {{ .Scratch.Set "showImages" $showImages }}
       {{ .Scratch.Set "showNotes" true }}
-      {{ partial "reading/book.html" . }}
+      {{ partial "read/single.html" . }}
     {{ end }}
     </ul>
 
@@ -18,7 +18,7 @@
       {{ range where .Pages.ByDate.Reverse "Params.book.year_read" 2018 }}
         {{ .Scratch.Set "showImages" $showImages }}
         {{ .Scratch.Set "showNotes" true }}
-        {{ partial "reading/book.html" . }}
+        {{ partial "read/single.html" . }}
       {{ end }}
     </ul>
 
@@ -27,7 +27,7 @@
       {{ range where .Pages.ByDate.Reverse "Params.book.year_read" 2017 }}
       {{ .Scratch.Set "showImages" $showImages }}
       {{ .Scratch.Set "showNotes" true }}
-      {{ partial "reading/book.html" . }}
+      {{ partial "read/single.html" . }}
       {{ end }}
     </ul>
 

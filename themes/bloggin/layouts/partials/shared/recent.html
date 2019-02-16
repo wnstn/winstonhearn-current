@@ -2,13 +2,13 @@
   <h2>omg have you seen?</h2>
   <p>linkblogging is still a thing, right?</p>
   <ul class="highlighted">
-    {{ with .Site.GetPage "section" "sharing" }}
+    {{ with .Site.GetPage "section" "shared" }}
     {{ range first 3 .Pages }}
-    {{ partial "sharing/share.html" . }}
+    {{ partial "shared/single.html" . }}
     {{ end }}
     {{ end }}
   </ul>
   <div class="actions">
-    <a href="/sharing">See more</a>
+    <a href="/shared">See more</a>
   </div>
 </section>

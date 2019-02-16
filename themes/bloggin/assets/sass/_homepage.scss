@@ -31,11 +31,14 @@
 
   .recommendations {
     width: 100%;
-    // background-color: #251b2d;
     border-top: 3px solid #251b2d;
     border-bottom: 3px solid #251b2d;
     padding: 2rem 1rem;
     margin-bottom: 3rem;
+
+    .actions {
+      margin-right: 1em;
+    }
   }
 
   #reading {

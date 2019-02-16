@@ -1,15 +1,15 @@
 <section class="recent-books">
   <h4 class="small-header">Most recently finished</h4>
 <ul>
-{{ with .Site.GetPage "section" "reading" }}
+{{ with .Site.GetPage "section" "read" }}
 {{ range first 4 (where .Pages.ByDate.Reverse "Params.book.year_read" 2019) }}
   {{ .Scratch.Set "showImages" true }}
   {{ .Scratch.Set "showNotes" true }}
-  {{ partial "reading/book" . }}
+  {{ partial "read/single.html" . }}
 {{ end }}
 {{ end }}
 </ul>
 <div class="actions">
-  <a href="/reading">full reading list</a>
+  <a href="/read">full reading list</a>
 </div>
 </section>
