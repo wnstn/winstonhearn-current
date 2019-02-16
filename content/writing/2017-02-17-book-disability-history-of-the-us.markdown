@@ -4,7 +4,7 @@
    date: 2017-02-17 23:57:17
    category: writing
    description: "A helpful survey of American history (pre-white settlers to now) focused on how disability was understood and how people with disabilities have been treated within various periods."
-   linkedBook: "disability-history-of-united-states"
+   linked_book: "disability-history-of-united-states"
 ---
 
 A simple reading of _A Disability History of America_ might lead one to think the question driving Nielsen's research is "How have people with disabilities been treated in America's history?" This reading rings true in the book because it's the question the author started with. But due to personal circumstances in the author's life (outlined in the foreward) and as a result of the research, two much more complex questions emerge at the heart of the book: What does it mean for a person to be abled? And how do the many facets of culture at a given point in history constrain the possible answers to the first question?

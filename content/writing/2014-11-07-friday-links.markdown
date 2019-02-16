@@ -1,5 +1,5 @@
 ---
-title:  "Friday Links: <br/> Death in America"
+title:  "Friday Links: Death in America"
 permalink: /friday-links-nov-7-2014/
 date:   2014-11-07 00:30:00
 category: writing

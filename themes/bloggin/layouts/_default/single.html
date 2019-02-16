@@ -6,20 +6,21 @@
   </section>
 
   {{ $hasBook := isset .Params "linked_book" }}
+  <article class="{{ cond $hasBook "with-book" "without-book" }}">
+
     {{ if $hasBook }}
     <ul class="post-book">
-      {{ $book := .Params.LinkedBook }}
+      {{ $book := .Params.Linked_book }}
       {{ with .GetPage "reading" }}
-          {{ with .GetPage $book }}
-            {{ .Scratch.Set "showImages" true }}
-            {{ .Scratch.Set "showNotes" false }}
-            {{ partial "reading/book.html" . }}
-          {{ end }}
+      {{ with .GetPage $book }}
+      {{ .Scratch.Set "showImages" true }}
+      {{ .Scratch.Set "showNotes" false }}
+      {{ partial "reading/book.html" . }}
+      {{ end }}
       {{ end }}
     </ul>
-  {{ end }}
+    {{ end }}
 
-  <article class="{{ cond $hasBook "with-book" "without-book" }}">
     {{ .Content }}
   </article>
 

@@ -391,6 +391,24 @@ nav {
     .writing .content article li {
       font-size: 20px; } }
 
+.writing .content .post-book {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 4em; }
+  .writing .content .post-book .book-publisher {
+    font-size: 11.5px; }
+
+@media screen and (min-width: 768px) {
+  .writing .content .post-book {
+    width: 30%;
+    float: right;
+    margin-left: 3rem;
+    margin-bottom: 2em; }
+    .writing .content .post-book .book {
+      max-width: 100%; }
+    .writing .content .post-book .book-publisher {
+      font-size: 11.5px; } }
+
 .book {
   flex: 1 1 100%;
   margin-bottom: .69em;

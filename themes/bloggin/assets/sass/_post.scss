@@ -121,4 +121,30 @@
   }
 }
 
+  .post-book {
+    width: 100%;
+    list-style: none;
+    margin-bottom: 4em;
+
+    .book-publisher {
+      font-size: 11.5px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .post-book {
+      width: 30%;
+      float: right;
+      margin-left: 3rem;
+      margin-bottom: 2em;
+
+      .book {
+        max-width: 100%;
+      }
+
+      .book-publisher {
+        font-size: 11.5px;
+      }
+    }
+  }
 }
