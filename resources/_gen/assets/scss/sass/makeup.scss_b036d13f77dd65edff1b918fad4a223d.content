@@ -353,19 +353,19 @@ footer {
   .winstons-homepage #reading {
     padding: 3rem 2rem 1em; } }
 
-.writing .content .post-header {
+.wrote .content .post-header {
   margin-bottom: 69px; }
-  .writing .content .post-header h2 {
+  .wrote .content .post-header h2 {
     margin-bottom: 1em; }
 
-.writing .content article {
+.wrote .content article {
   margin: 0 auto 10rem;
   position: relative;
   width: 95%; }
   @media screen and (min-width: 768px) {
-    .writing .content article {
+    .wrote .content article {
       width: 80%; } }
-  .writing .content article:after {
+  .wrote .content article:after {
     content: "";
     width: 40%;
     height: 10px;
@@ -374,7 +374,7 @@ footer {
     left: 30%;
     bottom: -5rem;
     transform: rotate(-6deg); }
-  .writing .content article:before {
+  .wrote .content article:before {
     content: "";
     width: 40%;
     height: 10px;
@@ -383,68 +383,68 @@ footer {
     left: 30%;
     bottom: -5rem;
     transform: rotate(6deg); }
-  .writing .content article hr {
+  .wrote .content article hr {
     border: none;
     border-bottom: 2px dotted #3e6fa5;
     margin-top: 1em;
     margin-bottom: 2em;
     position: relative; }
-    .writing .content article hr:after {
+    .wrote .content article hr:after {
       content: "";
       width: 10%;
       border-top: 2px solid #3e6fa5;
       position: absolute;
       left: 0;
       top: 0; }
-    .writing .content article hr:before {
+    .wrote .content article hr:before {
       content: "";
       width: 10%;
       border-top: 2px solid #3e6fa5;
       position: absolute;
       right: 0;
       top: 0; }
-  .writing .content article blockquote {
+  .wrote .content article blockquote {
     border-left: 10px solid #48305a;
     padding-left: 5px; }
-  .writing .content article h3 {
+  .wrote .content article h3 {
     color: #3e6fa5;
     margin-top: 1rem;
     margin-bottom: 2rem;
     font-size: 22px;
     display: inline-block; }
-  .writing .content article strong {
+  .wrote .content article strong {
     font-weight: 800; }
-  .writing .content article ul {
+  .wrote .content article ul {
     list-style: circle;
     margin-left: 1em; }
-  .writing .content article li {
+  .wrote .content article li {
     margin-bottom: .69em;
     font-size: 15px;
     line-height: 1.5; }
   @media screen and (min-width: 768px) {
-    .writing .content article p {
+    .wrote .content article p {
       margin: 0 auto 2rem; }
-    .writing .content article blockquote {
+    .wrote .content article blockquote {
       padding-left: 15px; }
-    .writing .content article li {
+    .wrote .content article li {
       font-size: 20px; } }
 
-.writing .content .post-book {
+.wrote .content .post-book {
   width: 100%;
   list-style: none;
   margin-bottom: 4em; }
-  .writing .content .post-book .book-publisher {
+  .wrote .content .post-book .book-publisher {
     font-size: 11.5px; }
 
 @media screen and (min-width: 768px) {
-  .writing .content .post-book {
+  .wrote .content .post-book {
     width: 30%;
     float: right;
     margin-left: 3rem;
     margin-bottom: 2em; }
-    .writing .content .post-book .book {
+    .wrote .content .post-book .book {
       max-width: 100%; }
-    .writing .content .post-book .book-publisher {
+    .wrote .content .post-book .book-publisher {
       font-size: 11.5px; } }
 
 .book {
