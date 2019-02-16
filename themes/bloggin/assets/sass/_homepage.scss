@@ -6,25 +6,22 @@
     flex-wrap: wrap;
   }
 
-  .featured-recent .actions{
-    display: flex;
-    flex: 1 1 100%;
-    margin: 1em 1em 1em 0;
-    justify-content: flex-end;
-  }
-
   .full-archives {
     display: none;
   }
 
   @media screen and (min-width: 768px){
-    .featured-recent .actions {
-      display: none;
-    }
 
-    .full-archives {
+    .writing-section.full-archives {
       display: flex;
+      flex: 1 1 50%;
       padding-top: 3rem;
+      margin-right: 0;
+      padding-right: 5%;
+
+      li {
+        margin-bottom: .5em;
+      }
     }
   }
 
@@ -35,36 +32,18 @@
     margin-bottom: 3rem;
   }
 
+  #reading {
+    background: linear-gradient(to bottom, #251b2d, $background);
+    padding: 3rem 1em 1em;
+  }
+
   @media screen and (min-width: 768px){
     .recommendations {
       padding: 2rem;
     }
-  }
 
-  #reading {
-    display: flex;
-    flex: 1 1 41%;
-    flex-wrap: wrap;
-    align-content: flex-start;
-
-    ul {
-      margin-left: 1em;
-    }
-
-    .book {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
     #reading {
-      background: linear-gradient(to right, #251b2d, $background);
-      padding: 3rem 2em 1em;
-    }
-
-    ul {
-      margin-left: 0;
+      padding: 3rem 2rem 1em;
     }
   }
 

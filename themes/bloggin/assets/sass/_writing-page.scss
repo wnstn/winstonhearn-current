@@ -1,6 +1,7 @@
 .writing-section {
   display: flex;
   z-index: 10;
+  margin-bottom: 3rem;
 
   > ul {
     display: flex;
@@ -13,6 +14,7 @@
 
   .post-link {
     margin-bottom: .69em;
+    line-height: 1.4;
   }
 
   @media screen and (min-width: 768px) {
@@ -41,7 +43,6 @@
     }
 
     @media screen and (min-width: 768px) {
-      margin-bottom: 0;
 
       .post-link {
         width: 45%;

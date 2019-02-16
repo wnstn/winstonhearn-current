@@ -70,7 +70,7 @@ h2,
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 40px;
-    margin-bottom: calc(69px * 1.5);
+    margin-bottom: 69px;
   }
 
   .small-header {
@@ -122,4 +122,13 @@ footer {
 
 .credits {
   font-size: 10px;
+}
+
+.actions {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: end;
+  margin-top: 1em;
+  margin-right: 3em;
+  padding-bottom: 2em;
 }

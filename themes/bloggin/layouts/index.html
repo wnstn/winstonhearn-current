@@ -12,14 +12,8 @@
 
   {{- partial "sharing/sharing-list-recent.html" . -}}
 
-  <section class="writing-section full-archives">
-    <h2>Full archives</h2>
-    {{- partial "writing/writing-archives.html" . -}}
-  </section>
-
   {{ .Scratch.Set "showNotes" true }}
-  {{- partial "reading/reading-list.html" . -}}
-
-
+  {{ .Scratch.Set "showImages" true }}
+  {{- partial "reading/reading-past-12.html" . -}}
 
 {{ end }}

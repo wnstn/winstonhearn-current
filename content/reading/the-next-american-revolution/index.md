@@ -1,6 +1,6 @@
 ---
 title: "The Next American Revolution"
-date: 2019-02-14T12:44:09-05:00
+date: 2018-02-14T12:44:09-05:00
 category: reading
 notes: ""
 book:

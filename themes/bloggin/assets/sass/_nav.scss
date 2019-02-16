@@ -36,17 +36,6 @@ nav {
     a:after {
       display: none;
     }
-
-    &:before {
-      content: "";
-      height: 1px;
-      background-color: $purple;
-      width: 100%;
-      display: block;
-      transform: rotate(-5deg);
-      top: -10px;
-      position: absolute;
-    }
   }
 
   @media screen and (min-width: 600px) {

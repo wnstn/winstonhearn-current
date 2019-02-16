@@ -1,7 +1,6 @@
 ---
 title: "Handmaids Tale"
-date: 2019-02-14T12:42:54-05:00
-
+date: 2018-02-14T12:42:54-05:00
 category: reading
 notes: ""
 book:

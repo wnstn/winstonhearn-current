@@ -95,7 +95,7 @@ h2,
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 40px;
-    margin-bottom: calc(69px * 1.5); }
+    margin-bottom: 69px; }
   .small-header {
     font-size: 22px; } }
 
@@ -133,6 +133,14 @@ footer {
 .credits {
   font-size: 10px; }
 
+.actions {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: end;
+  margin-top: 1em;
+  margin-right: 3em;
+  padding-bottom: 2em; }
+
 nav {
   width: 100%;
   max-width: 1024px;
@@ -161,15 +169,6 @@ nav {
       border-bottom: 1px solid #a287fb; }
     nav .site-title a:after {
       display: none; }
-    nav .site-title:before {
-      content: "";
-      height: 1px;
-      background-color: #a287fb;
-      width: 100%;
-      display: block;
-      transform: rotate(-5deg);
-      top: -10px;
-      position: absolute; }
   @media screen and (min-width: 600px) {
     nav .site-title:before {
       display: none; } }
@@ -282,21 +281,18 @@ nav {
   width: 100%;
   flex-wrap: wrap; }
 
-.winstons-homepage .featured-recent .actions {
-  display: flex;
-  flex: 1 1 100%;
-  margin: 1em 1em 1em 0;
-  justify-content: flex-end; }
-
 .winstons-homepage .full-archives {
   display: none; }
 
 @media screen and (min-width: 768px) {
-  .winstons-homepage .featured-recent .actions {
-    display: none; }
-  .winstons-homepage .full-archives {
+  .winstons-homepage .writing-section.full-archives {
     display: flex;
-    padding-top: 3rem; } }
+    flex: 1 1 50%;
+    padding-top: 3rem;
+    margin-right: 0;
+    padding-right: 5%; }
+    .winstons-homepage .writing-section.full-archives li {
+      margin-bottom: .5em; } }
 
 .winstons-homepage .recommendations {
   width: 100%;
@@ -304,27 +300,15 @@ nav {
   padding: 2rem 1rem;
   margin-bottom: 3rem; }
 
+.winstons-homepage #reading {
+  background: linear-gradient(to bottom, #251b2d, #11041b);
+  padding: 3rem 1em 1em; }
+
 @media screen and (min-width: 768px) {
   .winstons-homepage .recommendations {
-    padding: 2rem; } }
-
-.winstons-homepage #reading {
-  display: flex;
-  flex: 1 1 41%;
-  flex-wrap: wrap;
-  align-content: flex-start; }
-  .winstons-homepage #reading ul {
-    margin-left: 1em; }
-  .winstons-homepage #reading .book {
-    flex: 1 1 100%;
-    max-width: 100%; }
-
-@media screen and (min-width: 768px) {
+    padding: 2rem; }
   .winstons-homepage #reading {
-    background: linear-gradient(to right, #251b2d, #11041b);
-    padding: 3rem 2em 1em; }
-  .winstons-homepage ul {
-    margin-left: 0; } }
+    padding: 3rem 2rem 1em; } }
 
 .writing .content .post-header {
   margin-bottom: 69px; }
@@ -510,14 +494,16 @@ nav {
 
 .writing-section {
   display: flex;
-  z-index: 10; }
+  z-index: 10;
+  margin-bottom: 3rem; }
   .writing-section > ul {
     display: flex;
     flex-wrap: wrap; }
   .writing-section h3 {
     font-size: 18px; }
   .writing-section .post-link {
-    margin-bottom: .69em; }
+    margin-bottom: .69em;
+    line-height: 1.4; }
   @media screen and (min-width: 768px) {
     .writing-section h3 {
       font-size: 25px; }
@@ -533,16 +519,14 @@ nav {
       font-size: 25px;
       line-height: 1.5; }
     @media screen and (min-width: 768px) {
-      .writing-section.featured-recent {
-        margin-bottom: 0; }
-        .writing-section.featured-recent .post-link {
-          width: 45%;
-          margin-right: 8%;
-          margin-left: 1%;
-          margin-bottom: 3rem; }
-          .writing-section.featured-recent .post-link:nth-child(even) {
-            margin-right: 0;
-            margin-left: 0; } }
+      .writing-section.featured-recent .post-link {
+        width: 45%;
+        margin-right: 8%;
+        margin-left: 1%;
+        margin-bottom: 3rem; }
+        .writing-section.featured-recent .post-link:nth-child(even) {
+          margin-right: 0;
+          margin-left: 0; } }
   .writing-section.full-archives {
     flex: 1 2 50%;
     margin-right: 9%;
@@ -580,15 +564,32 @@ nav {
     .recommendations .highlighted li:last-child {
       margin-right: 0; } }
 
-.recommendations .actions {
+.recommendations ul {
   display: flex;
-  flex: 1 1 auto;
-  justify-content: end;
-  margin-top: 1em;
-  margin-right: 3em; }
+  flex-wrap: wrap; }
 
-.recommendations .recommendation h3 {
-  margin-bottom: 1em;
-  font-size: 18px; }
+.recommendations .recommendation {
+  position: relative;
+  flex: 1 1 100%;
+  padding-left: 40px;
+  margin-bottom: 2em; }
+  .recommendations .recommendation h3 {
+    margin-bottom: 1em;
+    font-size: 18px; }
+  @media screen and (min-width: 768px) {
+    .recommendations .recommendation {
+      flex: 1 1 50%;
+      max-width: 45%;
+      margin-right: 5%; } }
+
+.recommendations .share-icon {
+  background: no-repeat url(/img/cassette.svg) 100% center;
+  background-size: 100%;
+  transform: rotate(-9deg);
+  fill: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0; }
 
 /*# sourceMappingURL=makeup.css.map */
