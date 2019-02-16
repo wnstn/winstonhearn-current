@@ -99,6 +99,16 @@ h2,
   .small-header {
     font-size: 22px; } }
 
+p {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  line-height: 1.4; }
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 23px;
+    line-height: 1.4; } }
+
 a {
   color: #b48193;
   text-decoration: none;
@@ -292,7 +302,9 @@ nav {
     margin-right: 0;
     padding-right: 5%; }
     .winstons-homepage .writing-section.full-archives li {
-      margin-bottom: .5em; } }
+      margin-bottom: .5em; }
+  .winstons-homepage p {
+    font-size: 20px; } }
 
 .winstons-homepage .recommendations {
   width: 100%;
@@ -340,10 +352,6 @@ nav {
     left: 30%;
     bottom: -5rem;
     transform: rotate(6deg); }
-  .writing .content article p {
-    font-size: 18px;
-    margin-bottom: 1.5rem;
-    line-height: 1.4; }
   .writing .content article hr {
     border: none;
     border-bottom: 2px dotted #3e6fa5;
@@ -384,9 +392,7 @@ nav {
     line-height: 1.5; }
   @media screen and (min-width: 768px) {
     .writing .content article p {
-      font-size: 23px;
-      margin: 0 auto 2rem;
-      line-height: 1.4; }
+      margin: 0 auto 2rem; }
     .writing .content article blockquote {
       padding-left: 15px; }
     .writing .content article li {
@@ -599,7 +605,9 @@ nav {
     .recommendations .recommendation {
       flex: 1 1 50%;
       max-width: 45%;
-      margin-right: 5%; } }
+      margin-right: 5%; }
+      .recommendations .recommendation h3 {
+        font-size: 21px; } }
 
 .recommendations .share-icon {
   background: no-repeat url(/img/cassette.svg) 100% center;

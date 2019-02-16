@@ -44,12 +44,6 @@
       transform: rotate(6deg);
     }
 
-    p {
-      font-size: 18px;
-      margin-bottom: 1.5rem;
-      line-height: 1.4;
-    }
-
     hr {
       border: none;
       border-bottom: 2px dotted $headers;
@@ -107,9 +101,7 @@
 
   @media screen and (min-width: 768px) {
     p {
-      font-size: 23px;
       margin: 0 auto 2rem;
-      line-height: 1.4;
     }
 
     blockquote {
