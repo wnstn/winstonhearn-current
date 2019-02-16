@@ -502,6 +502,10 @@ footer {
       border-top: 2px dotted #3e6fa5;
       left: 15%;
       bottom: -1em; }
+    @media screen and (min-width: 500px) {
+      .book.with-image {
+        margin: 0;
+        margin-bottom: 2em; } }
     @media screen and (min-width: 650px) {
       .book.with-image {
         padding-right: 1em;

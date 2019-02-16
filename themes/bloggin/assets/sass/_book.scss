@@ -72,6 +72,11 @@
       bottom: -1em;
     }
 
+    @media screen and (min-width: 500px) {
+      margin: 0;
+      margin-bottom: 2em;
+    }
+
     @media screen and (min-width: 650px) {
       padding-right: 1em;
       margin: 0;
