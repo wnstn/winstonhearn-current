@@ -1,7 +1,6 @@
 ---
 title: "With Pod"
 date: 2019-02-15T22:28:26-05:00
-draft: true
 category: sharing
 share:
   name: "Why is this happening?"
