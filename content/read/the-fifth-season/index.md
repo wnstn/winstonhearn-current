@@ -10,6 +10,7 @@ book:
   publisher: "Orbit"
   publish_year: 2015
   year_read: 2018
+  times_read: 2nd
 resources:
   - name: cover
     src: images/cover.jpg

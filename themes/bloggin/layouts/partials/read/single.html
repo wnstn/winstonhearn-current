@@ -26,6 +26,10 @@
   {{ end }}
 
   {{ with .Params.book }}
+    {{ if isset . "times_read"}}
+      <p class="book-reread">({{ .times_read }} time reading)</p>
+    {{ end }}
+
     <h4 class="book-author"><em>by {{ .author }}</em></h4>
 
     {{ if $showImages }}
