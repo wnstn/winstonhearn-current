@@ -41,7 +41,7 @@
 
   {{ if (and .Params.notes $showNotes) }}
     {{ $page := .Params.notes }}
-    {{ with .GetPage "/writing" }}
+    {{ with .GetPage "/wrote" }}
     {{ with .GetPage $page }}
     <p class="book-notes"><a href="{{ .Permalink }}">My reading notes</a></p>
     {{ end }}

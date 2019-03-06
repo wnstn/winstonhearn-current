@@ -11,7 +11,7 @@
     {{ if $hasBook }}
     <ul class="post-book">
       {{ $book := .Params.Linked_book }}
-      {{ with .GetPage "reading" }}
+      {{ with .GetPage "read" }}
       {{ with .GetPage $book }}
       {{ .Scratch.Set "showImages" true }}
       {{ .Scratch.Set "showNotes" false }}
