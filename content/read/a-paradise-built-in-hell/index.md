@@ -9,7 +9,7 @@ book:
   title: "A Paradise Built in Hell"
   publisher: "Penguin"
   publish_year: 2010
-  year_read: 2018
+  year_read: 2019
 resources:
   - name: cover
     src: images/cover.jpg
