@@ -2,7 +2,7 @@
 title: "Perpetuating Harm"
 date: 2019-03-13T08:58:48-04:00
 category: writing
-description: Understanding how I come to recognize my users.
+description: The things I am learning about the power of the web industry.
 linked_book: "building-access"
 ---
 
