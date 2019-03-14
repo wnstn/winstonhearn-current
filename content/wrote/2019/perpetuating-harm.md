@@ -8,7 +8,7 @@ linked_book: "building-access"
 
 I've been thinking about the people that use the websites I build. I've been thinking about them, because I've been learning how much _who they are_ differs from _who I imagine them to be_. This gap, between who I build for and who actually exists in the real world is a failure on my part, and, I've learned recently, a failure not limited to me.
 
-I've started reading _Building Access_, which is best described by Aimi Hamraie, the author, in her introduction:
+I've started reading _Building Access_, which is best described by Aimi Hamraie, the author, in their introduction:
 
 > I am concerned with the implications of how we imagine the figure of the user, justify design for particular users, and tell stories about the value of such design for broader questions of difference and belonging in the contemporary United States. _Building Access_, then, offers scholars, activists, designers, and others who support the project of accessible world-building a map of our paths to the present.
 
@@ -16,7 +16,7 @@ Hamraie has researched and written a fantastic book that helps us understand the
 
 > is the design and composition of an environment so that it can be accessed, understood and used to the greatest extent possible by all people regardless of their age, size, ability or disability.
 
-If you've ever heard that "making things accessible improves them for everyone", you've been introduced to ideas stemming from Universal Design. Hamraie seeks to understand historically what *all people* means, which she investigates by looking at the past century of political, design, and cultural understanding of disability and design. Using this history, she begins to understand the concept of the "user" as understood in Universal Design. I'm only in chapter 4, but so far the book is absolutely fascinating.
+If you've ever heard that "making things accessible improves them for everyone", you've been introduced to ideas stemming from Universal Design. Hamraie seeks to understand historically what *all people* means, which they investigate by looking at the past century of political, design, and cultural understanding of disability and design. Using this history, they begin to understand the concept of the "user" as understood in Universal Design. I'm only in chapter 4, but so far the book is absolutely fascinating.
 
 Last week [WebAim released an accessibility analysis of the top 1 million sites worldwide](https://webaim.org/projects/million/), which revealed the state of accessibility on the web to be pretty damn shitty. I appreciate this project because it helps me think about the cumulative impact of industry-wide ignorance on accessibility. This week the web turned 30 years old, and the Millions project helps me roughly see what we've accomplished in the past 30 years.
 
@@ -47,3 +47,5 @@ I don't know about you, but I'm not ok with that. I would like to not be complic
 We, the web makers, have broken the world. We did this because we did not know about or listen to the full range of people who use the web. The solution now is not only for us to rapidly learn accessibility standards and ARIA and patch all our websites. That only addresses the abuses of power we've perpetuated. The way to building a future that resolves some of the harm we've perpetuated is to change the power dynamics. Those whose voices were ignored, or silenced, or rendered inaudible by our choices are the people who should be hired and paid to help us build a better future. If we change the power structures so that previously excluded people are present in them, we reduce the chances that power will be used to harm specific groups of people.
 
 Towards that end, if this downer of a post leaves you wanting something to act on, may I recommend watching [this 20 minute talk by Liz Jackson at Interaction19](https://vimeo.com/319388683) about how our attempts to foster empathy often cause us to perpetuate the systems of harm. This talk helped me imagine an industry that I'm not ashamed to work in. Now to figure out what I can do to help build it.
+
+_Note: in the initial version of this piece I misgendered Hamraie. I've updated it to use the correct pronouns._.
