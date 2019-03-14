@@ -48,4 +48,4 @@ We, the web makers, have broken the world. We did this because we did not know a
 
 Towards that end, if this downer of a post leaves you wanting something to act on, may I recommend watching [this 20 minute talk by Liz Jackson at Interaction19](https://vimeo.com/319388683) about how our attempts to foster empathy often cause us to perpetuate the systems of harm. This talk helped me imagine an industry that I'm not ashamed to work in. Now to figure out what I can do to help build it.
 
-_Note: in the initial version of this piece I misgendered Hamraie. I've updated it to use the correct pronouns._.
+_Note: in the initial version of this piece I misgendered Hamraie. I've updated the piece to use the correct pronouns._
