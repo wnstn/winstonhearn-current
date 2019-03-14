@@ -6,7 +6,7 @@ description: The things I am learning about the power of the web industry.
 linked_book: "building-access"
 ---
 
-I've been thinking about the people that use the websites I build. I've been thinking about them, because I've been learning how much who they are differs from who I imagine them to be. This gap, between who I build for and who actually exists in the real world is a failure on my part, and, I've learned recently, a failure not limited to me.
+I've been thinking about the people that use the websites I build. I've been thinking about them, because I've been learning how much _who they are_ differs from _who I imagine them to be_. This gap, between who I build for and who actually exists in the real world is a failure on my part, and, I've learned recently, a failure not limited to me.
 
 I've started reading this book, _Building Access_, which is best described by Aimi Hamraie, the author, in her introduction:
 
