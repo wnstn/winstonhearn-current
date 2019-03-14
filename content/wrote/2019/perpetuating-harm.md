@@ -8,7 +8,7 @@ linked_book: "building-access"
 
 I've been thinking about the people that use the websites I build. I've been thinking about them, because I've been learning how much _who they are_ differs from _who I imagine them to be_. This gap, between who I build for and who actually exists in the real world is a failure on my part, and, I've learned recently, a failure not limited to me.
 
-I've started reading this book, _Building Access_, which is best described by Aimi Hamraie, the author, in her introduction:
+I've started reading _Building Access_, which is best described by Aimi Hamraie, the author, in her introduction:
 
 > I am concerned with the implications of how we imagine the figure of the user, justify design for particular users, and tell stories about the value of such design for broader questions of difference and belonging in the contemporary United States. _Building Access_, then, offers scholars, activists, designers, and others who support the project of accessible world-building a map of our paths to the present.
 
