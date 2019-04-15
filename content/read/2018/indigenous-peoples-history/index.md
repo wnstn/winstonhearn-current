@@ -6,7 +6,7 @@ notes: ""
 book:
   author: "Roxanne Dunbar-Ortiz"
   url: "http://www.beacon.org/An-Indigenous-Peoples-History-of-the-United-States-P1164.aspx"
-  title: "An Idigenous Peoples' History of the United States"
+  title: "An Indigenous Peoples' History of the United States"
   publisher: "Beacon"
   publish_year: 2015
   year_read: 2018

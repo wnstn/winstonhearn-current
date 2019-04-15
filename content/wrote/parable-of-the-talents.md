@@ -2,7 +2,7 @@
 title: "Parable of the Talents"
 date: 2019-03-06T08:45:42-05:00
 category: writing
-linked_book: "parable-of-the-talents"
+linked_book: "2019/parable-of-the-talents"
 description: "The second in a near-future sci-fi series about America."
 ---
 
