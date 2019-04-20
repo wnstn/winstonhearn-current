@@ -11,11 +11,11 @@
     {{ if $hasBook }}
     <ul class="post-book">
       {{ $book := .Params.Linked_book }}
-      {{ with .GetPage "read" }}
+      {{ with .Site.GetPage "section" "read" }}
       {{ with .GetPage $book }}
-      {{ .Scratch.Set "showImages" true }}
-      {{ .Scratch.Set "showNotes" false }}
-      {{ partial "read/single.html" . }}
+        {{ .Scratch.Set "showImages" true }}
+        {{ .Scratch.Set "showNotes" false }}
+        {{ partial "read/single.html" . }}
       {{ end }}
       {{ end }}
     </ul>
