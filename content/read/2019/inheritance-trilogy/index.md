@@ -2,7 +2,7 @@
 title: "Inheritance Trilogy"
 date: 2019-04-20T13:44:50-04:00
 category: reading
-notes: "post-file-name"
+notes: "2019/substantial-fiction.md"
 book:
   author: "N.K. Jemisin"
   url: "http://nkjemisin.com/books/the-inheritance-trilogy-omnibus/"
