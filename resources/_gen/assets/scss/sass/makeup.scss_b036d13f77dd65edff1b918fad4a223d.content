@@ -241,8 +241,8 @@ a {
     content: "";
     height: 290px;
     position: absolute;
-    border-bottom: 10px solid #48305a;
-    border-right: 10px solid #48305a;
+    border-bottom: 10px solid #fefdf9;
+    border-right: 10px solid #fefdf9;
     right: -5%;
     top: -10%;
     width: 290px;

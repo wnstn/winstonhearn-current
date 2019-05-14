@@ -13,8 +13,8 @@
     content: "";
     height: 290px;
     position: absolute;
-    border-bottom: 10px solid $flourish;
-    border-right: 10px solid $flourish;
+    border-bottom: 10px solid lighten($background, 5%);
+    border-right: 10px solid lighten($background, 5%);
     right: -5%;
     top: -10%;
     width: 290px;
