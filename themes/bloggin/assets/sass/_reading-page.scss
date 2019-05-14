@@ -27,9 +27,9 @@
 }
 
 .recent-books {
-  margin-top: 3rem;
-  padding: 1em;
-  background: linear-gradient(to bottom, #251b2d, $background 20%);
+  border-top: 3px solid $accent;
+  margin-top: 2rem;
+  padding: 2rem 1rem 1rem;
   width: 100%;
 
   ul {

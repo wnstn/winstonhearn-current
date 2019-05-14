@@ -1,8 +1,10 @@
 
 footer {
-  margin: 2em 0 4em;
-  background: linear-gradient(to bottom, #251b2d, $background);
-  padding: 1em;
+  max-width: 1072px;
+  width: 100%;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  background-color: lighten($background, 5%);
 }
 
 .footer-links {
@@ -13,10 +15,15 @@ footer {
   li {
     width: 100%;
     padding: .5em 0;
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 }
 
 @media screen and (min-width:600px) {
+
   .footer-links {
     display: flex;
     margin-bottom: 3rem;
@@ -25,6 +32,10 @@ footer {
       width: auto;
       max-width: 25%;
       padding: 1em;
+
+      &:first-child {
+        padding-left: 0;
+      }
     }
   }
 }

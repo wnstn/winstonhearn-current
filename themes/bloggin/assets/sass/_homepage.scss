@@ -1,11 +1,5 @@
 .winstons-homepage {
 
-  #page-content {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-
   .full-archives {
     display: none;
   }
@@ -31,8 +25,8 @@
 
   .recommendations {
     width: 100%;
-    border-top: 3px solid #251b2d;
-    border-bottom: 3px solid #251b2d;
+    border-top: 3px solid $accent;
+    border-bottom: 3px solid $accent;
     padding: 2rem 1rem;
     margin-bottom: 3rem;
 
@@ -42,7 +36,6 @@
   }
 
   #reading {
-    background: linear-gradient(to bottom, #251b2d, $background);
     padding: 3rem 1em 1em;
   }
 
