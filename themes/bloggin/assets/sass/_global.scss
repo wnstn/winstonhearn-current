@@ -126,18 +126,6 @@ a {
   padding: 0;
   overflow: hidden;
   background-color: $background;
-
-  > * {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-}
-
-@media screen and (min-width:600px) {
-  .content > * {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
 }
 
 .actions {

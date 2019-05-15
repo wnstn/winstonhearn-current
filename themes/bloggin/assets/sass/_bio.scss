@@ -2,11 +2,12 @@
   display: flex;
   align-content: flex-start;
   flex-wrap: wrap;
-  min-height: 300px;
-  width: calc(100% + 16px);
+  width: 100%;
   position: relative;
   z-index: 10;
-  margin: 1rem -8px;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 2rem 8px 1rem;
   border-bottom: 4px solid lighten($background, 5%);
 
   &:after {
@@ -48,11 +49,9 @@
   }
 
   @media screen and (min-width:768px) {
-    height: 300px;
-    padding-left: 4rem;
-    margin: 2rem -24px;
-    width: calc(100% + 48px);
-    border-bottom: 10px solid lighten($background, 5%);
+    padding: 3rem 24px 3rem 4rem;
+    width: 100%;
+    border-bottom: 20px solid lighten($background, 5%);
 
     &:after {
       width: 13vw;

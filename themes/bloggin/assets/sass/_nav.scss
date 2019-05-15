@@ -1,14 +1,15 @@
 .content nav {
-  padding: 0 8px;
-  margin: 34.5px 0;
+  padding: 34.5px 8px 17.25px;
+  margin: 0;
   display: block;
   justify-content: center;
   align-content: space-between;
-  border-bottom: 4px solid lighten($background, 5%);
+  background: lighten($background, 5%);
+  // border-bottom: 4px solid lighten($background, 5%);
 
   @media screen and (min-width: 600px) {
-    border-bottom: 10px solid lighten($background, 5%);
-    padding: 12px 24px;
+    // border-bottom: 10px solid lighten($background, 5%);
+    padding: 69px 24px 34.5px;
     display: flex;
   }
 
@@ -22,6 +23,10 @@
     position: relative;
     padding-right: 10px;
     color: $links;
+
+    a {
+      font-weight: 700;
+    }
 
     a:link,
     a:visited {

@@ -136,14 +136,6 @@ a {
   padding: 0;
   overflow: hidden;
   background-color: #FBF3E3; }
-  .content > * {
-    margin-left: 8px;
-    margin-right: 8px; }
-
-@media screen and (min-width: 600px) {
-  .content > * {
-    margin-left: 24px;
-    margin-right: 24px; } }
 
 .actions {
   display: flex;
@@ -160,16 +152,15 @@ a {
     clear: both; }
 
 .content nav {
-  padding: 0 8px;
-  margin: 34.5px 0;
+  padding: 34.5px 8px 17.25px;
+  margin: 0;
   display: block;
   justify-content: center;
   align-content: space-between;
-  border-bottom: 4px solid #fefdf9; }
+  background: #fefdf9; }
   @media screen and (min-width: 600px) {
     .content nav {
-      border-bottom: 10px solid #fefdf9;
-      padding: 12px 24px;
+      padding: 69px 24px 34.5px;
       display: flex; } }
   .content nav .left-nav {
     display: flex;
@@ -179,6 +170,8 @@ a {
     position: relative;
     padding-right: 10px;
     color: #477CB7; }
+    .content nav .site-title a {
+      font-weight: 700; }
     .content nav .site-title a:link,
     .content nav .site-title a:visited {
       color: #477CB7; }
@@ -231,11 +224,12 @@ a {
   display: flex;
   align-content: flex-start;
   flex-wrap: wrap;
-  min-height: 300px;
-  width: calc(100% + 16px);
+  width: 100%;
   position: relative;
   z-index: 10;
-  margin: 1rem -8px;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 2rem 8px 1rem;
   border-bottom: 4px solid #fefdf9; }
   #bio:after {
     content: "";
@@ -269,11 +263,9 @@ a {
     z-index: 10; }
   @media screen and (min-width: 768px) {
     #bio {
-      height: 300px;
-      padding-left: 4rem;
-      margin: 2rem -24px;
-      width: calc(100% + 48px);
-      border-bottom: 10px solid #fefdf9; }
+      padding: 3rem 24px 3rem 4rem;
+      width: 100%;
+      border-bottom: 20px solid #fefdf9; }
       #bio:after {
         width: 13vw;
         height: 13vw;
@@ -331,6 +323,9 @@ footer {
 
 .winstons-homepage .full-archives {
   display: none; }
+
+.winstons-homepage .writing-section {
+  padding: 0 8px; }
 
 @media screen and (min-width: 768px) {
   .winstons-homepage .writing-section.full-archives {
@@ -589,7 +584,16 @@ footer {
     flex-wrap: wrap;
     margin-bottom: 2em; }
     .writing-section.featured-recent .post-link {
-      margin-bottom: 3em; }
+      margin-bottom: 2em; }
+      .writing-section.featured-recent .post-link:after {
+        content: '';
+        border-bottom: 2px solid #fefdf9;
+        width: 69%;
+        display: block;
+        margin-left: -8px;
+        margin-top: 1em; }
+      .writing-section.featured-recent .post-link:last-child:after {
+        display: none; }
     .writing-section.featured-recent h3 {
       font-size: 25px;
       line-height: 1.5; }
@@ -599,6 +603,8 @@ footer {
         margin-right: 8%;
         margin-left: 1%;
         margin-bottom: 3rem; }
+        .writing-section.featured-recent .post-link:after {
+          display: none; }
         .writing-section.featured-recent .post-link:nth-child(even) {
           margin-right: 0;
           margin-left: 0; } }

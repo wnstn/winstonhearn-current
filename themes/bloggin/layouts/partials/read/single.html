@@ -4,7 +4,9 @@
 <li class="{{ cond $showImages "book with-image" "book"}}">
   {{ if $showImages }}
     {{ $img := (.Resources.GetMatch "cover") }}
-    <img src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
+    {{ if $img }}
+      <img src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
+    {{ end}}
   {{ end }}
 
   {{ with .Params.book }}
