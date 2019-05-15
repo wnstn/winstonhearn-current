@@ -2,7 +2,7 @@
 
   <section class="post-header">
     <h2>{{ .Title }}</h2>
-    <p class="post-date">Published <time datetime="{{ dateFormat "2006-02-01" .Date }}">{{ dateFormat "Jan 2, 2006" .Date }}</time></p>
+    <p class="post-date"><em>Published <time datetime="{{ dateFormat "2006-02-01" .Date }}">{{ dateFormat "Jan 2, 2006" .Date }}</time></em></p>
   </section>
 
   {{ $hasBook := isset .Params "linked_book" }}

@@ -137,6 +137,13 @@ a {
   overflow: hidden;
   background-color: #FBF3E3; }
 
+#page-content {
+  padding: 8px; }
+
+@media screen and (min-width: 768px) {
+  #page-content {
+    padding: 24px; } }
+
 .actions {
   display: flex;
   flex: 1 1 auto;
@@ -361,6 +368,8 @@ footer {
   margin-bottom: 69px; }
   .wrote .content .post-header h2 {
     margin-bottom: 1em; }
+  .wrote .content .post-header .post-date {
+    font-size: 15px; }
 
 .wrote .content article {
   margin: 0 auto 10rem;
