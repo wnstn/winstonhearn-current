@@ -1,5 +1,5 @@
 <ul>
-    {{ range first 6 .Pages }}
+    {{ range first 6 (where .Site.RegularPages "Section" "wrote") }}
     {{ .Scratch.Set "minimal" false }}
     {{ partial "wrote/single-post.html" . }}
     {{ end }}
