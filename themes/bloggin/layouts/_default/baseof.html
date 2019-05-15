@@ -4,6 +4,9 @@
   <body class="{{ .Type }} {{ .Params.BodyClass }}">
     <div class="content">
       {{- partial "header.html" . -}}
+      {{ .Scratch.Set "bioMinimal" false }}
+      {{- partial "bio.html" . -}}
+
       <main id="page-content">
         {{- block "main" . }}{{- end }}
       </main>

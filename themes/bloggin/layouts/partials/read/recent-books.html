@@ -1,11 +1,11 @@
 <section class="recent-books">
   <h4 class="small-header">Most recently finished</h4>
   <ul>
-  {{ $pages := (first 4 (where .Site.Pages "Section" "read")) }}
+  {{ $pages := (first 4 (where .Site.RegularPages "Section" "read")) }}
   {{ range $pages }}
     {{ .Scratch.Set "showImages" true }}
     {{ .Scratch.Set "showNotes" true }}
-    {{ partial "read/single.html" . }}
+    {{ partial "read/book.html" . }}
   {{ end }}
   </ul>
   <div class="actions">

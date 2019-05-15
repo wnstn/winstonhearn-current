@@ -1,40 +1,15 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
 
-  <section class="post-header">
-    <h2>{{ .Title }}</h2>
-    <p class="post-date"><em>Published <time datetime="{{ dateFormat "2006-02-01" .Date }}">{{ dateFormat "Jan 2, 2006" .Date }}</time></em></p>
-  </section>
+<body class="{{ .Type }} {{ .Params.BodyClass }}">
+  <div class="content">
+    {{- partial "header.html" . -}}
+    <main id="page-content">
+      {{- block "main" . }}{{- end }}
+    </main>
+  </div>
+  {{- partial "footer.html" . -}}
+</body>
 
-  {{ $hasBook := isset .Params "linked_book" }}
-  <article class="{{ cond $hasBook "with-book" "without-book" }}">
-
-    {{ if $hasBook }}
-    <ul class="post-book">
-      {{ $book := .Params.Linked_book }}
-      {{ with .Site.GetPage "section" "read" }}
-      {{ with .GetPage $book }}
-        {{ .Scratch.Set "showImages" true }}
-        {{ .Scratch.Set "showNotes" false }}
-        {{ partial "read/single.html" . }}
-      {{ end }}
-      {{ end }}
-    </ul>
-    {{ end }}
-
-    {{ .Content }}
-
-    {{ if isset .Params "references" }}
-      <div class="post-references">
-      <h3>References</h3>
-      <ul >
-      {{ range .Params.references }}
-          <li><a href="{{ .url }}">{{ .title }}</a></li>
-      {{ end }}
-      </ul>
-      </div>
-    {{ end }}
-  </article>
-
-  {{ partial "read/recent-books" . }}
-
-{{ end }}
+</html>

@@ -1,0 +1,52 @@
+{{ $showImages := default false (.Scratch.Get "showImages") }}
+{{ $showNotes := default false (.Scratch.Get "showNotes") }}
+
+<li class="{{ cond $showImages "book with-image" "book"}}">
+  {{ if $showImages }}
+    {{ $img := (.Resources.GetMatch "cover") }}
+    {{ if $img }}
+      <img src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
+    {{ end}}
+  {{ end }}
+
+  {{ with .Params.book }}
+    {{ if isset . "url" }}
+      <h4 class="book-title">
+        {{ if not $showImages }}
+          <span class="glasses-icon"></span>
+        {{ end }}
+        <a href="{{ .url }}">{{ .title }}</a>
+      </h4>
+    {{ else }}
+      <h4 class="book-title">
+        {{ if not $showImages }}
+          <span class="glasses-icon"></span>
+        {{ end }}
+        {{ .title }}
+      </h4>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Params.book }}
+    {{ if isset . "times_read"}}
+      <p class="book-reread">({{ .times_read }} time reading)</p>
+    {{ end }}
+
+    <h4 class="book-author"><em>by {{ .author }}</em></h4>
+
+    {{ if $showImages }}
+      {{ if (and (isset . "publisher") (isset . "publish_year")) }}
+        <p class="book-publisher">Published {{ .publish_year }} by {{ .publisher }}</p>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if (and .Params.notes $showNotes) }}
+    {{ $page := .Params.notes }}
+    {{ with .GetPage "/wrote" }}
+    {{ with .GetPage $page }}
+    <p class="book-notes"><a href="{{ .Permalink }}">My reading notes</a></p>
+    {{ end }}
+    {{ end }}
+  {{ end }}
+</li>

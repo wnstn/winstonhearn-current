@@ -1,52 +1,42 @@
-{{ $showImages := default false (.Scratch.Get "showImages") }}
-{{ $showNotes := default false (.Scratch.Get "showNotes") }}
+{{ define "main" }}
 
-<li class="{{ cond $showImages "book with-image" "book"}}">
-  {{ if $showImages }}
-    {{ $img := (.Resources.GetMatch "cover") }}
-    {{ if $img }}
-      <img src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
-    {{ end}}
-  {{ end }}
+<section class="post-header">
+  <h2>{{ .Title }}</h2>
+  <p class="post-date"><em>Published <time
+        datetime="{{ dateFormat "2006-02-01" .Date }}">{{ dateFormat "Jan 2, 2006" .Date }}</time></em></p>
+</section>
 
-  {{ with .Params.book }}
-    {{ if isset . "url" }}
-      <h4 class="book-title">
-        {{ if not $showImages }}
-          <span class="glasses-icon"></span>
-        {{ end }}
-        <a href="{{ .url }}">{{ .title }}</a>
-      </h4>
-    {{ else }}
-      <h4 class="book-title">
-        {{ if not $showImages }}
-          <span class="glasses-icon"></span>
-        {{ end }}
-        {{ .title }}
-      </h4>
-    {{ end }}
-  {{ end }}
+{{ $hasBook := isset .Page.Params "linked_book" }}
+<article class="{{ cond $hasBook "with-book" "without-book" }}">
 
-  {{ with .Params.book }}
-    {{ if isset . "times_read"}}
-      <p class="book-reread">({{ .times_read }} time reading)</p>
+  {{ if $hasBook }}
+  <ul class="post-book">
+    {{ $title := .Page.Params.linked_book }}
+    {{ $book := where (where .Site.Pages "Section" "read") "Title" "==" $title }}
+    {{ range $book }}
+      {{ .Scratch.Set "showImages" true }}
+      {{ .Scratch.Set "showNotes" false }}
+      {{ partial "read/book.html" . }}
     {{ end }}
 
-    <h4 class="book-author"><em>by {{ .author }}</em></h4>
 
-    {{ if $showImages }}
-      {{ if (and (isset . "publisher") (isset . "publish_year")) }}
-        <p class="book-publisher">Published {{ .publish_year }} by {{ .publisher }}</p>
+  </ul>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ if isset .Params "references" }}
+  <div class="post-references">
+    <h3>References</h3>
+    <ul>
+      {{ range .Params.references }}
+      <li><a href="{{ .url }}">{{ .title }}</a></li>
       {{ end }}
-    {{ end }}
+    </ul>
+  </div>
   {{ end }}
+</article>
 
-  {{ if (and .Params.notes $showNotes) }}
-    {{ $page := .Params.notes }}
-    {{ with .GetPage "/wrote" }}
-    {{ with .GetPage $page }}
-    <p class="book-notes"><a href="{{ .Permalink }}">My reading notes</a></p>
-    {{ end }}
-    {{ end }}
-  {{ end }}
-</li>
+{{ partial "read/recent-books" . }}
+
+{{ end }}

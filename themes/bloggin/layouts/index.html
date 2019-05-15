@@ -1,8 +1,5 @@
 {{ define "main" }}
 
-{{ .Scratch.Set "bioMinimal" false }}
-{{- partial "bio.html" . -}}
-
   <section class="writing-section featured-recent">
     <h2>Recent posts</h2>
     {{- partial "wrote/featured.html" . -}}

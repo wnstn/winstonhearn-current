@@ -10,12 +10,11 @@
 
     <main id="page-content">
 
-      {{ block "main" .}}
         {{ $page := .Page.Section }}
 
         {{ .Scratch.Set "showImages" true }}
         {{ if (eq $page "read")}}
-          {{- partial "read/all.html" . -}}
+          {{- partial "read/list.html" . -}}
         {{ end }}
 
         {{ if (eq $page "shared") }}
@@ -33,7 +32,7 @@
           </section>
         {{ end }}
 
-      {{- end }}
+
     </main>
   </div>
   {{- partial "footer.html" . -}}

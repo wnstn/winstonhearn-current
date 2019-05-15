@@ -3,7 +3,7 @@ title: "Substantial Fiction"
 date: 2019-04-27T13:41:16-04:00
 category: writing
 description: N.K. Jemisin builds fictional worlds that expose the numerous substances of life.
-linked_book: "read/2019/inheritance-trilogy"
+linked_book: "Inheritance Trilogy"
 ---
 
 N.K. Jemisin can see the world unlike, perhaps, any other fiction author I have ever encountered. Better is the word I seek. She can see the world better. With this clarity, she builds worlds that I feel like I inhabit while reading her fiction. I inhabit it because I believe every single iota of the universe her stories take place in.
