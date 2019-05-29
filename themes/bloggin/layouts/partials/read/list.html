@@ -5,7 +5,7 @@
 <section id="reading">
   <h2>Recently read</h2>
   {{ range $pages }}
-  <h3>{{ .Title }}</h3>
+  <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
 
   <ul>
     {{ range .Pages }}
