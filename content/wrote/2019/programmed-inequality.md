@@ -17,7 +17,7 @@ _Programmed Inequality_ is not a happy book, but it is a forceful argument built
 
 ---
 
-In the post WWII era, the British state saw the data processing capabilities of computers as helpful and exciting; a way to centralize control while without increasing headcount of the civil service. Hicks' book traces the many ways that reality did not match up to these dreams. In the ~40 years post war they trace a history where many institutions were seeking to computerize their infrastructure and were only able to do so because of a growing workforce of women.
+In the post WWII era, the British state saw the data processing capabilities of computers as helpful and exciting; a way to centralize control while without increasing headcount of the civil service. Hicks' book traces the many ways reality did not match up to these goals. In the ~40 years post war _Programmed Inequality_ traces a history where many institutions were seeking to computerize their infrastructure and were only able to do so because of a growing workforce of "invisible" women.
 
 The initial decades of computerization were built, shaped, and debugged by thousands of women, women who were codified as low-skilled and prevented (for evolving reasons) from any hopes of career advancement. Hicks thoroughly documents the labor these women performed, including telling the stories of women whose labor was effectively erased by the state for decades. These women were working in environments that were hot, loud, tedious and high-pressure, and yet their labor was constantly described in official reports as mindless, low-skilled, and low-value.
 
