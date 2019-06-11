@@ -7,7 +7,7 @@ linked_book: "Programmed Inequality"
 
 ---
 
-Near the end of _Programmed Inequality_, Marie Hicks' thorough, excellent history of the development of the British computing industry, they summarize an argument infused in every page of the book:
+Near the end of _Programmed Inequality_, Marie Hicks' thorough, excellent history of the post WWII British computer industry's development, they summarize an argument infused in every page of the book:
 
 > Technological change cannot be revolutionary if it fails to change the social and political structures of a society and instead heightens inequalities and divisions that are already present.
 
