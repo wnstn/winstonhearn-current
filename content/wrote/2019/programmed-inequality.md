@@ -13,7 +13,7 @@ Near the end of _Programmed Inequality_, Marie Hicks' thorough, excellent histor
 
 The "yes!" I shouted in response to this was a welcome relief from most of the other verbal exclamations I'd uttered throughout the book, which were mostly along the lines of "fuck" or "goddamn" or "what the hell."
 
-_Programmed Inequality_ is not a happy book, but it is a forceful argument built on extensive research. In this era where the internet and big data and cloud computing are once again ushering in an epoch of "revolutionary change," Hicks' book is a clear analysis of how the systems of power that existed prior to any revolution will do everything possible to remake itself into a form that sustains its power.
+_Programmed Inequality_ is not a happy book, but it is a forceful argument built on extensive research. In this era where the internet and big data and cloud computing are once again ushering in an epoch of "revolutionary change," Hicks' book is a clear analysis of how any system of power that existed prior to a revolution will do everything possible to remake itself into a form that sustains its power.
 
 ---
 
