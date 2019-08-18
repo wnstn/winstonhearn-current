@@ -19,7 +19,8 @@
   {{ $options := (dict "targetPath" "css/makeup.css" "enableSourceMap" true) }}
   {{ $style := resources.Get "sass/makeup.scss" | toCSS $options }}
 
-  {{ if .Site.IsServer }}
+  {{/*  false if building for production  */}}
+  {{ if not (.Site.IsServer) }}
     {{ $style := $style | minify }}
   {{ end }}
 
