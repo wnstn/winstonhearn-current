@@ -19,7 +19,7 @@
   {{ $options := (dict "targetPath" "css/makeup.css" "enableSourceMap" true) }}
   {{ $style := resources.Get "sass/makeup.scss" | toCSS $options }}
 
-  {{ if not (.Site.IsServer) }}
+  {{ if .Site.IsServer }}
     {{ $style := $style | minify }}
   {{ end }}
 
