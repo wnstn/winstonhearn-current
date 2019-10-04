@@ -5,7 +5,7 @@
   {{ if $showImages }}
     {{ $img := (.Resources.GetMatch "cover") }}
     {{ if $img }}
-      <img src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
+      <img loading="lazy" src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
     {{ end}}
   {{ end }}
 
