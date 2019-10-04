@@ -82,6 +82,10 @@
   &.minimal {
     height: auto;
     margin: 2em 0;
+
+    .site-description {
+      display: none;
+    }
   }
 
 }

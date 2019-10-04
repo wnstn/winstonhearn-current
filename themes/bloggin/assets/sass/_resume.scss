@@ -1,0 +1,28 @@
+.hire-me {
+  .post-header {
+    width: 100%;
+  }
+
+  .post-date {
+    display: none;
+  }
+}
+
+.resume-body {
+  h3 {
+    font-size: 25px;
+    margin-bottom: 2em;
+    margin-top: 3rem;
+  }
+
+  ul {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-left: 1em;
+    list-style: disc;
+  }
+
+  li {
+    margin-bottom: .75em;
+  }
+}
