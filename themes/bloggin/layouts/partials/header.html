@@ -8,5 +8,6 @@
       {{ $class := cond (eq $active.Title .Title) "active header-link" "header-link" }}
       <li class="{{ $class }}"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}
+    <li class="moonlighting-link"><a href="/hire-me">moonlighting</a></li>
   </ul>
 </nav>
