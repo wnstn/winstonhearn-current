@@ -1,5 +1,5 @@
 ---
-title: "Vonneguts Seasons"
+title: "Vonnegut's Seasons"
 date: 2019-10-22T11:42:42-04:00
 draft: true
 category: writing
