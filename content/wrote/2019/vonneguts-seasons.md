@@ -1,7 +1,6 @@
 ---
 title: "Vonnegut's Seasons"
 date: 2019-10-22T11:42:42-04:00
-draft: true
 category: writing
 description: A short passage on seasons from Vonnegut that is extremely helpful.
 ---
