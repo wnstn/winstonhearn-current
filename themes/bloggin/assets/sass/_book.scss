@@ -98,6 +98,15 @@
       max-width: 60%;
       margin-left: 20%;
       margin-bottom: 1em;
+
+      @include dark-mode {
+        opacity: .3;
+
+        &:hover,
+        &:active {
+          opacity: 1
+        }
+      }
     }
 
     @media screen and (min-width: 650px) {

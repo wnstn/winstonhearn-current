@@ -5,7 +5,10 @@
   justify-content: center;
   align-content: space-between;
   background: lighten($background, 5%);
-  // border-bottom: 4px solid lighten($background, 5%);
+  
+  @include dark-mode {
+    background: invert($background);
+  }
 
   @media screen and (min-width: 600px) {
     // border-bottom: 10px solid lighten($background, 5%);
@@ -24,6 +27,10 @@
     padding-right: 10px;
     color: $links;
 
+    @include dark-mode {
+      color: invert($links);
+    }
+
     a {
       font-weight: 700;
     }
@@ -31,11 +38,19 @@
     a:link,
     a:visited {
       color: $links;
+
+      @include dark-mode {
+        color: invert($links);
+      }
     }
 
     a:hover,
     a:active {
       border-bottom: 1px solid $purple;
+
+      @include dark-mode {
+        border-color: invert($purple);
+      }
     }
 
     a:after {
@@ -97,6 +112,15 @@
 
     &:visited {
       color: $links;
+    }
+
+    @include dark-mode {
+      color: invert($links);
+
+      &:after,
+      &:visited {
+        background-color: invert($links);
+      }
     }
   }
 

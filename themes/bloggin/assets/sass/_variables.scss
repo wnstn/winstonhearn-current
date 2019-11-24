@@ -6,3 +6,9 @@ $links: #477CB7;
 $flourish: #48305a;
 $headers: #533e7b;
 $accent: #DBD7EF;
+
+@mixin dark-mode {
+  @media (prefers-color-scheme: dark) {
+    @content
+  }
+}

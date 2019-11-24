@@ -10,6 +10,10 @@
   padding: 2rem 8px 1rem;
   border-bottom: 4px solid lighten($background, 5%);
 
+  @include dark-mode {
+    border-color: invert($background);
+  }
+
   &:after {
     content: "";
     height: 290px;
@@ -22,6 +26,10 @@
     display: block;
     border-radius: 100%;
     z-index: 0;
+
+    @include dark-mode {
+      border-color: invert($background);
+    }
   }
 
   h1 {
@@ -39,6 +47,10 @@
     padding-left: 2em;
     flex: 1 1 100%;
     z-index: 10;
+
+    @include dark-mode {
+      color: invert($headers);
+    }
   }
 
   .site-description {
@@ -52,6 +64,10 @@
     padding: 3rem 24px 3rem 4rem;
     width: 100%;
     border-bottom: 20px solid lighten($background, 5%);
+
+    @include dark-mode {
+      border-bottom: 20px solid invert($background);
+    }
 
     &:after {
       width: 13vw;

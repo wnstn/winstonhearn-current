@@ -4,6 +4,10 @@
 
 body {
   background-color: lighten($background, 5%);
+
+  @include dark-mode {
+    background-color: invert($background);
+  }
 }
 
 html,
@@ -12,6 +16,10 @@ body * {
   font-family: 'Source Serif Pro', serif;
   font-weight: 400;
   color: $text;
+
+  @include dark-mode {
+    color: invert($text);
+  }
 }
 
 strong {
@@ -55,7 +63,6 @@ h2,
     display: block;
   }
 
-
   &:after {
     content: "";
     position: absolute;
@@ -64,6 +71,19 @@ h2,
     border-bottom: 3px solid $headers;
     width: 31%;
     display: block;
+  }
+
+  @include dark-mode {
+    color: invert($headers);
+
+    &:before {
+      border-bottom: 3px dotted invert($headers);
+    }
+
+    &:after {
+      border-bottom: 3px solid invert($headers);
+    }
+
   }
 }
 
@@ -111,12 +131,26 @@ a {
   &:visited {
     border-bottom: 2px solid $links;
   }
+
+  @include dark-mode {
+    color: invert($links);
+
+    &:active,
+    &:hover,
+    &:visited {
+      border-color: invert($links);
+    }
+  }
 }
 
 *:focus {
   outline: $links dotted 2px;
   outline-offset: 2px;
   border-bottom: none;
+
+  @include dark-mode {
+    outline: invert($links) dotted 2px;
+  }
 }
 
 .content {
@@ -126,6 +160,10 @@ a {
   padding: 0;
   overflow: hidden;
   background-color: $background;
+
+  @include dark-mode {
+    background-color: invert($background);
+  }
 }
 
 #page-content {
