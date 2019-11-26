@@ -1,5 +1,6 @@
 {{ $showImages := default false (.Scratch.Get "showImages") }}
 {{ $showNotes := default false (.Scratch.Get "showNotes") }}
+{{ $showHighlights := default false (.Scratch.Get "showHighlights") }}
 
 <li class="{{ cond $showImages "book with-image" "book"}}">
   {{ if $showImages }}
@@ -40,6 +41,12 @@
       {{ end }}
     {{ end }}
   {{ end }}
+
+  {{ if $showHighlights }}
+    {{ if (and .Params.highlights )}}
+      <p><a href="{{ .Permalink }}">highlights</a></p>
+    {{ end }}
+  {{end }}
 
   {{ if (and .Params.notes $showNotes) }}
     {{ $page := .Params.notes }}

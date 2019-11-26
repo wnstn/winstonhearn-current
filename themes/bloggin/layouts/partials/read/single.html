@@ -1,25 +1,23 @@
 {{ define "main" }}
 
+{{ .Scratch.Set "showImages" true }}
+{{ .Scratch.Set "showNotes" true }}
+{{ .Scratch.Set "showHighlights" false }}
+
 <section class="post-header">
-  <h2>{{ .Title }}</h2>
-  <p class="post-date"><em>Published <time
-        datetime="{{ dateFormat "2006-02-01" .Date }}">{{ dateFormat "Jan 2, 2006" .Date }}</time></em></p>
+  <h2>Highlights from {{ .Title }}</h2>
 </section>
 
-{{ $hasBook := isset .Page.Params "linked_book" }}
-<article class="{{ cond $hasBook "with-book" "without-book" }}">
+{{ $showBooks := isset .Params "highlights" }}
 
-  {{ if $hasBook }}
+<article class="{{ cond $showBooks "with-book" "without-book" }}">
+
+  {{ if $showBooks }}
   <ul class="post-book">
-    {{ $title := .Page.Params.linked_book }}
-    {{ $book := where (where .Site.Pages "Section" "read") "Title" "==" $title }}
-    {{ range $book }}
-      {{ .Scratch.Set "showImages" true }}
-      {{ .Scratch.Set "showNotes" false }}
+    {{ with .Page }}
+
       {{ partial "read/book.html" . }}
     {{ end }}
-
-
   </ul>
   {{ end }}
 
