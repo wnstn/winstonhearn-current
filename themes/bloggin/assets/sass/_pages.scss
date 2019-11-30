@@ -2,3 +2,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.highlights-post {
+
+  hr {
+    max-width: 50%;
+    margin: 5rem auto;
+    display: block;
+  }
+}

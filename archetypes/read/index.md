@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 category: reading
 notes: "post-file-name"
-marginalia: false
+highlights: false
 book:
   author: ""
   url: ""
