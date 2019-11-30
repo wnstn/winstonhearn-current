@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<section class="post-header">
+  <h2>{{ .Title }}</h2>
+</section>
+
+{{ $showBook := isset .Page.Params "linked_book" }}
+
+<article class="{{ cond $showBook "with-book" "without-book" }}">
+
+  {{ if $showBook }}
+  <ul class="post-book">
+    {{ $title := .Page.Params.linked_book }}
+    {{ $book := where (where .Site.Pages "Section" "read") "Title" "==" $title }}
+    {{ range $book }}
+      {{ .Scratch.Set "showImages" true }}
+      {{ .Scratch.Set "showNotes" false }}
+      {{ .Scratch.Set "showHighlights" (isset .Params "highlights") }}
+      {{ partial "read/book.html" . }}
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  {{ .Content }}
+
+{{ if isset .Params "references" }}
+  <div class="post-references">
+    <h3>References</h3>
+    <ul>
+      {{ range .Params.references }}
+      <li><a href="{{ .url }}">{{ .title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
+</article>
+
+{{ partial "read/recent-books" . }}
+
+{{ end }}

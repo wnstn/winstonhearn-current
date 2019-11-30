@@ -11,7 +11,7 @@
     {{ range .Pages }}
     {{ .Scratch.Set "showImages" $showImages }}
     {{ .Scratch.Set "showNotes" true }}
-    {{ .Scratch.Set "showHighlights" true }}
+    {{ .Scratch.Set "showHighlights" (isset .Params "highlights") }}
     {{ partial "read/book.html" . }}
     {{ end }}
   </ul>

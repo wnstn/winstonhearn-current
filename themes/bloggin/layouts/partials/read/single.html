@@ -1,38 +1,22 @@
 {{ define "main" }}
 
-{{ .Scratch.Set "showImages" true }}
-{{ .Scratch.Set "showNotes" true }}
-{{ .Scratch.Set "showHighlights" false }}
-
 <section class="post-header">
   <h2>Highlights from {{ .Title }}</h2>
 </section>
 
-{{ $showBooks := isset .Params "highlights" }}
+<article class="with-book">
 
-<article class="{{ cond $showBooks "with-book" "without-book" }}">
-
-  {{ if $showBooks }}
   <ul class="post-book">
     {{ with .Page }}
-
+      {{ .Scratch.Set "showImages" true }}
+      {{ .Scratch.Set "showNotes" true }}
+      {{ .Scratch.Set "showHighlights" false }}
       {{ partial "read/book.html" . }}
     {{ end }}
   </ul>
-  {{ end }}
 
   {{ .Content }}
 
-  {{ if isset .Params "references" }}
-  <div class="post-references">
-    <h3>References</h3>
-    <ul>
-      {{ range .Params.references }}
-      <li><a href="{{ .url }}">{{ .title }}</a></li>
-      {{ end }}
-    </ul>
-  </div>
-  {{ end }}
 </article>
 
 {{ partial "read/recent-books" . }}

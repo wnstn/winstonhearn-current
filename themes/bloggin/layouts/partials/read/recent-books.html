@@ -1,9 +1,8 @@
 <section class="recent-books">
   <h4 class="small-header">Most recently finished</h4>
   <ul>
-  {{ $pages := .Site.GetPage "section" "read"}}
-  {{ $pages := first 4 $pages.Sections.ByTitle.Reverse }}
-  {{ range $pages }}
+  {{ $pages := where .Site.Pages "Params.category" "reading" }}
+  {{ range first 4 $pages.ByDate.Reverse }}
     {{ .Scratch.Set "showImages" true }}
     {{ .Scratch.Set "showNotes" true }}
     {{ partial "read/book.html" . }}
