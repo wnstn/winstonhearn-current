@@ -6,7 +6,7 @@ description: My tradition is to write a small benediction for each new year. Thi
 ---
 
 2019 was not what one might describe as "fun";
-any personal triumps happend in the midst of
+any personal triumps happened in the midst of
 
 —in spite of—
 
