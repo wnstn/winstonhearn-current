@@ -2,7 +2,6 @@
 title: "Programmed Inequality"
 date: 2019-06-11T08:51:48-04:00
 category: reading
-notes: "post-file-name"
 book:
   author: "Marie Hicks"
   url: "http://programmedinequality.com/"

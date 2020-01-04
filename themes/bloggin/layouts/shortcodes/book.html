@@ -1,0 +1,10 @@
+{{ $book := where (where .Site.Pages "Section" "read" ) "Title" (.Get "title") }}
+{{ $float := default "right" (.Get "float") }}
+{{ if $book }}
+  {{ range $book}}
+    <ul class="inline-book {{ $float }}">
+      {{ .Scratch.Set "showImages" true }}
+      {{ partial "read/book.html" . }}
+    </ul>
+  {{ end }}
+{{ end }}

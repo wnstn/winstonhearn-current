@@ -1,9 +1,9 @@
 <section class="recommendations">
-  <h2>omg have you seen?</h2>
-  <p>linkblogging is still a thing, right?</p>
+  <h2>Noted and Noteworthy</h2>
+  <p>I read a lot of articles, papers, and other things that don't make it on to my <a href="/read">reading</a> page. This is where I can share them.</p>
   <ul class="highlighted">
     {{ with .Site.GetPage "section" "shared" }}
-    {{ range first 3 .Pages }}
+    {{ range first 6 .Pages }}
     {{ partial "shared/single.html" . }}
     {{ end }}
     {{ end }}

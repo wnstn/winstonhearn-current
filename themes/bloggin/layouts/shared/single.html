@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<section class="post-header">
+  <h2>{{ .Title }}</h2>
+</section>
+
+<article class="without-book">
+
+  {{ if isset .Params "share" }}
+    <h3><a href="{{ .Params.share.url }}">Highlights from {{ .Params.share.name }}{{ if .Params.share.author }}, by {{ .Params.share.author }} {{end }}</a></h3>
+    <hr />
+    <br/>
+    <br/>
+  {{ end }}
+
+  {{ .Content }}
+
+</article>
+
+{{ partial "read/recent-books" . }}
+
+{{ end }}

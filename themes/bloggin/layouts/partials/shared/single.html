@@ -1,13 +1,4 @@
 <li class="recommendation">
   <span class="share-icon"></span>
-  {{ with .Params.share }}
-    {{ if isset . "url" }}
-    <h3><a href="{{ .url }}">{{ .name }}</a></h3>
-    {{ else }}
-    <h3>{{ .name }}</h3>
-    {{ end }}
-  {{ end }}
-
-  {{ .Content }}
-
+  <h3><a href="{{ .Permalink }}">{{ .Params.share.name }}</a></h3>
 </li>

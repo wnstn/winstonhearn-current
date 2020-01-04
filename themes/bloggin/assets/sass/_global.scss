@@ -143,6 +143,12 @@ a {
   }
 }
 
+
+blockquote {
+  border-left: 10px solid $flourish;
+  padding-left: 5px;
+}
+
 *:focus {
   outline: $links dotted 2px;
   outline-offset: 2px;

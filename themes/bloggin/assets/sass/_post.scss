@@ -72,17 +72,12 @@
       }
     }
 
-    blockquote {
-      border-left: 10px solid $flourish;
-      padding-left: 5px;
-    }
-
     h3 {
       color: $headers;
       margin-top: 1rem;
       margin-bottom: 2rem;
       font-size: 22px;
-      display: inline-block;
+      display: block;
     }
 
     strong {
@@ -100,6 +95,39 @@
       line-height: 1.5;
     }
 
+    .inline-book {
+      list-style: none;
+      margin: 0;
+      width: 100%;
+
+      &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+
+      &.right {
+        float: right;
+      }
+
+      &.left {
+        float: left;
+      }
+
+      .book {
+        max-width: 100%;
+        padding-right: 0;
+        margin: 1em;
+      }
+
+      img {
+        margin-bottom: 8px;
+      }
+
+      .book-title {
+        margin-bottom: 8px;
+      }
+    }
 
   @media screen and (min-width: 768px) {
     p {
@@ -112,6 +140,10 @@
 
     li {
       font-size: 20px;
+    }
+
+    .inline-book {
+      max-width: 30%;
     }
   }
 }
