@@ -2,6 +2,7 @@
 
 <section class="post-header">
   <h2>{{ .Title }}</h2>
+  <p class="post-date"><em>Published {{ .Date.Format "Jan 2, 2006" }} at {{ .Date.Format "15:04" }}</em></p>
 </section>
 
 {{ $showBook := isset .Page.Params "linked_book" }}

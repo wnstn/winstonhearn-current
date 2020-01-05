@@ -5,7 +5,7 @@
   justify-content: center;
   align-content: space-between;
   background: lighten($background, 5%);
-  
+
   @include dark-mode {
     background: invert($background);
   }
@@ -91,7 +91,8 @@
 
     &:active,
     &:hover,
-    &:visited {
+    &:visited,
+    &:focus {
       border-bottom: none;
 
       &:after {
@@ -102,10 +103,11 @@
     &:after {
       content: "";
       height: 1px;
-      margin-top: 5px;
+      bottom: -5px;
       background-color: $links;
       width: 100%;
       display: block;
+      position: absolute;
       transform: rotate(-5deg);
       transition: height .1s ease-out;
     }
