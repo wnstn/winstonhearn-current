@@ -3,5 +3,11 @@ languageCode = "en-us"
 title = "Winston the third"
 description = "Winston Hearn's person blogging website dedicated to reading and such."
 theme = "bloggin"
+
+[params]
+  description = "Winston Hearn's person blogging website dedicated to reading and such."
+  images = ["share.png"]
+  title = "Winston Hearn (the Third)"
+
 [blackfriday]
   extensions = ["hardLineBreak"]
