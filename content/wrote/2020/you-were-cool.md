@@ -23,7 +23,7 @@ clicking down the concrete hallways
 in your spiked heels
 back in high school_
 
-The song is _You Were Cool_, and holy shit I remember these interactions, I know these people. Hell, there were a couple years in middle school and early highschool where I was this person (I did not have spiked heels, just people who were mean to me). And when I think of those moments, when I replay those interactions in my head, well this song is what I have longed to be able to say to them, to hear other say to me.
+The song is _You Were Cool_, and holy shit I remember these interactions, I know these people. Hell, there were a couple years in middle school and early highschool where I was this person (I did not have spiked heels, just people who were mean to me). And when I think of those moments, when I replay those interactions in my head, well this song is what I have longed to be able to say to them, to hear others say to me.
 
 Tomorrow I turn 35, which is five complete years in my 30s; another 5 remaining. My 36th year on earth is going to be full of big changes which I haven't gotten up the courage to talk about publicly because I keep hoping if I don't talk about them they will be less anxiety-inducing. My hopes have thus far proven inaccurate. So yeah, forgive me, but I'm being a little contemplative as this completely arbitrary marker of time rolls past.
 
