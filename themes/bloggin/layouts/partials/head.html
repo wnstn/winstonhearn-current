@@ -11,6 +11,8 @@
   <meta name="twitter:site" content="@suchwinston" />
   <meta name="twitter:site:id" content="15059001" />
 
+  {{ template "_internal/twitter_cards.html" . }}
+
   {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
