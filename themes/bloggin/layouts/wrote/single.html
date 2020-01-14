@@ -26,10 +26,10 @@
 
 {{ if isset .Params "references" }}
   <div class="post-references">
-    <h3>References</h3>
+    <h3>Referenced:</h3>
     <ul>
       {{ range .Params.references }}
-      <li><a href="{{ .url }}">{{ .title }}</a></li>
+      <li><a href="{{ .url }}">{{ .name }}</a></li>
       {{ end }}
     </ul>
   </div>
