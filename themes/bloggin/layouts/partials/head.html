@@ -16,6 +16,10 @@
   <meta name="twitter:site" content="@suchwinston" />
   <meta name="twitter:site:id" content="15059001" />
 
+  {{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
   {{ $options := (dict "targetPath" "css/makeup.css" "enableSourceMap" true) }}
   {{ $style := resources.Get "sass/makeup.scss" | toCSS $options }}
 
