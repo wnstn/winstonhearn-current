@@ -3,7 +3,6 @@ title: "Ancillary Sword"
 date: 2020-01-22T23:01:14-05:00
 category: reading
 notes: "post-file-name"
-highlights: false
 book:
   author: "Ann Leckie"
   url: "https://www.indiebound.org/book/9780316246651"
