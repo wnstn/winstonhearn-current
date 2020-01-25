@@ -5,31 +5,12 @@
   width: 100%;
   position: relative;
   z-index: 10;
-  margin: 0;
   margin-bottom: 2rem;
   padding: 2rem 8px 1rem;
   border-bottom: 4px solid lighten($background, 5%);
 
   @include dark-mode {
     border-color: invert($background);
-  }
-
-  &:after {
-    content: "";
-    height: 290px;
-    position: absolute;
-    border-bottom: 10px solid lighten($background, 5%);
-    border-right: 10px solid lighten($background, 5%);
-    right: -5%;
-    top: -10%;
-    width: 290px;
-    display: block;
-    border-radius: 100%;
-    z-index: 0;
-
-    @include dark-mode {
-      border-color: invert($background);
-    }
   }
 
   h1 {
@@ -81,13 +62,6 @@
     h1 {
       font-size: 69px;
       width: 100%;
-    }
-
-    .site-subtitle {
-      font-size: 25px;
-      width: 100%;
-      text-align: right;
-      margin-right: 45%;
     }
 
     .site-description {

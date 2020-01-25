@@ -19,10 +19,11 @@
   .left-nav {
     display: flex;
     flex: 1 1 100%;
+    flex-wrap: wrap;
   }
 
   .site-title {
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
     padding-right: 10px;
     color: $links;
@@ -32,6 +33,7 @@
     }
 
     a {
+      font-family: 'Nanum Gothic', sans-serif;
       font-weight: 700;
     }
 
@@ -64,12 +66,23 @@
     }
   }
 
+  .site-subtitle {
+    font-size: 22px;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 2rem;
+    color: darken($background, 20%);
+    font-style: italic;
+  }
+
   ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     margin-top: 1em;
-    height: 40px;
+    margin-bottom: 1em;
 
     li {
       margin-left: 1.5em;
@@ -104,12 +117,18 @@
       content: "";
       height: 1px;
       bottom: -5px;
+      right: 0;
       background-color: $links;
       width: 100%;
       display: block;
       position: absolute;
       transform: rotate(-5deg);
       transition: height .1s ease-out;
+
+      @media screen and (min-width: 600px) {
+        right: auto;
+        left: 0;
+      }
     }
 
     &:visited {
