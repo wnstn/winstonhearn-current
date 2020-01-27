@@ -2,7 +2,7 @@
 title: "A Different Journalism"
 date: 2020-01-26T18:55:54-05:00
 category: writing
-description: optional
+description: Lewis Raven Wallace argues in The View from Somewhere that for journalists, "standing to the side of history is impossible when we are the ones writing it."
 linked_book: "View From Somewhere"
 ---
 
