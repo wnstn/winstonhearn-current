@@ -1,13 +1,8 @@
 ---
 title: "Bernie Is Not an Organizer"
 date: 2020-02-13T22:36:53-05:00
-draft: true
 category: writing
-description: optional
-linked_book: "directory-of-book"
-references:
-  - name: ""
-    url: ""
+description: "I’ve struggled to make sense of the argument that Bernie will be the Organizer in Chief because I can’t find any evidence that’s doing the work of organizing."
 ---
 
 _I’m going preface this by admitting that the candidate I support in the primaries is Elizabeth Warren. It’s also important for me to say that if Bernie is the candidate, I will be so excited to campaign for him and vote for him. Ok._
