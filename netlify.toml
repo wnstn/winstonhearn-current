@@ -30,6 +30,12 @@ HUGO_VERSION = "0.59.0"
 HUGO_ENABLEGITINFO = "true"
 
 [[redirects]]
+from="/rss/"
+to="/wrote/index.xml"
+[[redirects]]
+from="/feed.xml"
+to="/wrote/index.xml"
+[[redirects]]
 from="/late-2018-reading-list/"
 to="/wrote/2019-01-02-late-2018-reading-list/"
 [[redirects]]
