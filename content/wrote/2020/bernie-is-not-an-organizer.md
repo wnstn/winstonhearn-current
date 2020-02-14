@@ -6,7 +6,7 @@ description: "I’ve struggled to make sense of the argument that Bernie will be
 
 ---
 
-_I’m going preface this by admitting that the candidate I support in the primaries is Elizabeth Warren. It’s also important for me to say that if Bernie is the candidate, I will be so excited to campaign for him and vote for him. Ok._
+_I’m going preface this by admitting that the candidate I support in the primaries is Elizabeth Warren. It’s also important for me to say that if Bernie is the eventual nominee, I will be so excited to campaign for him and vote for him. Ok._
 
 In the past few months I’ve encountered an argument for Bernie about how if he were elected president, he would represent a completely new model for the Presidency. This argument is best summarized by the In These Times piece “[What a Bernie Sanders Presidency would Look Like](https://inthesetimes.com/features/Bernie-Sanders-presidency-climate-mobilization.html)” that argues Bernie, unlike past presidents, would be an Organizer in Chief. And because he’s an organizer, he’d have a movement behind him that would be disruptive against the political status quo and allow him to pass the ambitious policy proposals he’s campaigning on.
 
