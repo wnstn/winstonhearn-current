@@ -1,6 +1,6 @@
 ---
 title: "Bernie is not an Organizer"
-date: 2020-02-13T22:36:53-05:00
+date: 2020-02-14T10:36:53-05:00
 category: writing
 description: "I’ve struggled to make sense of the argument that Bernie will be the Organizer in Chief because I can’t find any evidence that’s doing the work of organizing."
 ---
