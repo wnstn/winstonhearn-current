@@ -1,12 +1,12 @@
 ---
-title: "Bernie Is Not an Organizer"
+title: "Bernie is not an Organizer"
 date: 2020-02-13T22:36:53-05:00
 category: writing
 description: "I’ve struggled to make sense of the argument that Bernie will be the Organizer in Chief because I can’t find any evidence that’s doing the work of organizing."
 ---
 
 _I’m going preface this by admitting that the candidate I support in the primaries is Elizabeth Warren. It’s also important for me to say that if Bernie is the candidate, I will be so excited to campaign for him and vote for him. Ok._
-----
+
 In the past few months I’ve encountered an argument for Bernie about how if he were elected president, he would represent a completely new model for the Presidency. This argument is best summarized by the In These Times piece “[What a Bernie Sanders Presidency would Look Like](https://inthesetimes.com/features/Bernie-Sanders-presidency-climate-mobilization.html)” that argues Bernie, unlike past presidents, would be an Organizer in Chief. And because he’s an organizer, he’d have a movement behind him that would be disruptive against the political status quo and allow him to pass the ambitious policy proposals he’s campaigning on.
 
 Taken at face value, I love this argument. We absolutely need to rethink politics in America at the federal level because the Climate Crisis is not an issue we can negotiate with or water-down. And since climate change will exacerbate every other injustice that is structurally embedded in America, we need a radical political shift that is capable of generating momentum that, until now, has not existed in the liberal political sphere. I am ready to support any candidate who is generating this momentum.
