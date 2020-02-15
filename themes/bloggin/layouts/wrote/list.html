@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<section class="writing-section featured-recent">
+  <h2>Writing</h2>
+  {{- partial "wrote/featured.html" . -}}
+</section>
+
+<section class="writing-section full-archives">
+  {{- partial "wrote/all-after-featured.html" . -}}
+</section>
+
+{{ end }}

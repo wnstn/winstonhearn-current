@@ -1,9 +1,13 @@
+{{ define "main" }}
+
 <section class="recommendations">
   <h2>Sharing</h2>
   <p>If I were a linkblogger, this would be where I linkblogged. These are things I think are awesome.</p>
   <ul>
     {{ range .Pages }}
-      {{ partial "shared/single.html" . }}
+    {{ partial "shared/single.html" . }}
     {{ end }}
   </ul>
 </section>
+
+{{ end }}
