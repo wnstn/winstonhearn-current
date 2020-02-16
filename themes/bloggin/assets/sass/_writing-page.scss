@@ -75,17 +75,6 @@
     }
   }
 
-  &.full-archives {
-    flex: 1 2 50%;
-    margin-right: 9%;
-    flex-wrap: wrap;
-    align-content: flex-start;
-
-    li {
-      width: 100%;
-    }
-  }
-
 
   .post-link {
 
@@ -100,4 +89,18 @@
 
   }
 
+}
+
+.writing-archives .writing-section {
+  flex-wrap: wrap;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li{
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
 }

@@ -1,12 +1,16 @@
+
 {{ define "main" }}
 
-<section class="writing-section featured-recent">
+<section class="writing-section">
   <h2>Writing</h2>
-  {{- partial "wrote/featured.html" . -}}
-</section>
 
-<section class="writing-section full-archives">
-  {{- partial "wrote/all-after-featured.html" . -}}
+  <ul>
+  {{ range where .Site.RegularPages "Section" "wrote" }}
+  {{ .Scratch.Set "minimal" false }}
+  {{ partial "wrote/single-post.html" . }}
+  {{ end }}
+  </ul>
+
 </section>
 
 {{ end }}
