@@ -21,7 +21,7 @@
   </ul>
   </div>
 
-  {{ range first 1 .Pages }}
+  {{ range first 1 $pages.Sections.ByTitle.Reverse }}
 
 
     <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
