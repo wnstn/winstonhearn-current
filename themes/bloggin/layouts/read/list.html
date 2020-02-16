@@ -26,9 +26,6 @@
 
     <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
 
-    <div class="book-toggle book-toggle-{{ .Title }}">
-      <button id="year-{{ .Title }}-toggle" type="button">Show all {{ .Pages | len }} books from {{ .Title }}</button>
-    </div>
     <ul class="book-list" id="year-{{ .Title }}">
       {{ range .Pages }}
       {{ .Scratch.Set "showImages" $showImages }}
