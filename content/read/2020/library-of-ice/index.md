@@ -16,3 +16,4 @@ resources:
     src: images/cover.jpg
 ---
 
+> The potential of all these boxes of books strikes me once I've got them up the stairs. I've lived without the familiar volumes so long. As I pull them into the light, I realize how many stories I'd forgotten. I had carried a few shadowy tales around in the chambers of my memory. Now my tiny flat was transformed into a palace with infinite rooms: records of different pasts, and dreams of many possible futures.

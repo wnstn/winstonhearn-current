@@ -3,7 +3,7 @@ title: "Fleishman Is in Trouble"
 date: 2020-01-25T14:44:40-05:00
 category: reading
 notes: "post-file-name"
-highlights: false
+highlights: true
 book:
   author: "Taffy Brodesser-Akner"
   url: "https://www.indiebound.org/book/9780525510871"

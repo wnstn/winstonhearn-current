@@ -43,7 +43,9 @@
   {{ end }}
 
   {{ if $showHighlights }}
-    <p class="book-highlights"><a href="{{ .Permalink }}">My highlights</a></p>
+    {{ if .Params.highlights }}
+      <p class="book-highlights"><a href="{{ .Permalink }}">My highlights</a></p>
+    {{ end }}
   {{ end }}
 
   {{ if (and .Params.notes $showNotes) }}

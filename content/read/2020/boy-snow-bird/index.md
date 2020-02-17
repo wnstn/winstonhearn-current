@@ -3,7 +3,7 @@ title: "Boy Snow Bird"
 date: 2020-01-13T14:41:24-05:00
 category: reading
 notes: "post-file-name"
-highlights: false
+highlights: true
 book:
   author: "Helen Oyeyemi"
   url: "https://www.indiebound.org/book/9781594633409"
