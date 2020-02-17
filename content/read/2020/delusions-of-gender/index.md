@@ -2,7 +2,8 @@
 title: "Delusions of Gender"
 date: 2020-01-13T22:50:00-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Cultural Analysis
 book:
   author: "Cordelia Fine"
   url: "https://www.indiebound.org/book/9780393340242"

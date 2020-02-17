@@ -2,7 +2,8 @@
 title: "Uncanny Valley"
 date: 2020-01-31T10:18:47-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - the Tech Industry
 book:
   author: "Anna Weiner"
   url: "https://www.indiebound.org/book/9780374278014"

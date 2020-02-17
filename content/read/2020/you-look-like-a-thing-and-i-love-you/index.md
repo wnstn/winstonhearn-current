@@ -2,8 +2,8 @@
 title: "You Look Like a Thing and I Love You"
 date: 2020-02-06T12:57:20-05:00
 category: reading
-notes: "post-file-name"
-highlights: false
+categories:
+  - the Tech Industry
 book:
   author: "Janelle Shane"
   url: "https://www.indiebound.org/book/9780316525244"

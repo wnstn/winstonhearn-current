@@ -2,7 +2,9 @@
 title: "Marrow Thieves"
 date: 2020-02-01T10:51:10-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
+  - Indigenous nations
 book:
   author: "Cherie Dimaline"
   url: "https://www.indiebound.org/book/9781770864863"

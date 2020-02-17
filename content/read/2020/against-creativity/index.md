@@ -4,6 +4,8 @@ date: 2020-02-06T12:57:29-05:00
 category: reading
 notes: "post-file-name"
 highlights: false
+categories:
+  - Cultural Analysis
 book:
   author: "Oli Mould"
   url: "https://www.indiebound.org/book/9781786636492"

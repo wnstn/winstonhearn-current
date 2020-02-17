@@ -2,7 +2,8 @@
 title: "Arts of Living on a Damaged Planet"
 date: 2020-01-22T23:01:24-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Climate Change
 book:
   author: "Tsing, Bubant, Gan, Swanson, editors"
   url: "https://www.indiebound.org/book/9781517902377"

@@ -4,6 +4,14 @@ date: {{ .Date }}
 category: reading
 notes: "post-file-name"
 highlights: false
+categories:
+  - Climate Change
+  - the Tech Industry
+  - Disability Theory
+  - Fiction
+  - Blackness
+  - Indigenous nations
+  - Cultural Analysis
 book:
   author: ""
   url: ""
