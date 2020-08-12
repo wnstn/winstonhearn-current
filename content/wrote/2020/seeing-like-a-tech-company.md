@@ -2,7 +2,7 @@
 title: "Seeing Like a Tech Company"
 date: 2020-08-12T09:40:56-04:00
 category: writing
-description: optional
+description: Seeing Like a State examines the hubris of High Modernist ideology in state schemes, but I see in it the ongoing work of the tech industry.
 linked_book: "Seeing Like a State"
 ---
 
