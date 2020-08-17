@@ -2,7 +2,6 @@
 title: "The Future Earth"
 date: 2020-08-16T12:28:56-04:00
 category: reading
-notes: "post-file-name"
 highlights: false
 categories:
   - Climate Change
