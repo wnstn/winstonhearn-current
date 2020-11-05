@@ -2,7 +2,9 @@
 {{ $showNotes := default false (.Scratch.Get "showNotes") }}
 {{ $showHighlights := default false (.Scratch.Get "showHighlights") }}
 
-<li class="{{ cond $showImages "book with-image" "book"}}">
+<li class="book {{ cond $showImages "with-image" ""}}">
+
+
   {{ if $showImages }}
     {{ $img := (.Resources.GetMatch "cover") }}
     {{ if $img }}
@@ -11,35 +13,39 @@
   {{ end }}
 
   {{ with .Params.book }}
-    {{ if isset . "url" }}
-      <h4 class="book-title">
-        {{ if not $showImages }}
-          <span class="glasses-icon"></span>
-        {{ end }}
+    <h4 class="book-title">
+      {{ if not $showImages }}
+        <span class="glasses-icon"></span>
+      {{ end }}
+      {{ if isset . "url" }}
         <a href="{{ .url }}">{{ .title }}</a>
-      </h4>
-    {{ else }}
-      <h4 class="book-title">
-        {{ if not $showImages }}
-          <span class="glasses-icon"></span>
-        {{ end }}
+      {{ else }}
         {{ .title }}
-      </h4>
-    {{ end }}
+      {{ end }}
+    </h4>
   {{ end }}
 
   {{ with .Params.book }}
-    {{ if isset . "times_read"}}
-      <p class="book-reread">({{ .times_read }} time reading)</p>
-    {{ end }}
 
-    <h4 class="book-author"><em>by {{ .author }}</em></h4>
+    <p class="book-author">by {{ .author }}</p>
 
     {{ if $showImages }}
       {{ if (and (isset . "publisher") (isset . "publish_year")) }}
-        <p class="book-publisher">Published {{ .publish_year }} by {{ .publisher }}</p>
+        <p class="book-publisher"><em>Copyright {{ .publish_year }}, {{ .publisher }}</em></p>
       {{ end }}
     {{ end }}
+  {{ end }}
+
+  {{ if .Params.categories }}
+    <p class="book-category">{{ delimit .Params.categories ", " }}</p>  
+  {{ end }}
+
+  {{ with .Params.book }}
+
+    {{ if isset . "times_read" }}
+      <p class="book-reread">({{ .times_read }} time reading)</p>
+    {{ end }}
+
   {{ end }}
 
   {{ if $showHighlights }}
