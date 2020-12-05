@@ -1,6 +1,15 @@
 {{ define "main" }}
 
-  <section class="writing-section featured-recent">
+{{ .Scratch.Set "bioMinimal" false }}
+{{- partial "bio.html" . -}}
+
+<section class="featured-recent">
+{{ .Scratch.Set "showNotes" true }}
+{{ .Scratch.Set "showImages" true }}
+{{- partial "read/last-12.html" . -}}
+</section>
+  
+<section class="writing-section featured-recent">
     <h2>Recent writings</h2>
     {{- partial "wrote/featured.html" . -}}
   </section>
@@ -9,8 +18,5 @@
 
   {{- partial "shared/recent.html" . -}}
 
-  {{ .Scratch.Set "showNotes" true }}
-  {{ .Scratch.Set "showImages" true }}
-  {{- partial "read/last-12.html" . -}}
 
 {{ end }}

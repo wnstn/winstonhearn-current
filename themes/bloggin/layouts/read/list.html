@@ -7,7 +7,7 @@
   <h2>What I've been reading</h2>
 
   <div class="reading-nav">
-  <p>This page is what I've read this year, see below for past years.</p>
+  <p>See other years or based on categories:</p>
   <ul class="years">
   {{ range $pages.Sections.ByTitle.Reverse }}
     {{ $active := eq (now.Format "2006") .Title }}
@@ -19,10 +19,14 @@
         {{ end }}
   {{ end }}
   </ul>
+  <ul class="years">
+    {{ range .Site.Taxonomies.categories }}
+      <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+  </ul>
   </div>
 
-  {{ range first 1 $pages.Sections.ByTitle.Reverse }}
-
+  {{ range where $pages.Sections "Title" (now.Format "2006") }}
 
     <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
 
@@ -36,7 +40,25 @@
     </ul>
   {{ end }}
 
-  </ul>
+  <div class="reading-nav">
+    <p>See other years or based on categories:</p>
+    <ul class="years">
+    {{ range $pages.Sections.ByTitle.Reverse }}
+      {{ $active := eq (now.Format "2006") .Title }}
+      <li>
+        {{ if $active }}
+          {{ .Title }}
+        {{ else }}
+          <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+    {{ end }}
+    </ul>
+    <ul class="years">
+      {{ range .Site.Taxonomies.categories }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
 </section>
 
 {{ end }}

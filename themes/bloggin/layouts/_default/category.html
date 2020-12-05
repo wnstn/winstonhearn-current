@@ -1,19 +1,24 @@
 {{ define "main" }}
 
+{{ $pages := .Site.GetPage "section" "read"}}
+{{ $active := .Title }}
+
 <section id="reading">
-  <h2>My reading history related to {{ .Title }}</h2>
+  <h2>All books tagged with {{ .Title }}</h2>
   <div class="reading-nav">
-    <p>Below are all the years of reading logs I have available right now!</p>
+    <p>See other years or based on categories:</p>
     <ul class="years">
-      {{ $current := .Title }}
-      {{ $pages := .Site.GetPage "section" "read"}}
-      {{ range $pages.Sections.ByTitle.Reverse }}
-      <li>
-        {{ if eq .Title $current }}
-        {{ .Title }}
+    {{ range $pages.Sections.ByTitle.Reverse }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+    <ul class="years">
+      {{ range .Site.Taxonomies.categories }}
+        {{ if eq $active .Page.Title }}
+          <li><strong>{{.Page.Title}}</strong></li>
         {{ else }}
-        <a href="{{ .Permalink }}">{{ .Title }}</a></li>
-      {{ end }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
       {{ end }}
     </ul>
   </div>
@@ -30,7 +35,23 @@
     {{ end }}
   </ul>
 
-  </ul>
+  <div class="reading-nav">
+    <p>See other years or based on categories:</p>
+    <ul class="years">
+    {{ range $pages.Sections.ByTitle.Reverse }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+    <ul class="years">
+      {{ range .Site.Taxonomies.categories }}
+        {{ if eq $active .Page.Title }}
+          <li><strong>{{.Page.Title}}</strong></li>
+        {{ else }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
 </section>
 
 {{ end }}
