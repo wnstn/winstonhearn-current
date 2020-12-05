@@ -2,7 +2,8 @@
 title: "Exit West"
 date: 2019-08-12T10:14:22-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Mohsin Hamid"
   url: "https://www.penguinrandomhouse.com/books/549017/exit-west-by-mohsin-hamid/9780735212206"

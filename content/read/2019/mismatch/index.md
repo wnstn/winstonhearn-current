@@ -2,7 +2,9 @@
 title: "Mismatch"
 date: 2019-07-12T22:43:32-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Tech Industry
+  - Disability Theory
 book:
   author: "Kat Holmes"
   url: "https://mismatch.design/"

@@ -2,7 +2,8 @@
 title: "The Rise of Big Data Policing"
 date: 2019-07-07T21:12:29-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Tech Industry
 book:
   author: "Andrew Guthrie Ferguson"
   url: "https://nyupress.org/9781479892822/the-rise-of-big-data-policing/"

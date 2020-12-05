@@ -2,7 +2,8 @@
 title: "Built"
 date: 2019-01-23T08:38:32-05:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "Roma Agrawal"
   url: "https://www.bloomsbury.com/us/built-9781635570229/"

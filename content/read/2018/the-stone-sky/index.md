@@ -2,7 +2,8 @@
 title: "The Stone Sky"
 date: 2019-01-15T17:17:22-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "N.K. Jemisin"
   url: "http://nkjemisin.com/books/the-stone-sky/"

@@ -2,7 +2,8 @@
 title: "Future of Another Timeline"
 date: 2019-10-10T10:18:21-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Annalee Newitz"
   url: "https://www.indiebound.org/book/9780765392107"

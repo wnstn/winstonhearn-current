@@ -2,6 +2,9 @@
 title: "The Master Switch"
 date: 2018-02-14T12:42:39-05:00
 category: reading
+categories:
+  - Tech Industry
+  - Cultural Analysis
 notes: ""
 book:
   author: "Tim Wu"

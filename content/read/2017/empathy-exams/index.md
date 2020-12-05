@@ -2,6 +2,8 @@
 title: "Empathy Exams"
 date: 2018-02-14T12:42:20-05:00
 category: reading
+categories:
+  - Cultural Analysis
 notes: ""
 book:
   author: "Leslie Jamison"

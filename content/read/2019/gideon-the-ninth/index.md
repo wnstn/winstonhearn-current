@@ -2,7 +2,8 @@
 title: "Gideon the Ninth"
 date: 2019-12-16T17:06:55-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Tamsyn Muir"
   url: "https://www.indiebound.org/book/9781250313195"

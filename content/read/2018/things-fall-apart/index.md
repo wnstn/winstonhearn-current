@@ -2,7 +2,8 @@
 title: "Things Fall Apart"
 date: 2019-01-15T17:05:27-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Chinua Achebe"
   url: "https://www.penguinrandomhouse.com/books/565351/things-fall-apart-by-chinua-achebe/9780679446231/"

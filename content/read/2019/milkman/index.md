@@ -2,7 +2,8 @@
 title: "Milkman"
 date: 2019-11-23T20:39:03-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 highlights: true
 book:
   author: "Anna Burns"

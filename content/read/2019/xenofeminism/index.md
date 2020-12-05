@@ -2,7 +2,9 @@
 title: "Xenofeminism"
 date: 2019-02-13T23:16:58-05:00
 category: reading
-notes: ""
+categories:
+  - Disability Theory
+  - Cultural Analysis
 book:
   author: "Helen Hester"
   url: "https://www.wiley.com/en-us/Xenofeminism-p-9781509520626"

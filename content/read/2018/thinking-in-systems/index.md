@@ -2,7 +2,8 @@
 title: "Thinking in Systems"
 date: 2019-01-23T08:44:17-05:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "Donella Meadows"
   url: "https://www.chelseagreen.com/product/thinking-in-systems/"

@@ -2,7 +2,8 @@
 title: "Another Country"
 date: 2019-08-12T10:14:17-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "James Baldwin"
   url: "https://en.wikipedia.org/wiki/Another_Country_(novel)"

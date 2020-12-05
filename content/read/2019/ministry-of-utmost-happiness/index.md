@@ -2,7 +2,8 @@
 title: "Ministry of Utmost Happiness"
 date: 2019-09-03T12:55:47-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Arundhati Roy"
   url: "https://en.wikipedia.org/wiki/The_Ministry_of_Utmost_Happiness"

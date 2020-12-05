@@ -2,6 +2,9 @@
 title: "Braiding Sweetgrass"
 date: 2019-10-30T13:07:38-04:00
 category: reading
+categories:
+  - Climate Change
+  - Indigenous Issues
 book:
   author: "Robin Wall Kimmerer"
   url: "https://www.indiebound.org/book/9781571313560"

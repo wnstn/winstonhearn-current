@@ -2,7 +2,8 @@
 title: "The Fifth Risk"
 date: 2019-09-19T15:57:45-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Cultural Analysis
 book:
   author: "Michael Lewis"
   url: "https://www.indiebound.org/book/9781324002642"

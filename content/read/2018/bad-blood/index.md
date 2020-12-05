@@ -2,7 +2,8 @@
 title: "Bad Blood"
 date: 2019-01-15T18:02:22-05:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "John Carreyou"
   url: "https://www.penguinrandomhouse.com/books/549478/bad-blood-by-john-carreyrou/9781524731656/"

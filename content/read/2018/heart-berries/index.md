@@ -2,7 +2,8 @@
 title: "Heart Berries"
 date: 2019-01-15T17:43:25-05:00
 category: reading
-notes: ""
+categories:
+  - Indigenous Issues
 book:
   author: "Terese Marie Mailhot"
   url: "https://www.counterpointpress.com/dd-product/heart-berries/"

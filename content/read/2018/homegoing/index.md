@@ -2,7 +2,8 @@
 title: "Homegoing"
 date: 2019-01-15T17:36:25-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Yaa Gyasi"
   url: "https://www.penguinrandomhouse.com/books/533857/homegoing-by-yaa-gyasi/9781101971062"

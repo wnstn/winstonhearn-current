@@ -2,7 +2,8 @@
 title: "How to Hide an Empire"
 date: 2019-09-14T17:34:07-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Cultural Analysis
 book:
   author: "Daniel Immerwahr"
   url: "https://www.indiebound.org/book/9780374172145"

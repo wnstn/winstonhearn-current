@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - the Tech Industry
+  - Tech Industry
 book:
   author: "Yanni Alexander Loukissas"
   url: "https://bookshop.org/books/all-data-are-local-thinking-critically-in-a-data-driven-society/9780262039666"

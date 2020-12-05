@@ -2,7 +2,8 @@
 title: "Care Work"
 date: 2019-08-05T11:31:14-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Disability Theory
 book:
   author: "Leah Lakshmi Piepzna-Samarasinha"
   url: "https://arsenalpulp.com/Books/C/Care-Work"

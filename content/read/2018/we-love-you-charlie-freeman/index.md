@@ -2,7 +2,8 @@
 title: "We Love You Charlie Freeman"
 date: 2019-02-14T10:04:04-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Kaitlyn Greenidge"
   url: "https://www.workman.com/products/we-love-you-charlie-freeman"

@@ -2,7 +2,8 @@
 title: "The Vine of Desire"
 date: 2019-02-13T23:18:09-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Chitra Banerjee Divakaruni"
   url: "https://www.publishersweekly.com/978-0-385-49729-9"

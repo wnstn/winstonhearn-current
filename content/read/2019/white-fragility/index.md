@@ -2,7 +2,9 @@
 title: "White Fragility"
 date: 2019-07-12T22:43:26-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Race
+  - Cultural Analysis
 book:
   author: "Robin DiAngelo"
   url: "http://www.beacon.org/White-Fragility-P1346.aspx"

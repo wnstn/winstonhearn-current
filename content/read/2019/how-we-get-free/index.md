@@ -2,7 +2,9 @@
 title: "How We Get Free"
 date: 2019-04-20T13:44:59-04:00
 category: reading
-notes: ""
+categories:
+  - Race
+  - Cultural Analysis
 book:
   author: "Keeanga-Yamahtta Taylor"
   url: "https://www.haymarketbooks.org/books/1108-how-we-get-free"

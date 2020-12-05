@@ -2,7 +2,8 @@
 title: "Her Body and Other Parties"
 date: 2019-02-13T23:15:59-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Carmen Maria Machado"
   url: "https://www.graywolfpress.org/books/her-body-and-other-parties"

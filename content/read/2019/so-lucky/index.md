@@ -2,7 +2,8 @@
 title: "So Lucky"
 date: 2019-11-20T12:16:21-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Nicola Griffith"
   url: "https://www.indiebound.org/book/9780374265922"

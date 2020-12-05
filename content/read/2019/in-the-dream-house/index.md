@@ -2,7 +2,8 @@
 title: "In the Dream House"
 date: 2019-12-12T22:35:32-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Cultural Analysis
 book:
   author: "Carmen Maria Machado"
   url: "https://www.indiebound.org/book/9781644450031"

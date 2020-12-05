@@ -2,7 +2,8 @@
 title: "This Changes Everything"
 date: 2019-01-14T23:45:10-05:00
 category: reading
-notes: ""
+categories:
+  - Climate Change
 book:
   author: "Naomi Klein"
   url: "https://thischangeseverything.org/"

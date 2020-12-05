@@ -2,6 +2,9 @@
 title: "Electric Arches"
 date: 2019-07-25T12:15:24-04:00
 category: reading
+categories:
+  - Race
+  - Cultural Analysis
 book:
   author: "Eve L. Ewing"
   url: "https://www.haymarketbooks.org/books/1129-electric-arches"

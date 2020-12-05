@@ -2,7 +2,8 @@
 title: "The Fifth Season"
 date: 2019-01-15T17:12:29-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "N.K. Jemisin"
   url: "http://nkjemisin.com/books/the-fifth-season/"

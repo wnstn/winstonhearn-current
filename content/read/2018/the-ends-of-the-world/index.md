@@ -2,7 +2,8 @@
 title: "The Ends of the World"
 date: 2019-01-15T17:12:29-05:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "Peter Brannen"
   url: "https://www.harpercollins.com/9780062364807/the-ends-of-the-world/"

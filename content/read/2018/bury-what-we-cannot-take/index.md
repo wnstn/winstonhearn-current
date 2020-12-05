@@ -2,7 +2,8 @@
 title: "Bury What We Cannot Take"
 date: 2019-01-14T23:59:48-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Kirstin Chen"
   url: "http://kirstinchen.com/books/"

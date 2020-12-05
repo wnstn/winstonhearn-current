@@ -2,7 +2,8 @@
 title: "My Name Is Asher Lev"
 date: 2019-07-07T21:12:41-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Chaim Potok"
   url: "https://en.wikipedia.org/wiki/My_Name_Is_Asher_Lev"

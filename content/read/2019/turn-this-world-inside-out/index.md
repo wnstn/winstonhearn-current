@@ -2,6 +2,8 @@
 title: "Turn This World Inside Out"
 date: 2019-12-31T17:38:33-08:00
 category: reading
+categories:
+  - Cultural Analysis
 book:
   author: "Nora Samaran"
   url: "https://www.indiebound.org/book/9781849353588"

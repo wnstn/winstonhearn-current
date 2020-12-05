@@ -2,7 +2,9 @@
 title: "The Memory Police"
 date: 2019-11-20T12:16:15-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Climate Change
+  - Fiction
 book:
   author: "Yoko Ogawa"
   url: "https://www.indiebound.org/book/9781101870600"

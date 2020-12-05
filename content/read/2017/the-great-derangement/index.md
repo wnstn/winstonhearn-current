@@ -2,6 +2,9 @@
 title: "The Great Derangement"
 date: 2018-02-14T12:45:12-05:00
 category: reading
+categories:
+  - Climate Change
+  - Cultural Analysis
 notes: ""
 book:
   author: "Amitav Ghosh"

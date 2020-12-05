@@ -2,7 +2,8 @@
 title: "Infinite Detail"
 date: 2019-12-12T22:34:54-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Tim Maughan"
   url: "https://www.indiebound.org/book/9780374175412"

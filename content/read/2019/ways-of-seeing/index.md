@@ -2,7 +2,8 @@
 title: "Ways of Seeing"
 date: 2019-03-25T09:32:00-04:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "John Berger"
   url: "https://www.penguinrandomhouse.com/books/324430/ways-of-seeing-by-john-berger/9780140135152"

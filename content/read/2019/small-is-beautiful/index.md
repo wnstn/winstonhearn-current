@@ -2,7 +2,8 @@
 title: "Small Is Beautiful"
 date: 2019-07-01T10:07:11-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Cultural Analysis
 book:
   author: "E.F. Schumacher"
   url: "https://centerforneweconomics.org/envision/legacy/ernst-friedrich-schumacher/small-is-beautiful-quotes/"

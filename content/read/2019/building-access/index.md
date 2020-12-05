@@ -2,7 +2,9 @@
 title: "Building Access"
 date: 2019-03-13T09:01:23-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Tech Industry
+  - Disability Theory
 book:
   author: "Aimi Hamraie"
   url: "https://www.upress.umn.edu/book-division/books/building-access"

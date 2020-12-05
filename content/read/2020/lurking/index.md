@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - the Tech Industry
+  - Tech Industry
 book:
   author: "Joanne McNeil"
   url: "https://www.indiebound.org/book/9780374194338"

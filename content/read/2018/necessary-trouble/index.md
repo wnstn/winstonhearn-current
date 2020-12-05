@@ -2,7 +2,8 @@
 title: "Necessary Trouble"
 date: 2019-01-15T18:03:14-05:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "Sarah Jaffe"
   url: "http://necessarytrouble.org/"

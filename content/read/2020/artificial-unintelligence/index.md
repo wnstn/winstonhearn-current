@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - the Tech Industry
+  - Tech Industry
 book:
   author: "Meredith Broussard"
   url: "https://bookshop.org/books/artificial-unintelligence-how-computers-misunderstand-the-world/9780262537018"

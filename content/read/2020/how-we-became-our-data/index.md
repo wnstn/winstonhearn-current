@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - the Tech Industry
+  - Tech Industry
 book:
   author: "Colin Koopman"
   url: "https://bookshop.org/books/how-we-became-our-data-a-genealogy-of-the-informational-person/9780226626581"

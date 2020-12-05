@@ -2,7 +2,9 @@
 title: "Against Purity"
 date: 2019-01-15T18:00:43-05:00
 category: reading
-notes: ""
+categories:
+  - Disability Theory
+  - Cultural Analysis
 book:
   author: "Alexis Shotwell"
   url: "https://www.upress.umn.edu/book-division/books/against-purity"

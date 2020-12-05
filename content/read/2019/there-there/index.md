@@ -2,6 +2,9 @@
 title: "There There"
 date: 2019-10-22T12:37:55-04:00
 category: reading
+categories:
+  - Fiction
+  - Indigenous Issues
 book:
   author: "Tommy Orange"
   url: "https://www.indiebound.org/book/9780525436140"

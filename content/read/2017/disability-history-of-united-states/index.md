@@ -2,6 +2,8 @@
 title: "Disability History of United States"
 date: 2018-01-22T23:41:01-05:00
 category: reading
+categories:
+  - Disability Theory
 notes: "2017-02-17-book-disability-history-of-the-us"
 book:
   author: "Kim E. Nielsen"

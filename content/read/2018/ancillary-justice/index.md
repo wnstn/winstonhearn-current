@@ -2,7 +2,8 @@
 title: "Ancillary Justice"
 date: 2019-01-14T23:52:11-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Ann Leckie"
   url: "https://www.annleckie.com/novel/ancillary-justice/"

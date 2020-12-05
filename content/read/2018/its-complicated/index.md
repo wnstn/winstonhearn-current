@@ -2,7 +2,8 @@
 title: "Its Complicated"
 date: 2019-01-15T18:06:23-05:00
 category: reading
-notes: ""
+categories:
+  - Tech Industry
 book:
   author: "danah boyd"
   url: "https://yalebooks.yale.edu/book/9780300199000/its-complicated"

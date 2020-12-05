@@ -2,7 +2,8 @@
 title: "Normal People"
 date: 2019-11-30T12:36:02-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Sally Rooney"
   url: "https://www.indiebound.org/book/9781984822178"

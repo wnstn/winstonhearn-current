@@ -2,7 +2,9 @@
 title: "New York 2140"
 date: 2019-01-15T17:28:42-05:00
 category: reading
-notes: ""
+categories:
+  - Climate Change
+  - Fiction
 book:
   author: "Kim Stanley Robinson"
   url: "https://www.kimstanleyrobinson.info/content/new-york-2140"

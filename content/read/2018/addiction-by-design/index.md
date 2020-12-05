@@ -2,7 +2,8 @@
 title: "Addiction by Design"
 date: 2019-01-23T08:42:45-05:00
 category: reading
-notes: ""
+categories:
+  - Tech Industry
 book:
   author: "Natasha Dow Schüll"
   url: "https://press.princeton.edu/titles/9156.html"

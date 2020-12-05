@@ -2,7 +2,8 @@
 title: "Super Pumped"
 date: 2019-09-23T20:44:41-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Tech Industry
 book:
   author: "Mike Isaac"
   url: "https://www.indiebound.org/book/9780393652246"

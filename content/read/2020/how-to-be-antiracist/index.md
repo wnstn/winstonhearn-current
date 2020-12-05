@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - Blackness
+  - Race
   - Cultural Analysis
 book:
   author: "Ibram X. Kendi"

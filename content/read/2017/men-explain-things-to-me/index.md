@@ -2,6 +2,8 @@
 title: "Men Explain Things to Me"
 date: 2018-02-14T12:44:38-05:00
 category: reading
+categories:
+  - Cultural Analysis
 notes: ""
 book:
   author: "Rebecca Solnit"

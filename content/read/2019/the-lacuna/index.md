@@ -2,7 +2,8 @@
 title: "The Lacuna"
 date: 2019-10-10T09:54:22-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Barbara Kingsolver"
   url: "http://www.kingsolver.com/books/the-lacuna.html"

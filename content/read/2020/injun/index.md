@@ -2,7 +2,8 @@
 title: "Injun"
 date: 2020-01-08T14:55:58-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Indigenous Issues
 book:
   author: "Jordan Abel"
   url: "https://www.indiebound.org/book/9780889229778"

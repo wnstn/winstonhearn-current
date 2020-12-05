@@ -6,11 +6,11 @@ notes: "post-file-name"
 highlights: false
 categories:
   - Climate Change
-  - the Tech Industry
+  - Tech Industry
   - Disability Theory
   - Fiction
-  - Blackness
-  - Indigenous nations
+  - Race
+  - Indigenous Issues
   - Cultural Analysis
 book:
   author: ""

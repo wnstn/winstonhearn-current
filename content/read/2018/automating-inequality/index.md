@@ -2,7 +2,8 @@
 title: "Automating Inequality"
 date: 2019-01-23T08:47:41-05:00
 category: reading
-notes: ""
+categories:
+  - Tech Industry
 book:
   author: "Virginia Eubanks"
   url: "https://us.macmillan.com/books/9781250074317"

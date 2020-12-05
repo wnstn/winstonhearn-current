@@ -3,7 +3,7 @@ title: "Reconstruction"
 date: 2020-01-22T12:52:43-05:00
 category: reading
 categories:
-  - Blackness
+  - Race
 book:
   author: "Eric Foner"
   url: "https://www.indiebound.org/book/9780062354518"

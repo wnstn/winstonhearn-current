@@ -2,7 +2,9 @@
 title: "Thick"
 date: 2019-02-13T23:17:11-05:00
 category: reading
-notes: ""
+categories:
+  - Race
+  - Cultural Analysis
 book:
   author: "Dr. Tressie McMillan Cottom"
   url: "https://www.thickthebook.com/"

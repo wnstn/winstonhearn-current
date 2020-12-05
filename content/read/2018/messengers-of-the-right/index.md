@@ -2,7 +2,8 @@
 title: "Messengers of the Right"
 date: 2019-01-15T17:59:23-05:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "Nicole Hemmer"
   url: "https://www.upenn.edu/pennpress/book/15571.html"

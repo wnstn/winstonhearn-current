@@ -2,6 +2,8 @@
 title: "The Lost Daughter"
 date: 2018-02-14T12:43:49-05:00
 category: reading
+categories:
+  - Fiction
 notes: ""
 book:
   author: "Elena Ferrante"

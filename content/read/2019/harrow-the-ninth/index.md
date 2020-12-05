@@ -2,7 +2,8 @@
 title: "Harrow the Ninth"
 date: 2019-12-31T17:38:25-08:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Tamsyn Muir"
   url: "https://www.indiebound.org/book/9781250313225"

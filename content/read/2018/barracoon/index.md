@@ -2,7 +2,8 @@
 title: "Barracoon"
 date: 2019-01-15T17:27:52-05:00
 category: reading
-notes: ""
+categories:
+  - Race
 book:
   author: "Zora Neal Hurston"
   url: "https://www.harpercollins.com/9780062748201/barracoon/"

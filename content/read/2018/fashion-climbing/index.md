@@ -2,7 +2,8 @@
 title: "Fashion Climbing"
 date: 2019-02-13T23:16:26-05:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "Bill Cunningham"
   url: "https://www.penguinrandomhouse.com/books/566849/fashion-climbing-by-bill-cunningham/9780525558705/"

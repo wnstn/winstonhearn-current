@@ -2,7 +2,8 @@
 title: "World Without Ice"
 date: 2019-01-15T17:44:19-05:00
 category: reading
-notes: ""
+categories:
+  - Climate Change
 book:
   author: "Henry Pollack"
   url: "http://www.worldwithoutice.com/"

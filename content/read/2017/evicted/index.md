@@ -2,6 +2,9 @@
 title: "Evicted"
 date: 2018-02-14T12:43:55-05:00
 category: reading
+categories:
+  - Race
+  - Cultural Analysis
 notes: ""
 book:
   author: "Matthew Desmond"

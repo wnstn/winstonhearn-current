@@ -2,7 +2,8 @@
 title: "The Incendiaries"
 date: 2019-11-18T06:03:55-06:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "R.O. Kwon"
   url: "https://www.indiebound.org/book/9780735213890"

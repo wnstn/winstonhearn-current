@@ -2,6 +2,8 @@
 title: "Handmaids Tale"
 date: 2018-02-14T12:42:54-05:00
 category: reading
+categories:
+  - Fiction
 notes: ""
 book:
   author: "Margaret Atwood"

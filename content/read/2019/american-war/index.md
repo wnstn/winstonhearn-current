@@ -2,7 +2,9 @@
 title: "American War"
 date: 2019-12-02T20:33:48-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Climate Change
+  - Fiction
 book:
   author: "Omar El Akkad"
   url: "https://www.indiebound.org/book/9781101973134"

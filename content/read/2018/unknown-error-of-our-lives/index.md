@@ -2,7 +2,8 @@
 title: "Unknown Error of Our Lives"
 date: 2019-01-15T17:57:02-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Chitra Banerjee Divakaruni"
   url: "http://www.chitradivakaruni.com/books/unknown-errors-of-our-lives/"

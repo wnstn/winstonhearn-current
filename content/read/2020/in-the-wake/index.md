@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - Blackness
+  - Race
 book:
   author: "Christina Sharpe"
   url: "https://bookshop.org/books/in-the-wake-on-blackness-and-being/9780822362944"

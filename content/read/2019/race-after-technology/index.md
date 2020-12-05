@@ -2,7 +2,9 @@
 title: "Race After Technology"
 date: 2019-10-04T10:43:29-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Tech Industry
+  - Race
 book:
   author: "Ruha Benjamin"
   url: "https://www.ruhabenjamin.com/race-after-technology"

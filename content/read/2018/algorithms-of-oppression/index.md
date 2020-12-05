@@ -2,7 +2,9 @@
 title: "Algorithms of Oppression"
 date: 2019-01-15T17:26:02-05:00
 category: reading
-notes: ""
+categories:
+  - Tech Industry
+  - Race
 book:
   author: "Safiya Umoja Noble"
   url: "http://algorithmsofoppression.com/"

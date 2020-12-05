@@ -2,7 +2,8 @@
 title: "The Three Body Problem"
 date: 2019-01-23T08:56:54-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Cixin Liu"
   url: "https://us.macmillan.com/books/9780765377067"

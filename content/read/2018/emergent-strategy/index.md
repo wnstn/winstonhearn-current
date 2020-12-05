@@ -2,7 +2,8 @@
 title: "Emergent Strategy"
 date: 2019-01-23T08:41:34-05:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "adrienne maree brown"
   url: "https://www.akpress.org/emergentstrategy.html"

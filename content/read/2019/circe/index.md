@@ -2,7 +2,8 @@
 title: "Circe"
 date: 2019-11-30T12:36:26-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 highlights: true
 book:
   author: "Madeline Miller"

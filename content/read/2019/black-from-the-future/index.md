@@ -2,7 +2,9 @@
 title: "Black From the Future"
 date: 2019-11-11T08:24:43-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
+  - Race
 book:
   author: "Stephanie Andrea Allen (ed), Lauren Cherelle (ed)"
   url: "https://www.indiebound.org/book/9780578502137"

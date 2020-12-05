@@ -2,7 +2,8 @@
 title: "Democracy May Not Exist"
 date: 2019-08-16T09:32:34-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Cultural Analysis
 book:
   author: "Astra Taylor"
   url: "https://us.macmillan.com/books/9781250179845"

@@ -2,7 +2,8 @@
 title: "Accessible America"
 date: 2019-05-29T09:06:01-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Disability Theory
 book:
   author: "Bess Williamson"
   url: "https://nyupress.org/9781479894093/accessible-america/"

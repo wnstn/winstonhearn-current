@@ -2,6 +2,8 @@
 title: "Parable of the Talents"
 date: 2019-03-06T08:40:35-05:00
 category: reading
+categories:
+  - Fiction
 notes: "parable-of-the-talents"
 book:
   author: "Octavia E. Butler"

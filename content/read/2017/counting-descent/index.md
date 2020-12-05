@@ -3,6 +3,9 @@ title: "Counting Descent"
 date: 2018-02-14T12:44:01-05:00
 category: reading
 notes: ""
+categories:
+  - Race
+  - Cultural Analysis
 book:
   author: "Clint Smith"
   url: "https://www.clintsmithiii.com/book"

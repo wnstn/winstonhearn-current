@@ -2,7 +2,9 @@
 title: "Gone Tomorrow"
 date: 2019-01-15T00:13:58-05:00
 category: reading
-notes: ""
+categories:
+  - Climate Change
+  - Cultural Analysis
 book:
   author: "Heather Rogers"
   url: "https://thenewpress.com/books/gone-tomorrow"

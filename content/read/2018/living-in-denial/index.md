@@ -2,7 +2,8 @@
 title: "Living in Denial"
 date: 2019-01-23T09:01:11-05:00
 category: reading
-notes: ""
+categories:
+  - Climate Change
 book:
   author: "Kari Marie Noorgard"
   url: "https://mitpress.mit.edu/books/living-denial"

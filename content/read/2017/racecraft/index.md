@@ -2,6 +2,8 @@
 title: "Racecraft"
 date: 2018-02-14T12:42:47-05:00
 category: reading
+categories:
+  - Race
 notes: ""
 book:
   author: "Karen E. Fields and Barbara J. Fields"

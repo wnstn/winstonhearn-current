@@ -2,7 +2,9 @@
 title: "Flight Behavior"
 date: 2019-10-28T10:10:02-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Climate Change
+  - Fiction
 book:
   author: "Barbara Kingsolver"
   url: "https://www.indiebound.org/book/9780385350815"

@@ -2,7 +2,8 @@
 title: "Liliths Brood"
 date: 2019-01-15T17:21:23-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Octavia Butler"
   url: "https://www.amazon.com/Liliths-Brood-Octavia-Butler/dp/0446676101"

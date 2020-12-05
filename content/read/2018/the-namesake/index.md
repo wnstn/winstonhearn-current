@@ -2,7 +2,8 @@
 title: "The Namesake"
 date: 2019-01-15T00:11:43-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Jhumpa Lahiri"
   url: "https://www.randomhouse.com/kvpa/jhumpalahiri/books.php"

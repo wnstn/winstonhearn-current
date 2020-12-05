@@ -2,7 +2,8 @@
 title: "Dept of Speculation"
 date: 2019-10-28T10:09:57-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Jenny Offill"
   url: "https://www.indiebound.org/book/9780385350815"

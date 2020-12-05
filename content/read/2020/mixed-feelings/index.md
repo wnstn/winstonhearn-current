@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - the Tech Industry
+  - Tech Industry
 book:
   author: "Naomi Shimada, Sarah Raphael"
   url: "https://www.hardiegrant.com/au/publishing/bookfinder/book/mixed-feelings-by-naomi-shimada/9781787133983"

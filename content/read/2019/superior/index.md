@@ -2,7 +2,9 @@
 title: "Superior"
 date: 2019-09-09T10:12:00-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Race
+  - Cultural Analysis
 book:
   author: "Angela Saini"
   url: "https://www.angelasaini.co.uk/"

@@ -2,6 +2,8 @@
 title: "Weapons of Math Destruction"
 date: 2018-02-14T12:43:17-05:00
 category: reading
+categories:
+  - Tech Industry
 notes: ""
 book:
   author: "Cathy O'Neil"

@@ -2,6 +2,9 @@
 title: "Networks of New York"
 date: 2018-02-14T12:42:27-05:00
 category: reading
+categories:
+  - Tech Industry
+  - Cultural Analysis
 notes: ""
 book:
   author: "Ingrid Burrington"

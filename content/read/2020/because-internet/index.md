@@ -6,6 +6,7 @@ notes: "post-file-name"
 highlights: false
 categories:
   - Cultural Analysis
+  - Tech Industry
 book:
   author: "Gretchen McCulloch"
   url: "https://bookshop.org/books/because-internet-understanding-the-new-rules-of-language/9780735210943"

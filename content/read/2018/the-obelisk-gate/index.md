@@ -2,7 +2,8 @@
 title: "The Obelisk Gate"
 date: 2019-01-15T17:13:33-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "N.K. Jemisin"
   url: "http://nkjemisin.com/books/book-two-the-obelisk-gate/"

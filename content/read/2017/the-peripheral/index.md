@@ -2,6 +2,9 @@
 title: "The Peripheral"
 date: 2018-02-14T12:45:05-05:00
 category: reading
+categories:
+  - Climate Change
+  - Fiction
 notes: ""
 book:
   author: "William Gibson"

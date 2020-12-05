@@ -2,7 +2,8 @@
 title: "Deaths End"
 date: 2019-02-13T23:17:25-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Cixin Liu"
   url: "https://us.macmillan.com/books/9780765386632"

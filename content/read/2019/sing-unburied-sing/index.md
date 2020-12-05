@@ -2,7 +2,8 @@
 title: "Sing Unburied Sing"
 date: 2019-11-30T12:36:11-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 highlights: true
 book:
   author: "Jesmyn Ward"

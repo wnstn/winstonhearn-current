@@ -2,7 +2,8 @@
 title: "Tenth of December"
 date: 2019-01-15T17:33:54-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "George Saunders"
   url: "http://www.georgesaundersbooks.com/tenth-of-december/"

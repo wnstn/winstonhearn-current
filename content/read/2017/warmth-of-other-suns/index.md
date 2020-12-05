@@ -2,6 +2,8 @@
 title: "Warmth of Other Suns"
 date: 2018-02-14T12:43:33-05:00
 category: reading
+categories:
+  - Race
 notes: ""
 book:
   author: "Isabel Wilkerson"

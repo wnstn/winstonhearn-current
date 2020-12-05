@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - the Tech Industry
+  - Tech Industry
 book:
   author: "Ellen Broad"
   url: "https://www.goodreads.com/book/show/40626257-made-by-humans"

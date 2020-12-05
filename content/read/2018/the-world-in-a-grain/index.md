@@ -2,7 +2,8 @@
 title: "The World in a Grain"
 date: 2019-01-15T17:32:17-05:00
 category: reading
-notes: ""
+categories:
+  - Climate Change
 book:
   author: "Vince Beiser"
   url: "https://www.penguinrandomhouse.com/books/537681/the-world-in-a-grain-by-vince-beiser/9780399576423/"

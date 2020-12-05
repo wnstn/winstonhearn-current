@@ -2,7 +2,8 @@
 title: "Artificial Unintelligence"
 date: 2019-03-25T09:32:11-04:00
 category: reading
-notes: ""
+categories:
+  - Tech Industry
 book:
   author: "Meredith Broussard"
   url: "https://mitpress.mit.edu/books/artificial-unintelligence"

@@ -2,7 +2,8 @@
 title: "The Boy Kings"
 date: 2019-01-15T17:09:19-05:00
 category: reading
-notes: ""
+categories:
+  - Tech Industry
 book:
   author: "Kate Loss"
   url: "http://theboykings.com/"

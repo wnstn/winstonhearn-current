@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - Indigenous nations
+  - Indigenous Issues
   - Cultural Analysis
 book:
   author: "Tyson Yunkaporta"

@@ -2,7 +2,8 @@
 title: "Indigenous Peoples History"
 date: 2019-01-15T17:52:10-05:00
 category: reading
-notes: ""
+categories:
+  - Indigenous Issues
 book:
   author: "Roxanne Dunbar-Ortiz"
   url: "http://www.beacon.org/An-Indigenous-Peoples-History-of-the-United-States-P1164.aspx"

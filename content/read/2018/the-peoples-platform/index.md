@@ -2,7 +2,9 @@
 title: "The People's Platform"
 date: 2019-01-23T08:51:19-05:00
 category: reading
-notes: ""
+categories:
+  - Tech Industry
+  - Cultural Analysis
 book:
   author: "Astra Taylor"
   url: "https://us.macmillan.com/books/9781250062598"

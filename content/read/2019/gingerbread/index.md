@@ -2,7 +2,8 @@
 title: "Gingerbread"
 date: 2019-11-04T21:27:43-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Helen Oyeyemi"
   url: "https://www.indiebound.org/book/9781594634659"

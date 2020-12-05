@@ -2,6 +2,8 @@
 title: "The Lathe of Heaven"
 date: 2018-02-14T12:44:52-05:00
 category: reading
+categories:
+  - Fiction
 notes: ""
 book:
   author: "Ursula le Guin"

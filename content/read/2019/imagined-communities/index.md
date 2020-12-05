@@ -2,7 +2,8 @@
 title: "Imagined Communities"
 date: 2019-03-25T09:31:52-04:00
 category: reading
-notes: ""
+categories:
+  - Cultural Analysis
 book:
   author: "Benedict Anderson"
   url: "https://www.versobooks.com/books/2259-imagined-communities"

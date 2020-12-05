@@ -2,7 +2,8 @@
 title: "Beowulf"
 date: 2019-09-06T10:01:11-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Seamus Heaney (editor)"
   url: "https://wwnorton.com/books/9780393320978"

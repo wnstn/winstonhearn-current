@@ -5,7 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - Blackness
+  - Race
 book:
   author: "Jo Ann Gibson Robinson"
   url: "https://bookshop.org/books/montgomery-bus-boycott-women-who-started-it/9780870495274"

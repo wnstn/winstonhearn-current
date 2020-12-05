@@ -2,7 +2,8 @@
 title: "Fun Home"
 date: 2019-01-14T23:56:54-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Alison Bechdel"
   url: "https://www.powells.com/book/fun-home-9780618871711"

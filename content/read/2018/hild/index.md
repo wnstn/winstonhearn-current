@@ -2,7 +2,8 @@
 title: "Hild"
 date: 2019-01-23T08:59:47-05:00
 category: reading
-notes: ""
+categories:
+  - Fiction
 book:
   author: "Nicola Griffith"
   url: "https://us.macmillan.com/books/9781250056092"

@@ -2,7 +2,8 @@
 title: "Song of Solomon"
 date: 2019-06-07T17:29:08-05:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Toni Morrison"
   url: "https://www.penguinrandomhouse.com/books/117657/song-of-solomon-by-toni-morrison/9781400033423/"

@@ -2,7 +2,8 @@
 title: "Educated"
 date: 2019-04-20T13:44:32-04:00
 category: reading
-notes:
+categories:
+  - Cultural Analysis
 book:
   author: "Tara Westover"
   url: "https://www.penguinrandomhouse.com/books/550168/educated-by-tara-westover/9780399590504/"

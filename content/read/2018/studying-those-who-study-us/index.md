@@ -2,7 +2,8 @@
 title: "Studying Those Who Study Us"
 date: 2019-01-23T08:46:40-05:00
 category: reading
-notes: ""
+categories:
+  - Tech Industry
 book:
   author: "Diana Forsythe"
   url: "https://www.sup.org/books/title/?id=1342"

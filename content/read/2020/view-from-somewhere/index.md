@@ -3,6 +3,8 @@ title: "View From Somewhere"
 date: 2020-01-26T18:53:54-05:00
 category: reading
 notes: "a-different-journalism.md"
+categories:
+  - Cultural Analysis
 book:
   author: "Lewis Raven Wallace"
   url: "https://www.indiebound.org/book/9780226589176"

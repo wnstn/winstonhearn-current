@@ -2,7 +2,8 @@
 title: "She Would Be King"
 date: 2019-09-14T17:34:14-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Fiction
 book:
   author: "Wayétu Moore"
   url: "https://www.indiebound.org/book/9781555978174"

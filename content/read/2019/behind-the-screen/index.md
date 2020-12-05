@@ -2,7 +2,8 @@
 title: "Behind the Screen"
 date: 2019-09-23T20:44:49-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Tech Industry
 book:
   author: "Sarah T. Roberts"
   url: "https://www.indiebound.org/book/9780300235883"

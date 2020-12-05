@@ -2,6 +2,8 @@
 title: "Making Home"
 date: 2018-02-14T12:44:28-05:00
 category: reading
+categories:
+  - Climate Change
 notes: ""
 book:
   author: "Sharon Astyk"

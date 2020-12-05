@@ -2,7 +2,8 @@
 title: "The Color of Law"
 date: 2019-01-14T23:55:13-05:00
 category: reading
-notes: ""
+categories:
+  - Race
 book:
   author: "Richard Rothstein"
   url: "https://books.wwnorton.com/books/The-Color-of-Law/"

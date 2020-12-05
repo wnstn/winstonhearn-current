@@ -3,8 +3,8 @@ title: "Intersectional Internet"
 date: 2020-01-25T14:44:33-05:00
 category: reading
 categories:
-  - the Tech Industry
-  - Blackness
+  - Tech Industry
+  - Race
 book:
   author: "Noble & Tynes"
   url: "https://www.indiebound.org/book/9781433130007"

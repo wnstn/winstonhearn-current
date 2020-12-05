@@ -2,7 +2,8 @@
 title: "Black Box Society"
 date: 2019-11-01T13:07:38-04:00
 category: reading
-notes: "post-file-name"
+categories:
+  - Tech Industry
 book:
   author: "Frank Pasquale"
   url: "https://www.indiebound.org/book/9780674970847"

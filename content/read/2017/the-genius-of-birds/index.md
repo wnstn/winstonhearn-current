@@ -2,6 +2,9 @@
 title: "The Genius of Birds"
 date: 2018-02-14T12:44:59-05:00
 category: reading
+categories:
+  - Climate Change
+  - Cultural Analysis
 notes: ""
 book:
   author: "Jennifer Ackerman"
