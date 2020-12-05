@@ -3,7 +3,7 @@ title: "Technically Wrong"
 date: 2018-02-14T12:44:46-05:00
 category: reading
 categories:
-  - Disability Theory
+  - Tech Industry
 notes: ""
 book:
   author: "Sara Watcher-Boettcher"
