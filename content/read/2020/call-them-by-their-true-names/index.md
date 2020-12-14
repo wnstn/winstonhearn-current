@@ -9,7 +9,7 @@ categories:
 book:
   author: "Rebecca Solnit"
   url: "https://bookshop.org/books/call-them-by-their-true-names-american-crises-and-essays/9781608469468"
-  title: "Call The By Their True Names"
+  title: "Call Them By Their True Names"
   publisher: "Haymarket"
   publish_year: 2018
   year_read: 2020
