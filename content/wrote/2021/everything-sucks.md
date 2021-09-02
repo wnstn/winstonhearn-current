@@ -1,5 +1,5 @@
 ---
-title: "Today is not great"
+title: "Every Day Sucks More"
 date: 2021-09-02T09:21:36-04:00
 category: writing
 description: Everything sucks. Everyone with power wants to keep the power but is terrified to wield it, and so we wake up every morning with new horrors to process, new fears to add to the list, new furies to fuel our helpless rage.
