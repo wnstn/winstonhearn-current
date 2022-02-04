@@ -165,7 +165,7 @@ blockquote {
   margin: 0 auto 3rem;
   padding: 0;
   overflow: hidden;
-  background-color: $background;
+  // background-color: $background;
 
   @include dark-mode {
     background-color: invert($background);

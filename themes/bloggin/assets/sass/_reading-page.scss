@@ -9,8 +9,14 @@
 
 
   .reading-nav p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: .4em;
+    margin-left: 1em;
+    color: $text;
+
+    @include dark-mode {
+      color: invert($text);
+    }
   }
 
   .years {
@@ -18,7 +24,6 @@
     margin: 0;
     padding: 0;
     padding-bottom: .4em;
-    border-bottom: 1px solid rgba($purple, .5);
     display: flex;
     flex-wrap: wrap;
 
@@ -33,9 +38,13 @@
       font-size: 16px;
       
       @media screen and (min-width:768px) {
-        margin: 1em;
+        margin: .6em .8em;
       }
     }
+  }
+
+  .categories {
+    border-bottom: 1px solid rgba($purple, .5);
   }
 
 
