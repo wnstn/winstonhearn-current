@@ -6,12 +6,6 @@ notes: "post-file-name"
 highlights: false
 categories:
   - Climate Change
-  - Tech Industry
-  - Disability Theory
-  - Fiction
-  - Race
-  - Indigenous Issues
-  - Cultural Analysis
 book:
   author: "Jason W. Moore (editor)"
   url: "https://bookshop.org/books/anthropocene-or-capitalocene-nature-history-and-the-crisis-of-capitalism/9781629631486"
