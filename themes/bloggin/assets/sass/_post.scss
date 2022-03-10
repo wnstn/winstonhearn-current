@@ -144,6 +144,14 @@
 
     .inline-book {
       max-width: 30%;
+
+      p {
+        margin-bottom: .4em;
+      }
+
+      .image-wrapper {
+        height: auto;
+      }
     }
   }
 }
