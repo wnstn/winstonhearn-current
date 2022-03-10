@@ -2,7 +2,7 @@
 title: "Starting at the Root"
 date: 2022-02-28T17:49:07-05:00
 category: writing
-description: Bookworm Issue 01, 2022
+description: Bookworm Issue 02, 2022
 ---
 
 The land that we call the Amazon Rainforest was not geographically fated to be such a lush ecosystem. Underneath the forest canopy, down below the understory, humus, and roots there is a lot of shitty, sandy soil that’s best suited for desert or grasslands. When Brazilians burn the forest to create new pastureland for sugarcane and cattle farming they are destroying everything the forest has built up to continually produce a layer of rich humus that covers the shitty soil. Within a decade of farming on post-rainforest land, the humus is exhausted and “unproductive,” when left fallow the land becomes a savannah rather than returning to forest.
