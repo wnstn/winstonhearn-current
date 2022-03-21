@@ -127,6 +127,11 @@
       .book-title {
         margin-bottom: 8px;
       }
+
+      .book-publisher,
+      .book-category {
+        display: none;
+      }
     }
 
   @media screen and (min-width: 768px) {
@@ -144,6 +149,14 @@
 
     .inline-book {
       max-width: 30%;
+
+      p {
+        margin-bottom: .4em;
+      }
+
+      .image-wrapper {
+        height: auto;
+      }
     }
   }
 }
