@@ -1,4 +1,50 @@
 .recommended {
 
+  .recommendation-post {
+    width :100%;
+
+    @media screen and (min-width:768px) {
+      max-width: 45%;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1em;
+    }
+
+    .description {
+      font-size: 16px;
+      color: #444;
+    }
+  }
+
+  .book-covers {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $flourish;
+    border-radius: 3px;
+    margin-bottom: 1em;
+
+    .image-wrapper {
+      width: 30%;
+      margin: auto;
+
+      &:nth-child(odd) {
+        transform: rotate(2deg);
+      }
+
+      &:nth-child(even) {
+        transform: rotate(-2deg);
+      }
+
+      img {
+        max-width: 100%;
+        transform: scale(104%);
+        filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.5));
+      }
+    }
+  }
+
 }
 

@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Winston Hearn (the third)"
 description = "Winston Hearn's personal blogging website dedicated to reading and such."
 theme = "bloggin"
+enableGitInfo = true
+
 
 [params]
   description = "Winston Hearn's personal blogging website dedicated to reading and such."
@@ -11,3 +13,6 @@ theme = "bloggin"
 
 [blackfriday]
   extensions = ["hardLineBreak"]
+
+[frontmatter]
+lastmod = ["lastmod", ":git", "date", "publishDate"]

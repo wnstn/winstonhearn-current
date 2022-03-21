@@ -1,11 +1,13 @@
 <li class="recommendation-post">
   <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-  <time datetime="{{ dateFormat "2006-02-01" .Date }}"><em>{{ dateFormat "Jan 2, 2006" .Date }}</em></time>
+  {{ if .Description }}
+    <p class="description">{{ .Description }}</p>
+  {{ end }}
   <p></p>
   <div class="book-covers">
     {{ range .Params.CoverBooks }}
     {{ $book := where (where $.Site.Pages "Section" "read" ) "Title" . }}
-      {{ range $book }}
+      {{ range first 1 $book }}
         {{ .Scratch.Set "showImages" true }}
         {{ .Scratch.Set "showNotes" false }}
         {{ .Scratch.Set "showHighlights" false }}
@@ -19,7 +21,5 @@
       {{ end }}
     {{ end }}
   </div>
-    {{ if .Description }}
-      <p>{{ .Description }}</p>
-    {{ end }}
+  <time datetime="{{ dateFormat "2006-02-01" .Date }}"><em>Last updated {{ dateFormat "Jan 2, 2006" .Lastmod }}</em></time>
 </li>

@@ -2,14 +2,14 @@
 title: "Tech Industry Criticism"
 date: 2022-03-21T11:34:24-04:00
 category: recommended
-description: optional
+description: Books about technology and the tech industry in general, all with an eye towards critique and analysis.
 coverBooks: 
-  - "Black Box Society"
   - "The Real World of Technology"
+  - "Building Access"
+  - "Programmed Inequality"
+  - "Addiction by Design"
+  - "Algorithms of Oppression"
+  - "Behind the Screen"
 ---
 
-hello i have written a post.
-
-{{< book title="Finding the Mother Tree">}}
-
-hello there is more content.
+This list 
