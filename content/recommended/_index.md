@@ -1,6 +1,5 @@
 ---
 title: recommending
-bodyClass: 'recommended'
 layout: recommended
 ---
 

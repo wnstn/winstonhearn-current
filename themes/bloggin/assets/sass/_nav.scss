@@ -80,18 +80,31 @@
   ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 1em;
+    flex-flow: row wrap;
     margin-bottom: 1em;
+    background-color: #fff;
+    margin-left: -.6em;
+    margin-right: -.6em;
+    padding: .6em;
 
     li {
-      margin-left: 1.5em;
+      margin: auto;
+      margin-bottom: 1em;
+      flex: 1 auto;
     }
   }
 
   @media screen and (min-width: 600px) {
     ul {
       margin:0;
+      padding: 0;
+      justify-content: flex-end;
+      background-color: transparent;
+
+      li {
+        flex: auto;
+        margin: 0;
+      }
     }
   }
 
@@ -122,7 +135,7 @@
       width: 100%;
       display: block;
       position: absolute;
-      transform: rotate(-5deg);
+      transform: rotate(-3deg);
       transition: height .1s ease-out;
 
       @media screen and (min-width: 600px) {

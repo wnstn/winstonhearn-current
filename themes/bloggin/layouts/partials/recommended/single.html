@@ -4,7 +4,7 @@
     <p class="description">{{ .Description }}</p>
   {{ end }}
   <p></p>
-  <div class="book-covers">
+  <a href="{{ .Permalink }}" class="book-covers">
     {{ range .Params.CoverBooks }}
     {{ $book := where (where $.Site.Pages "Section" "read" ) "Title" . }}
       {{ range first 1 $book }}
@@ -20,6 +20,6 @@
         {{ end}}
       {{ end }}
     {{ end }}
-  </div>
-  <time datetime="{{ dateFormat "2006-02-01" .Date }}"><em>Last updated {{ dateFormat "Jan 2, 2006" .Lastmod }}</em></time>
+  </a>
+  <time datetime="{{ dateFormat "2006-02-01" .Date }}"><em>Last updated {{ dateFormat "January 2, 2006" .Lastmod }}</em></time>
 </li>

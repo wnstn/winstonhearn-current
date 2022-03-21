@@ -1,0 +1,19 @@
+{{ $book := where (where .Site.Pages "Section" "read" ) "Title" (.Get "title") }}
+{{ $layout := default "" (.Get "layout") }}
+<div class="book-rec {{ $layout }}">
+  {{ if $book }}
+    {{ range $book}}
+      <ul class="inline-book">
+        {{ .Scratch.Set "showImages" true }}
+        {{ partial "read/book.html" . }}
+      </ul>
+    {{ end }}
+  {{ end }}
+
+
+  <div class="description">
+    <p>{{.Inner | markdownify }}</p>
+  </div>
+
+</div>
+<hr />
