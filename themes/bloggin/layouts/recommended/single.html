@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="post-header">
+  <h2>{{ .Title }}</h2>
+</section>
+
+<article class="with-book">
+
+  {{ .Content }}
+
+</article>
+
+{{ partial "read/recent-books" . }}
+
+{{ end }}

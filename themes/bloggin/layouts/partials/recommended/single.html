@@ -1,0 +1,25 @@
+<li class="recommendation-post">
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <time datetime="{{ dateFormat "2006-02-01" .Date }}"><em>{{ dateFormat "Jan 2, 2006" .Date }}</em></time>
+  <p></p>
+  <div class="book-covers">
+    {{ range .Params.CoverBooks }}
+    {{ $book := where (where $.Site.Pages "Section" "read" ) "Title" . }}
+      {{ range $book }}
+        {{ .Scratch.Set "showImages" true }}
+        {{ .Scratch.Set "showNotes" false }}
+        {{ .Scratch.Set "showHighlights" false }}
+        {{ $img := (.Resources.GetMatch "cover") }}
+        {{ $img := $img.Resize "300x q80"}}
+        {{ if $img }}
+          <div class="image-wrapper">
+            <img loading="lazy" src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
+          </div>
+        {{ end}}
+      {{ end }}
+    {{ end }}
+  </div>
+    {{ if .Description }}
+      <p>{{ .Description }}</p>
+    {{ end }}
+</li>
