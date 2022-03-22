@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 <section class="recommendations">
-  <h2>Book Recs</h2>
-  <p>I'm occasionally asked for recs on a given topic, here's where I can keep track of books I've read and recommend on a given subject.</p>
+  <h2 class="small-header">Book Recs</h2>
+  <p>My most recommended books across various topics.</p>
   <ul>
     {{ range .Pages }}
       {{ partial "recommended/single.html" . }}

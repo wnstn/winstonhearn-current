@@ -12,31 +12,9 @@
     border-color: invert($background);
   }
 
-  h1 {
-    font-size: 34.5px;
-    margin-bottom: 3px;
-    flex: 1 1 100%;
-    z-index: 10;
-  }
-
-  .site-subtitle {
-    font-size: 20px;
-    color: $headers;
-    margin:0;
-    margin-bottom: 34px;
-    padding-left: 2em;
-    flex: 1 1 100%;
-    z-index: 10;
-
-    @include dark-mode {
-      color: invert($headers);
-    }
-  }
-
   .site-description {
     font-weight: 400;
-    font-size: 17px;
-    padding: 2em 1em 1em;
+    font-size: 16px;
     z-index: 10;
   }
 
@@ -48,28 +26,8 @@
       border-bottom: 20px solid invert($background);
     }
 
-    h1 {
-      font-size: 69px;
-      width: 100%;
-    }
-
     .site-description {
-      width: 60%
-    }
-  }
-
-  &.minimal {
-    height: auto;
-    margin: 2em 0;
-
-    .site-description {
-      display: none;
-    }
-
-    @media screen and (max-width:768px) {
-      &:after {
-        display: none;
-      }
+      width: 40%
     }
   }
 

@@ -4,28 +4,8 @@
 {{ $pages := .Site.GetPage "section" "read"}}
 
 <section id="reading">
-  <h2>All books I have logged</h2>
-
-  <div class="reading-nav">
-    <p>See other years or based on categories:</p>
-    <ul class="years">
-			{{ range $pages.Sections.ByTitle.Reverse }}
-      {{ $active := eq "All books" .Title }}
-      <li>
-        {{ if $active }}
-          <strong>{{ .Title }}</strong>
-        {{ else }}
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-				{{ end }}
-			</li>
-    {{ end }}
-    </ul>
-    <ul class="years">
-      {{ range .Site.Taxonomies.categories }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
-      {{ end }}
-    </ul>
-  </div>
+  <h2 class="small-header">All books I have logged</h2>
+  {{ partial "read/category-nav.html" . }}  
 
   {{ range $pages.Sections.ByTitle.Reverse }}
     {{ if eq .Title "All books"}}
@@ -44,26 +24,7 @@
     {{ end }}
   {{ end }}
 
-  <div class="reading-nav">
-    <p>See other years or based on categories:</p>
-    <ul class="years">
-			{{ range $pages.Sections.ByTitle.Reverse }}
-      {{ $active := eq "All books" .Title }}
-      <li>
-        {{ if $active }}
-          <strong>{{ .Title }}</strong>
-        {{ else }}
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-				{{ end }}
-			</li>
-    {{ end }}
-    </ul>
-    <ul class="years">
-      {{ range .Site.Taxonomies.categories }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
-      {{ end }}
-    </ul>
-  </div>
+  {{ partial "read/category-nav.html" . }}  
 </section>
 
 {{ end }}

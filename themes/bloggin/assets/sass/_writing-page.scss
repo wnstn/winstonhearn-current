@@ -9,7 +9,7 @@
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 2rem;
   }
 
   .post-link {
@@ -19,7 +19,7 @@
 
   @media screen and (min-width: 768px) {
     h3 {
-      font-size: 25px;
+      font-size: 2rem;
     }
 
     .post-link {
@@ -51,7 +51,7 @@
     }
 
     h3 {
-      font-size: 25px;
+      font-size: 2rem;
       line-height: 1.5
     }
 
@@ -105,7 +105,7 @@
     align-self: flex-start;
     flex: 1 100%;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     padding-right: 1em;
     position:relative;
 

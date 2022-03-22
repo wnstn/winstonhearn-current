@@ -1,22 +1,29 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body class="{{ .Type }} {{ .Params.BodyClass }}">
+    <div class="content">
+      {{- partial "header.html" . -}}
 
-{{ .Scratch.Set "bioMinimal" false }}
-{{- partial "bio.html" . -}}
+      <main id="page-content">
+        {{ .Scratch.Set "bioMinimal" false }}
+        {{- partial "bio.html" . -}}
 
-<section class="featured-recent">
-{{ .Scratch.Set "showNotes" true }}
-{{ .Scratch.Set "showImages" true }}
-{{- partial "read/last-12.html" . -}}
-</section>
-  
-<section class="writing-section featured-recent">
-    <h2>Recent writings</h2>
-    {{- partial "wrote/featured.html" . -}}
-  </section>
+        <section class="writing-section featured-recent">
+          <h2 class="small-header">Recent posts</h2>
+          {{- partial "wrote/featured.html" . -}}
+        </section>
 
-  {{- partial "newsletter.html" . -}}
+        <section class="featured-recent">
+        {{ .Scratch.Set "quantity" 8 }}
+        {{- partial "read/recent-books.html" . -}}
+        </section>
+          
+        {{- partial "shared/recent.html" . -}}
 
-  {{- partial "shared/recent.html" . -}}
-
-
-{{ end }}
+        {{- partial "newsletter.html" . -}}
+      </main>
+    </div>  
+    {{- partial "footer.html" . -}}
+  </body>
+</html>

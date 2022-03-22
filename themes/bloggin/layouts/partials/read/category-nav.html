@@ -1,0 +1,26 @@
+{{ $pages := .Site.GetPage "section" "read"}}
+{{ $current := .Title }}
+
+<div class="reading-nav">
+  <p>See other years or based on categories:</p>  
+
+  <ul class="years">
+    {{ range $pages.Sections.ByTitle.Reverse }}
+      {{ if eq $current .Title }}
+        <li class="active">{{ .Title }}</li>
+      {{ else }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+
+  <ul class="years">
+    {{ range .Site.Taxonomies.categories }}
+        {{ if eq $current .Page.Title }}
+          <li class="active">{{.Page.Title}}</li>
+        {{ else }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+    {{ end }}
+  </ul>
+</div>
