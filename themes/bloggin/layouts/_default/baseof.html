@@ -8,6 +8,7 @@
       <main id="page-content">
         {{- block "main" . }}{{- end }}
 
+        {{ .Scratch.Set "footer" true }}
         {{- partial "bio.html" . -}}
       </main>
     

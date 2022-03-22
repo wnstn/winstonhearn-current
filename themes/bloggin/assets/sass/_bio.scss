@@ -12,10 +12,17 @@
     border-color: invert($background);
   }
 
+  &.footer {
+    border: 1px dotted $flourish;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
   .site-description {
     font-weight: 400;
     font-size: 16px;
     z-index: 10;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width:768px) {

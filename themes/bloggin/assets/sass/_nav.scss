@@ -5,6 +5,7 @@
   justify-content: center;
   align-content: space-between;
   background: lighten($background, 5%);
+  border-bottom: 1px dotted $flourish;
 
   @include dark-mode {
     background: invert($background);

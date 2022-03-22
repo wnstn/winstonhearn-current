@@ -39,7 +39,6 @@
   .recommendation {
     position: relative;
     flex: 1 1 100%;
-    padding-left: 40px;
     margin-bottom: 2em;
 
     h3 {
@@ -59,17 +58,6 @@
       }
     }
 
-  }
-
-  .share-icon {
-    background: no-repeat url(/img/cassette.svg) 100% center;
-    background-size: 100%;
-    transform: rotate(-9deg);
-    fill: #fff;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 0;
   }
 
 }
