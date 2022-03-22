@@ -1,6 +1,7 @@
 ---
 title: recommending
 layout: recommended
+description: My most recommended books across various topics.
 ---
 
-I'm occasionally asked for recs on a given topic, here's where I can keep track of books I've read and recommend on a given subject.
+My most recommended books across various topics.
