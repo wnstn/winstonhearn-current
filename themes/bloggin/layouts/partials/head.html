@@ -1,4 +1,6 @@
 <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,8 +25,9 @@
   {{/*  false if building for production  */}}
   {{ if not (.Site.IsServer) }}
     {{ $style := $style | minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
+  {{ else }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
   {{ end }}
-
-  <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
 
 </head>
