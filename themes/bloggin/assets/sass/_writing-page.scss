@@ -113,22 +113,6 @@
       flex: 1 50%;
       padding-right: 3em;
     }
-
-
-    :after {
-      position: absolute;
-      bottom: 0;
-      left: -.5em;
-      width: 1em;
-      height: 1em;
-      border-left: 1px dotted $flourish;
-      border-bottom: 1px dotted $flourish;
-
-      @include dark-mode {
-        border-left: 1px dotted invert($flourish);
-        border-bottom: 1px dotted invert($flourish);
-      }
-    }
   }
 
   time {
