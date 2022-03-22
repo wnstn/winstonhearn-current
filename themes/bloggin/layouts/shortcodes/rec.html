@@ -2,7 +2,7 @@
 {{ $layout := default "" (.Get "layout") }}
 <div class="book-rec {{ $layout }}">
   {{ if $book }}
-    {{ range $book}}
+    {{ range first 1 $book}}
       <ul class="inline-book">
         {{ .Scratch.Set "showImages" true }}
         {{ partial "read/book.html" . }}

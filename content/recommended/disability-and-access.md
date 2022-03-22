@@ -33,3 +33,21 @@ This book, part of the Revisioning History series, re-examines the chapters of U
 A fantastic collection of first-person essays about disability. Disability intersects across all sorts of injustices; racism, sexism, ageism and more, and this collection explores the many contributor's experiences in the ways they desire to tell them. A great read for challenging your assumptions about disability and learning to better see ableism in its myriad forms.
 
 {{</rec>}}
+
+{{<rec title="Designing Disability" layout="flipped">}}
+
+Disability is a cultural construct, according to current perspectives in disability studies. With that lens, Elizabeth Guffey explores the history of how modern cultures have identified and shaped disability through technological adaptations and symbolism. A deeply researched history book that is in conversation with other books on this list to reveal how much remains towards building a just world.
+
+{{</rec>}}
+
+{{<rec title="Care Work">}}
+
+What better worlds can we dream? So many. Leah Lakshmi Piepzna-Samarasinha in this book explores some of those dreams, imagining a queer, crip, livable world that embraces the messiness of humans having needs as a way to create beauty and community where previously there has only been alienation and injustice. The book is challenging because Piepzna-Samarasinha is not interested in a utopia, they are interested in what is actually possible, no matter how much we act like it isn't.
+
+{{</rec>}}
+
+{{<rec title="Accessible America" layout="flipped">}}
+
+An engaging history of how disabled people in America have fought in the past century to get out of institutions that hid them away, and then fought again to make a world that acknowledged their abilities and needs. A fascinating book that details the disabled people who designed what they needed and reshaped parts of the world as their designs were recognized and appreciated. 
+
+{{</rec>}}
