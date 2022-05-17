@@ -1,0 +1,22 @@
+{
+  "name": "winstonhearn",
+  "version": "1.0.0",
+  "description": "personal blog",
+  "main": "./themes/bloggin/assets/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wnstn/winstonhearn-current.git"
+  },
+  "author": "me",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/wnstn/winstonhearn-current/issues"
+  },
+  "homepage": "https://github.com/wnstn/winstonhearn-current#readme",
+  "dependencies": {
+    "web-vitals": "^2.1.4"
+  }
+}
