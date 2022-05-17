@@ -30,4 +30,6 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
   {{ end }}
 
+  {{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
+
 </head>
