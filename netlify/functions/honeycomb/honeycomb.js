@@ -3,8 +3,8 @@ import Libhoney from 'libhoney';
 
 const hny = new Libhoney({
   apiHost: 'https://api.honeycomb.io',
-  writeKey: $HNY_API_KEY,
-  dataset: $HNY_DATASET,
+  writeKey: process.env.HNY_API_KEY,
+  dataset: process.env.HNY_DATASET,
 });
 
 function sendEvent(metric) {

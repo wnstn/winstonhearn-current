@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
   {{ end }}
 
-  {{ $vars := dict "api" (os.Getenv "HUGO_API") }}
+  {{ $vars := dict "api" .Site.Params.apiurl }}
   {{ $opts := dict "targetPath" "main.js" "params" $vars }}
   {{ $built := resources.Get "js/index.js" | js.Build $opts }}
   <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
