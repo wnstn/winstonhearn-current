@@ -1,5 +1,7 @@
 import {getCLS, getFID, getLCP} from 'web-vitals';
 
+let API_ENDPOINT = ''
+
 // Threshold to weed out insignificant Layout Shift events
 const CLS_THRESHOLD = .02;
 // Simple generic session ID that will help us query all events on a given session
@@ -35,7 +37,7 @@ function captureMetadata() {
 // Grab the url of every script on the page and determine if the script
 // is loaded asynchronously and deferred
 function captureScriptData() {
-  const inlineCounter = 0;
+  let inlineCounter = 0;
   const data = {}
   Array.prototype.forEach.call(document.scripts, (script) =>{
     let filename = `inlineScript${inlineCounter}`
@@ -179,7 +181,10 @@ async function send(metric) {
   console.log(response.json());
 }
 
-export default function () {
+export default function (api) {
+  if (!api) return false;
+  console.log('starting');
+  API_ENDPOINT = api;
   captureMetadata();
   getCLS(handleCLSEvent);
   getFID(reportScriptTiming);

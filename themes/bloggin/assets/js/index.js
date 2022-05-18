@@ -1,5 +1,6 @@
+import * as params from '@params';
 import observability from "./observability";
 
-observability();
+observability(params);
 
-console.log('helllooooo');
+console.log(params);

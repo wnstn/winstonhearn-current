@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
   {{ end }}
 
+  {{ $js := resources.Get "js/index.js" | js.Build (dict "params" (dict "api" (os.Getenv "HUGO_API"))) }}
+
   {{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+
 
 </head>
