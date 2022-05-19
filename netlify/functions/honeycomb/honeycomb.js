@@ -22,7 +22,7 @@ const handler = async function (req) {
     const evnt = hny.newEvent();
     evnt.add(metric);
     console.log(`sending ${metric.trace_id}`)
-    evnt.send();
+    evnt.sendNow();
     
     return {
       statusCode: 200
