@@ -17,7 +17,7 @@ const handler = async function (req) {
   const allowedList = ['FCP', 'LCP', 'CLS', 'FID', 'TTFB'];
 
   try {
-    if (allowedList.includes(metric.name)) {
+    if (allowedList.includes(metric.span_event)) {
       sendEvent(metric);
     }
 

@@ -1,25 +1,34 @@
-import {getCLS, getFID, getLCP} from 'web-vitals';
+import {getCLS, getFID, getLCP, getTTFB} from 'web-vitals';
 
 let API_ENDPOINT = ''
+function generateId() {
+  return Math.random().toString(36).substr(2, 20);
+};
 
 // Threshold to weed out insignificant Layout Shift events
 const CLS_THRESHOLD = .02;
 // Simple generic session ID that will help us query all events on a given session
-const sessionID =  '_' + Math.random().toString(36).substr(2, 9);
-
+if (!sessionStorage.getItem('HNY_TRACE')) {
+  sessionStorage.setItem('HNY_TRACE', `_${generateId()}`);
+}
+const trace_id = sessionStorage.getItem('HNY_TRACE')
+let parentSpan = null;
 let metadata = {};
+
+
 
 // This method is called on initial load and lets us capture all metadata
 // about the browser and device that might help us dig into patterns
 function captureMetadata() {
   metadata = {
+    name: 'web_performance',
     pathname: document.location.pathname, 
     // Pixel dimensions of the visible screen
     screenWidth: window.innerWidth,
     screenHeight: window.innerHeight,
     // Browser string
     browser: navigator.userAgent,
-    sessionID
+    trace_id
   }
 
   if (navigator.userAgentData) {
@@ -62,8 +71,6 @@ function captureScriptData() {
 
 // Get all available performance measures. Next creates before-hydration, hydration, by default.
 function getPerformanceMeasures() {
-  // this measure is not created by default but the marks are available
-  performance.measure('Next.js-render');
   const output = {};
   [...performance.getEntriesByType('measure')].forEach((measure) => {
     output[measure.name] = measure.duration;
@@ -74,7 +81,7 @@ function getPerformanceMeasures() {
 // Handler for First Input Delay
 function reportScriptTiming(metric) {
   const report = {
-    name: metric.name,
+    span_event: metric.name,
     fid_value: metric.value,
     fid_delta: metric.delta,
     scriptsOnPage: document.scripts.length,
@@ -130,7 +137,7 @@ function extractLargeShifts(entries) {
 // handler for Cumulative Layout Shift
 function handleCLSEvent(evt) {
   let report = {
-    name: evt.name,
+    span_event: evt.name,
     cls_delta: evt.delta,
     cls_value: evt.value,
     ...extractLargeShifts(evt.entries),
@@ -147,7 +154,7 @@ function handleCLSEvent(evt) {
 // Handler for Largest Contentful Paint
 function reportLCP(metric) {
   const report = {
-    name: metric.name,
+    span_event: metric.name,
     lcp_value: metric.value,
     lcp_delta: metric.delta,
     ...metadata
@@ -172,6 +179,12 @@ function reportLCP(metric) {
 
 
 async function send(metric) {
+  metric.span_id = generateId();
+  metric.timestamp = Date.now();
+  // first event should not have this field
+  if (parentSpan) {
+    metric.parent_id = parentSpan;
+  }
   const response = await fetch(`${API_ENDPOINT}`, {
     method: 'PUT',
     headers: {
@@ -179,6 +192,8 @@ async function send(metric) {
     },
     body: JSON.stringify(metric)
   });
+  // fake daisy chaining
+  parentSpan = metric.span_id;
 }
 
 export default function ({api}) {
@@ -188,4 +203,5 @@ export default function ({api}) {
   getCLS(handleCLSEvent);
   getFID(reportScriptTiming);
   getLCP(reportLCP);
+  getTTFB(reportScriptTiming);
 };
