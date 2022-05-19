@@ -1,14 +1,4 @@
-import Libhoney from 'libhoney';
-
-try {
-  console.log('tests', {
-    envApiKey: process.env.HNY_API_KEY,
-    envDataset: process.env.HNY_DATASET
-  });
-} catch (e) {
-  console.error(e);
-}
-
+const Libhoney = require('libhoney');
 
 const hny = new Libhoney({
   apiHost: 'https://api.honeycomb.io',
@@ -23,7 +13,7 @@ function sendEvent(metric) {
 }
 
 const handler = async function (req) {
-  const { metric } = req.body;
+  const metric  = JSON.parse(req.body);
   const allowedList = ['FCP', 'LCP', 'CLS', 'FID', 'TTFB'];
 
   try {
