@@ -1,4 +1,3 @@
-const fetch = require('node-fetch')
 import Libhoney from 'libhoney';
 
 try {
