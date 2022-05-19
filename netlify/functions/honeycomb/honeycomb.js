@@ -19,10 +19,8 @@ const handler = async function (req) {
         });
       },
     });
-    const evnt = hny.newEvent();
-    evnt.add(metric);
     console.log(`sending ${metric.trace_id}`)
-    evnt.sendNow();
+    hny.sendNow(metric);
     
     return {
       statusCode: 200
