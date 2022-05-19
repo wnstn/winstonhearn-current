@@ -25,6 +25,7 @@ const handler = async function (req) {
     ev.add(metric);
     ev.metadata = { trace: metric.trace_id, span: metric.span_id };
     ev.send();
+    hny.flush();
     
     return {
       statusCode: 200
