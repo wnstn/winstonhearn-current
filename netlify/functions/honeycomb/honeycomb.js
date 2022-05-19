@@ -19,8 +19,11 @@ const handler = async function (req) {
         });
       },
     });
-    console.log(`sending ${metric.trace_id}`)
-    hny.sendNow(metric);
+    console.log(`sending trace ${metric.trace_id} with span ${metric.span_id}`)
+    let ev = hny.newEvent();
+    ev.add(metric);
+    ev.metadata = { trace: metric.trace_id, span: metric.span_id };
+    ev.send();
     
     return {
       statusCode: 200
