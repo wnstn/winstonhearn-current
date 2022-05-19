@@ -2,9 +2,7 @@ import Libhoney from 'libhoney';
 
 try {
   console.log('tests', {
-    dollarApiKey: $HNY_API_KEY,
     envApiKey: process.env.HNY_API_KEY,
-    dollarDataset: $HNY_DATASET,
     envDataset: process.env.HNY_DATASET
   });
 } catch (e) {
