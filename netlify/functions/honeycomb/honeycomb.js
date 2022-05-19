@@ -13,12 +13,17 @@ const handler = async function (req) {
       apiHost: 'https://api.honeycomb.io',
       writeKey: process.env.HNY_API_KEY,
       dataset: process.env.HNY_DATASET,
+      responseCallback: responses => {
+        responses.forEach(resp => {
+          console.log(resp);
+        });
+      },
     });
     const evnt = hny.newEvent();
     evnt.add(metric);
     console.log(`sending ${metric.trace_id}`)
     evnt.send();
-
+    
     return {
       statusCode: 200
     }
