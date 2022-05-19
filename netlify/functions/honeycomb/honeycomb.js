@@ -1,6 +1,18 @@
 const fetch = require('node-fetch')
 import Libhoney from 'libhoney';
 
+try {
+  console.log('tests', {
+    dollarApiKey: $HNY_API_KEY,
+    envApiKey: process.env.HNY_API_KEY,
+    dollarDataset: $HNY_DATASET,
+    envDataset: process.env.HNY_DATASET
+  });
+} catch (e) {
+  console.error(e);
+}
+
+
 const hny = new Libhoney({
   apiHost: 'https://api.honeycomb.io',
   writeKey: process.env.HNY_API_KEY,

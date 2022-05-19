@@ -171,7 +171,7 @@ function reportLCP(metric) {
 
 
 async function send(metric) {
-  const response = await fetch(`${$NEXT_PUBLIC_ENDPOINT}`, {
+  const response = await fetch(`${API_ENDPOINT}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'
@@ -183,7 +183,7 @@ async function send(metric) {
 
 export default function (api) {
   if (!api) return false;
-  console.log('starting');
+  console.log('starting', api);
   API_ENDPOINT = api;
   captureMetadata();
   getCLS(handleCLSEvent);
