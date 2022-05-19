@@ -1,25 +1,23 @@
 const Libhoney = require('libhoney');
-
-const hny = new Libhoney({
-  apiHost: 'https://api.honeycomb.io',
-  writeKey: process.env.HNY_API_KEY,
-  dataset: process.env.HNY_DATASET,
-});
-
-function sendEvent(metric) {
-  const evnt = hny.newEvent();
-  evnt.add(metric);
-  evnt.send();
-}
+const allowedList = ['FCP', 'LCP', 'CLS', 'FID', 'TTFB', 'root'];
 
 const handler = async function (req) {
   const metric  = JSON.parse(req.body);
-  const allowedList = ['FCP', 'LCP', 'CLS', 'FID', 'TTFB', 'root'];
 
   try {
-    if (allowedList.includes(metric.span_event)) {
-      sendEvent(metric);
+    if (!allowedList.includes(metric.span_event)) {
+      return false;
     }
+
+    const hny = new Libhoney({
+      apiHost: 'https://api.honeycomb.io',
+      writeKey: process.env.HNY_API_KEY,
+      dataset: process.env.HNY_DATASET,
+    });
+    const evnt = hny.newEvent();
+    evnt.add(metric);
+    console.log(`sending ${metric.span_event}`)
+    evnt.send();
 
     return {
       statusCode: 200
