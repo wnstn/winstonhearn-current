@@ -1,6 +1,17 @@
 const Libhoney = require('libhoney');
 const allowedList = ['FCP', 'LCP', 'CLS', 'FID', 'TTFB', 'root'];
 
+const hny = new Libhoney({
+  apiHost: 'https://api.honeycomb.io',
+  writeKey: process.env.HNY_API_KEY,
+  dataset: process.env.HNY_DATASET,
+  responseCallback: responses => {
+    responses.forEach(resp => {
+      console.log(resp);
+    });
+  },
+});
+
 const handler = async function (req) {
   const metric  = JSON.parse(req.body);
 
@@ -8,17 +19,7 @@ const handler = async function (req) {
     if (!allowedList.includes(metric.span_event)) {
       return false;
     }
-
-    const hny = new Libhoney({
-      apiHost: 'https://api.honeycomb.io',
-      writeKey: process.env.HNY_API_KEY,
-      dataset: process.env.HNY_DATASET,
-      responseCallback: responses => {
-        responses.forEach(resp => {
-          console.log(resp);
-        });
-      },
-    });
+ 
     console.log(`sending trace ${metric.trace_id} with span ${metric.span_id}`)
     let ev = hny.newEvent();
     ev.add(metric);
