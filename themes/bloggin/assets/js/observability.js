@@ -7,15 +7,9 @@ function generateId() {
 
 // Threshold to weed out insignificant Layout Shift events
 const CLS_THRESHOLD = .02;
-// Simple generic session ID that will help us query all events on a given session
-if (!sessionStorage.getItem('HNY_TRACE')) {
-  sessionStorage.setItem('HNY_TRACE', `_${generateId()}`);
-}
-const trace_id = sessionStorage.getItem('HNY_TRACE')
 let parentSpan = null;
 let metadata = {};
-
-
+let trace_id;
 
 // This method is called on initial load and lets us capture all metadata
 // about the browser and device that might help us dig into patterns
@@ -27,8 +21,7 @@ function captureMetadata() {
     screenWidth: window.innerWidth,
     screenHeight: window.innerHeight,
     // Browser string
-    browser: navigator.userAgent,
-    trace_id
+    browser: navigator.userAgent
   }
 
   if (navigator.userAgentData) {
@@ -87,7 +80,8 @@ function reportScriptTiming(metric) {
     scriptsOnPage: document.scripts.length,
     scripts: captureScriptData(),
     ...getPerformanceMeasures(),
-    ...metadata
+    ...metadata,
+    trace_id
   }
   send(report);
 }
@@ -141,7 +135,8 @@ function handleCLSEvent(evt) {
     cls_delta: evt.delta,
     cls_value: evt.value,
     ...extractLargeShifts(evt.entries),
-    ...metadata
+    ...metadata,
+    trace_id
   };
 
   send(report);
@@ -157,7 +152,8 @@ function reportLCP(metric) {
     span_event: metric.name,
     lcp_value: metric.value,
     lcp_delta: metric.delta,
-    ...metadata
+    ...metadata,
+    trace_id
   };
 
   // Google claims only the last element in the array is worth reporting
@@ -177,6 +173,21 @@ function reportLCP(metric) {
   send(report);
 }
 
+function sendRootSpan() {
+  captureMetadata();
+  // Simple generic session ID that will help us query all events on a given session
+  if (!sessionStorage.getItem('HNY_TRACE')) {
+    sessionStorage.setItem('HNY_TRACE', `_${generateId()}`);
+    trace_id = sessionStorage.getItem('HNY_TRACE')
+    send({
+      span_event: 'root',
+      ...metadata,
+      trace_id
+    })
+  } else {
+    trace_id = sessionStorage.getItem('HNY_TRACE')
+  }
+}
 
 async function send(metric) {
   metric.span_id = generateId();
@@ -199,7 +210,7 @@ async function send(metric) {
 export default function ({api}) {
   if (!api) return false;
   API_ENDPOINT = `${window.location.origin}${api}`;
-  captureMetadata();
+  sendRootSpan();
   getCLS(handleCLSEvent);
   getFID(reportScriptTiming);
   getLCP(reportLCP);

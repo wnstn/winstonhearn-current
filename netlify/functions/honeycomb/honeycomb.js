@@ -14,10 +14,9 @@ function sendEvent(metric) {
 
 const handler = async function (req) {
   const metric  = JSON.parse(req.body);
-  const allowedList = ['FCP', 'LCP', 'CLS', 'FID', 'TTFB'];
+  const allowedList = ['FCP', 'LCP', 'CLS', 'FID', 'TTFB', 'root'];
 
   try {
-    console.log(metric.span_event);
     if (allowedList.includes(metric.span_event)) {
       sendEvent(metric);
     }
