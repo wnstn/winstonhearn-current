@@ -71,6 +71,18 @@ function getPerformanceMeasures() {
   return output;
 }
 
+// Handler for TTFB
+function reportInitialTiming(metric) {
+  const report = {
+    span_event: metric.name,
+    ttfb_value: metric.value,
+    ttfb_delta: metric.delta,
+    ...metadata,
+    trace_id
+  }
+  send(report);
+}
+
 // Handler for First Input Delay
 function reportScriptTiming(metric) {
   const report = {
@@ -214,5 +226,5 @@ export default function ({api}) {
   getCLS(handleCLSEvent);
   getFID(reportScriptTiming);
   getLCP(reportLCP);
-  getTTFB(reportScriptTiming);
+  getTTFB(reportInitialTiming);
 };
