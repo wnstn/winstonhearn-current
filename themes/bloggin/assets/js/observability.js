@@ -182,10 +182,11 @@ async function send(metric) {
   console.log(response.json());
 }
 
-export default function (api) {
+export default function ({api}) {
   if (!api) return false;
   console.log('starting', api);
   API_ENDPOINT = `${window.location.origin}${api}`;
+  console.log(API_ENDPOINT);
   captureMetadata();
   getCLS(handleCLSEvent);
   getFID(reportScriptTiming);
