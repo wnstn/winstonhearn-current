@@ -173,14 +173,14 @@ function reportLCP(metric) {
 
   // outputs element type and classlist as a string
   if (lcp.element) {
-    report.elementSelector = `${lcp.element.localName}.${[...lcp.element.classList].join('.')}`;  
+    report.lcp_elementSelector = `${lcp.element.localName}.${[...lcp.element.classList].join('.')}`;  
   }
   // Computed pixel size of the largest content
-  report.sizeInPixels = lcp.size;
+  report.lcp_sizeInPixels = lcp.size;
   // url if the largest content is media
-  report.url = lcp.url;
+  report.lcp_url = lcp.url;
   // time it took the browser to load the element
-  report.loadTimeMS = lcp.loadTime
+  report.lcp_loadTimeMS = lcp.loadTime
 
   send(report);
 }

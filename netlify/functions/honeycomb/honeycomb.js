@@ -20,7 +20,6 @@ const handler = async function (req) {
       return false;
     }
  
-    console.log(`sending trace ${metric.trace_id} with span ${metric.span_id}`)
     let ev = hny.newEvent();
     ev.add(metric);
     ev.metadata = { trace: metric.trace_id, span: metric.span_id };
@@ -32,7 +31,6 @@ const handler = async function (req) {
     }
   } catch (error) {
     // output to netlify function log
-    console.log(error)
     return {
       statusCode: 500,
       // Could be a custom message or object i.e. JSON.stringify(err)
