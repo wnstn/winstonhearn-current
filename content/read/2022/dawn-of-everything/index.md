@@ -5,12 +5,6 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - Climate Change
-  - Tech Industry
-  - Disability Theory
-  - Fiction
-  - Race
-  - Indigenous Issues
   - Cultural Analysis
 book:
   author: "David Graeber, David Wengrow"
