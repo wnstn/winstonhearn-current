@@ -38,28 +38,26 @@ Kuang's book, in this regard, fits in well within the field of design books. Peo
 
 In Kuang's framing, the brilliant designers he highlights have found creative solutions that help us navigate complexity, design better for real humans, and overall create a more personalized and user-friendly world. Somehow, unfortunately, that world is a dystopia that seems to be getting worse? But the designers had good intentions and were solving real problems so they cannot be at fault. At the end of the book, one is left wondering if there's any way of solving real problems without creating a dystopia? Or if, since we recognize this world as sucking so much, and full of trends that suggest the suck will continue, we have any hope of a different world? 
 
-This framing
+This framing comes out most clearly in the chapter focused on Facebook, which goes from the invention of the Like button to the above critiques about hiding complexity, with no clear takeaway for a reader of any audience. This is because the book scopes it's purview to "Design," which means Kuang refuses to engage with context. The book covers designers who work for companies ranging from Disney, Microsoft, Facebook, and Apple as well as governments and design consultancy firms like IDEO and Frog Design. Designers who work for these corporations can impact millions to billions of humans, and all are doing so in service of products designed to generate profits. And yet Kuang does not explore scale, power, or capitalism in the book aside from occasional inconsequential mentions. This is a massive failure for any audience, whether you are a designer reading to understand the history you are working in, or a non-designer curious about why the world works the way it does. 
 
+In failing to deal with the system of capitalism that designers operate within, Kuang misses the obvious reasons that design intentions often fail to be actualized in the real world. He recognizes that user-friendly design only sees human users as consumers. He is unable to connect that recognition to the system of profit-driven capitalism that designers operate within, and how that system requires all products to generate profits, which by nature removes the opportunity to design more humane solutions to real problems, solutions that would increase agency and give humans the option to make other decisions. Futhermore, because this system lens is unavailable to Kuang, he does not question the power that designers to impact the lives and choices of so many humans today. In the world of _User Friendly_, this is simply how the world is, and designers are doing the best they can.
 
+As he winds down the book, Kuang writes:
 
+> It is Pollyannaish to think that design will solve the world's problems. But it is self-evident that the methods of design will play a role in helping us understand, accept, and then make use of whatever solutions we're able to create.
 
+I will interject to note that at no point has this book made the case that it's "self-evident" that methods of design will play a role, instead the book has made the case that people with a lot of power and profit-incentives are convinced that the methods of design are helpful for their goals. Anyways, he continues.
 
+> The paradox of design in the twenty-first century will be the same one we face in society. A hundred years of exploding consumer choice have pulled us apart, blinding us to the costs of what we consume, in the name of making that consumption easier. The problem now is how to design for individual happiness while aiming us all toward higher ends that we can't accomplish on our own. We can no longer assume that a better world will come merely as a by-product of making more people comfortable. Whether the problem is climate change or fake news, design must now help us make decisions based not just on what's easy to use, but on what we should be using in the first place.
 
+If I were to rephrase, his conclusion is that "designers have created a really shitty world based on their insightful and creative worlds. It's clearly not working, but good news, we have design-methodology to help us figure out how to improve the world, just as soon as we figure out what exactly isn't going well." This is an infuriating conclusion for a book that explores a genuinely interesting history that raises a lot of worthwhile questions. Unfortunately, it is an exercise left to the reader to try and determine what other worlds we might be making.
 
+----
 
+I hope that my review prevents you from cracking open this book, but in the spirit of not being hypocritical, I do not want to raise a bunch of questions for you without pointing you towards resources that might help answer them. If you are curious about the impacts that technology has on the world, and how we might think beyond the world that has been designed by people with a lot of power and a lot of demands to generate profits. 
 
+{{< book title="Road to Nowhere" float="left">}}
 
+First, forever and always the first book I recommend is [_The Real World of Technology_](https://bookshop.org/p/books/the-real-world-of-technology-ursula-franklin/9995479?ean=9780887846366) by Ursula Franklin. This short book of essays is one of the most insightful works ever published about how humans and technology interact, and how one might go about thinking critically about the design of technology (which, in Franklin's framing, is a very wide field beyond just digital tech).
 
-
-
-The thesis of the book seems to be look at all these smart people who have helped build the world that we live in! It's strange how the world sucks, but the designers didn't intend that, so oh well!
-
-Designers have _so much power_ to shape the world, but they are always ignoring the systems they operate within. Capitalism and power! These things exist. they cannot be scoped out of design.
-
-Here is where it's helpful to use a framing definition. I always return to Ursula Franklin's definition of technology because it's so systemic, and User Friendly is far and away focused on designing new technology.
-
-With Franklin's framing, we can think about how "designing a solution" invites new ways of doing things, and designers can be responsible for thinking through the implications of how their designs will impact the world.
-
-Furthermore, we can evaluate designs in a range of ways, we do not need the history of design to be a "just-so" story about how the world came to be, where we try to credit the most influential people. We can learn from the gap between what they thought they were doing and what they actually did, and hold them to account while also building tools to help designers improve.
-
-In this book's framing, people are just gonna keep designing, and we'll keep figuring out if the world is improving or not. We are all subjects to forces that are unnameable and unchangeable, so we just will keep hoping that the next big design solution will actually improve things.
+The other book is a recent book by Paris Marx called _Road To Nowhere: What Silicon Valley gets Wrong about the Future of Transportation_. Marx insightfully examines the ways that self-driving cars have been promoted in the past couple decades, then comprehensively explores the systems and histories that prove their promoters are making promises they can't keep while attempting to solve the wrong problems. The book is an excellent history of America's automobile-centric policies, as well as a well-argued proposal for larger ideas that grapple with real problems beyond the ones that self-driving cars could theoretically solve. Marx is well aware of how capitalism and power interact in the real world, and how much harm is created when those systems build the world without regulation or resistance. 
