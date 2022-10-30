@@ -1,5 +1,5 @@
 ---
-title: "User Friendly Capitalism"
+title: "Design without Designers"
 date: 2022-10-30T09:07:49-04:00
 category: writing
 description: A review of _User Friendly_, a book about the history of user-friendly design that is too afraid of challenging existing myths to actually pursue the interesting questions it raises.
