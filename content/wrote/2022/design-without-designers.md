@@ -1,6 +1,6 @@
 ---
 title: "Design without Designers"
-date: 2022-10-30T09:07:49-04:00
+date: 2022-10-31T09:07:49-04:00
 category: writing
 description: A review of "User Friendly", a book about the history of user-friendly design that is too afraid of challenging existing myths to actually pursue the interesting questions it raises.
 linked_book: "User Friendly"
