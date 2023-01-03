@@ -1,7 +1,6 @@
 ---
 title: "Shopping My Shelves"
 date: 2023-01-03T13:19:23-05:00
-draft: true
 category: writing
 description: optional
 linked_book: "Pleasure Activism"
