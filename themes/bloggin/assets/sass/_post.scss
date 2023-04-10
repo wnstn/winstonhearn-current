@@ -90,6 +90,10 @@
       margin-left: 1em;
     }
 
+    img {
+      max-width: 100%;
+    }
+
     li {
       margin-bottom: .69em;
       font-size: 15px;
@@ -123,6 +127,7 @@
 
       img {
         margin-bottom: 8px;
+        max-width: 100%;
       }
 
       .book-title {
