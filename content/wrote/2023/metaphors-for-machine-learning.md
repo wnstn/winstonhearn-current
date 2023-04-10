@@ -1,7 +1,6 @@
 ---
 title: "Metaphors for Machine Learning"
 date: 2023-04-09T11:20:21-04:00
-draft: true
 category: writing
 description: "Interacting with ML tools can feel like magic. People with no illustration skills can suddenly have a computer generate images they want just by describing them. Writing large amounts of content is as simple as providing a sentence or two of instructions. But I can't stop wrestling with the question: how will individuals make sense of these new tools, which are powerful in science-fiction ways, but inaccurate in very confusing ways?" 
 linked_book: "Metaphors We Live By"
