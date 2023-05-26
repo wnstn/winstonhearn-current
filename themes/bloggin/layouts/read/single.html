@@ -4,7 +4,12 @@
   <h2>{{ .Title }}</h2>
 </section>
 
-<article class="without-book reading-highlights">
+<article class="with-book reading-highlights">
+  
+  <ul class="post-book">
+      {{ .Scratch.Set "showImages" true }}
+      {{ partial "read/book.html" . }}
+  </ul>
 
   {{ .Content }}
 
