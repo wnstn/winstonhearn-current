@@ -96,6 +96,24 @@
       max-width: 100%;
     }
 
+    figure {
+      margin: 0 auto;
+      padding: 0 10%;
+      position: relative;
+
+      &:after {
+        content: "";
+        border: 1px solid $purple;
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        left: 10%;
+        top: -2px;
+        z-index: -1;
+        transform: rotate(-2deg);
+      }
+    }
+
     li {
       margin-bottom: .69em;
       font-size: 15px;
