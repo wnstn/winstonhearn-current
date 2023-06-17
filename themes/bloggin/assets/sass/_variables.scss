@@ -1,14 +1,33 @@
-$background: #FBF3E3;
-$purple: #a287fb;
-$light-purple: #eae4fe;
+$background: #FFF;
+$purple: #000;
+$light-purple: #000;
 $text: #333;
-$links: #38689D;
-$flourish: #48305a;
-$headers: #533e7b;
-$accent: #DBD7EF;
+$links: #1A5F7A;
+$flourish: #FF8DC7;
+$headers: #002B5B;
+$accent: #57C5B6;
+
+// $background: #FFF;
+// $purple: #a287fb;
+// $light-purple: #eae4fe;
+// $text: #002B5B;
+// $links: #159895;
+// $flourish: #1A5F7A;
+// $headers: #57C5B6;
+// $accent: #DBD7EF;
 
 @mixin dark-mode {
   @media (prefers-color-scheme: dark) {
     @content
   }
 }
+
+
+// $background: #FFF;
+// $purple: #a287fb;
+// $light-purple: #eae4fe;
+// $text: #333;
+// $links: #38689D;
+// $flourish: #48305a;
+// $headers: #533e7b;
+// $accent: #DBD7EF;

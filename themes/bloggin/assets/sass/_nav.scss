@@ -28,15 +28,16 @@
     position: relative;
     padding-right: 10px;
     color: $links;
+    line-height:1;
 
     @include dark-mode {
       color: invert($links);
     }
 
-    a {
-      font-family: 'Nanum Gothic', sans-serif;
-      font-weight: 700;
-    }
+    // a {
+    //   font-family: 'Nanum Myeongjo', serif;
+    //   font-weight: 700;
+    // }
 
     a:link,
     a:visited {
@@ -68,14 +69,14 @@
   }
 
   .site-subtitle {
-    font-size: 22px;
+    font-size: 25px;
     width: 100%;
     display: block;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: -10px;
+    margin-left: 2em;
     margin-bottom: 2rem;
-    color: lighten($flourish, 35%);
-    font-style: italic;
+    color: $headers;
+    opacity: .5;
   }
 
   ul {
