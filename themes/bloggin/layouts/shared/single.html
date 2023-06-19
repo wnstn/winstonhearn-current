@@ -3,10 +3,10 @@
   <h2>{{ .Title }}</h2>
 </section>
 
-<article class="without-book">
+<article class="without-book sharing-excerpts">
 
   {{ if isset .Params "share" }}
-    <h3><a href="{{ .Params.share.url }}">Highlights from {{ .Params.share.name }}{{ if .Params.share.author }}, by {{ .Params.share.author }} {{end }}</a></h3>
+    <h3>Highlights from <a href="{{ .Params.share.url }}">{{ .Params.share.name }}{{ if .Params.share.author }}, by {{ .Params.share.author }} {{end }}</a></h3>
     <hr />
     <br/>
     <br/>
