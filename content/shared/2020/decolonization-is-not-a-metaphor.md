@@ -7,4 +7,4 @@ share:
   url: "https://www.researchgate.net/publication/277992187_Decolonization_Is_Not_a_Metaphor"
 ---
 
-> Decolonization brings about the repatriation of Indigenous land and life; it is not a metaphor for other things we want to do to improve our societies and schools.
+Decolonization brings about the repatriation of Indigenous land and life; it is not a metaphor for other things we want to do to improve our societies and schools.
