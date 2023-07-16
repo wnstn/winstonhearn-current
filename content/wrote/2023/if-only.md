@@ -24,10 +24,10 @@ again, so fun to imagine, but shit, they have the power.
 
 they have the power and that's why i don't have time to take care of my loved ones. they have the power and that's why i can't spend a lazy day swimming in the river with those i love the most. the water is poisoned, toxic. because they have the power.
 
-even if i wanted to make a garden, i shouldn't, because their parents had power and they were so excited about getting rich on technology they forgot to check if the technology poisons the soil for generations. it does, later we learned that, but they had the power and could do whatever they want, and so i shouldn't make a garden.
+even if i wanted to make a garden, i shouldn't, because their parents had power and they were so excited about getting rich on technology they forgot to check if the technology poisons the soil for generations. it does–later we learned that–but they had the power and could do whatever they want, and so i shouldn't make a garden.
 
-they have the power and I have to pay rent which means i can't go help a friend repair their home. i'd love to, nothing makes me happier than laboring to support my friends, but my friend is in the same shit i'm in. they have the power and we need their money to pay our rent. teh house can wait, i guess.
+they have the power and I have to pay rent which means i can't go help a friend repair their home. i'd love to, nothing makes me happier than laboring to support my friends, but my friend is in the same shit i'm in. they have the power and we need their money to pay our rent. the house can wait, i guess.
 
 but it is fun to imagine they didn't have the power.
 
-if only we weren't the vast majority. if only we also had some power. if only our dreams were realistic, and not so impossible. 
+if only we weren't the majority of humanity. if only we also had some power. if only our dreams were realistic, and not so impossible. if only.
