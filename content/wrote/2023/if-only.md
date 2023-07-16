@@ -1,7 +1,6 @@
 ---
 title: "If Only"
 date: 2023-07-16T19:23:09-04:00
-draft: true
 category: writing
 description: it's nice to know that the dream exists, you know? i sure would love if it were reality, but i'm a realist, I've learned not to hope too much, to assume that imagination can become reality. so i just dream about it, as a distraction. i will still do whatever is necessary to buy food. that's how it works right?
 
