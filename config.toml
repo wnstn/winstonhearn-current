@@ -8,12 +8,13 @@ apiurl = ""
 
 
 [params]
-  description = "Winston Hearn's personal blogging website dedicated to reading and such."
+  description = "winston hearn's personal blog"
   images = ["share.png"]
-  title = "Winston Hearn (the Third)"
+  title = "winston hearn"
+  hny = ""
 
 [blackfriday]
   extensions = ["hardLineBreak"]
 
 [frontmatter]
-lastmod = ["lastmod", ":git", "date", "publishDate"]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
