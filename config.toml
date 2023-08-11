@@ -5,6 +5,7 @@ description = "Winston Hearn's personal blogging website dedicated to reading an
 theme = "bloggin"
 enableGitInfo = true
 apiurl = ""
+enableRobotsTXT = true
 
 
 [params]
