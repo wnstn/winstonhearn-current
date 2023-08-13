@@ -1,4 +1,17 @@
 export const DocumentLoadSpans = (span) => {
+  try {
+    if (!!window.location.search) {
+      const params = new URLSearchParams(window.location.search)
+      for (const param in params) {
+        if (Object.hasOwnProperty.call(params, param)) {
+          span.setAttribute(`param.${param}`, params[param]);
+        }
+      }
+    }
+  } catch(e) {
+    span.recordException(e)
+  }
+
   span.setAttributes({
     'document.title':document.title,
     'document.is_secure': window.isSecureContext,
@@ -6,6 +19,7 @@ export const DocumentLoadSpans = (span) => {
     'document.script_count': document.scripts.length,
     'document.stylesheet.count': document.styleSheets,
     'document.visibility': document.visibilityState,
+    'referer': window.referer,
   });
 };
 
