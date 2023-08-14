@@ -1,6 +1,7 @@
 export const DocumentLoadSpans = (span) => {
   try {
     if (!!window.location.search) {
+      span.setAttribute('url_params', window.location.search);
       const urlParams = new URLSearchParams(window.location.search)
       const params = Object.fromEntries(urlParams);
 
