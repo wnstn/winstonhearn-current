@@ -1,14 +1,17 @@
 export const DocumentLoadSpans = (span) => {
   try {
     if (!!window.location.search) {
-      const params = new URLSearchParams(window.location.search)
+      const urlParams = new URLSearchParams(window.location.search)
+      const params = Object.fromEntries(urlParams);
+
       for (const param in params) {
-        if (Object.hasOwnProperty.call(params, param)) {
+        if (params.hasOwnProperty(param)) {
           span.setAttribute(`param.${param}`, params[param]);
         }
       }
     }
   } catch(e) {
+    console.log(e);
     span.recordException(e)
   }
 
