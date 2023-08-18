@@ -23,7 +23,7 @@ export const DocumentLoadSpans = (span) => {
     'document.script_count': document.scripts.length,
     'document.stylesheet.count': document.styleSheets,
     'document.visibility': document.visibilityState,
-    'referer': window.referer,
+    'referer': document.referer,
   });
 };
 
