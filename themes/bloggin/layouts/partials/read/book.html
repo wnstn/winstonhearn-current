@@ -4,7 +4,6 @@
 
 <li class="book {{ cond $showImages "with-image" ""}}">
 
-
   {{ if $showImages }}
     {{ $img := (.Resources.GetMatch "cover") }}
     {{ $img := $img.Resize "500x q90"}}

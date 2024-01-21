@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+{{ $pages := .Pages }}
+{{ $headline := printf "What I read in %s" .Title }}
+
+{{/*  this is the main reading section page  */}}
+{{ if eq .Title "reading" }}
+  {{ $headline = "What I've been reading" }}
+  {{ $pages = where .RegularPagesRecursive "Title" (now.Format "2006") }}
+{{ end }}
+{{/*  end business logic  */}}
+
+<section id="reading">
+  <h2 class="small-header">{{$headline}}</h2>
+  
+  {{/*  {{ .Scratch.Set "showTaxonomies" true }}
+  {{ partial "read/category-nav.html" $pages }}    */}}
+
+  <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
+
+  {{ $showImages := true }}
+
+  <ul>
+    {{ range $pages }}
+    {{ .Scratch.Set "showImages" $showImages }}
+    {{ .Scratch.Set "showNotes" true }}
+    {{ .Scratch.Set "showHighlights" (isset .Params "highlights") }}
+    <pre>{{ print . }}</pre>
+    {{/* partial "read/book.html" . */}}
+    {{ end }}
+  </ul>
+
+  {{/*  {{ if gt .Pages.Len 10 }}
+    {{ .Scratch.Set "showTaxonomies" true }}
+    {{ partial "read/category-nav.html" .Pages }}  
+  {{ end }}  */}}
+</section>
+
+{{ end }}
