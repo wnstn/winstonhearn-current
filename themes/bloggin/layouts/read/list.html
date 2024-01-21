@@ -6,25 +6,8 @@
 <section id="reading">
   <h2 class="small-header">What I've been reading</h2>
 
-  <div class="reading-nav">
-  <p>See other years or based on categories:</p>
-  <ul class="years">
-  {{ range $pages.Sections.ByTitle.Reverse }}
-    {{ $active := eq (now.Format "2006") .Title }}
-    <li>
-      {{ if $active }}
-        {{ .Title }}
-      {{ else }}
-        <a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-  {{ end }}
-  </ul>
-  <ul class="years categories">
-    {{ range .Site.Taxonomies.categories }}
-      <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
-    {{ end }}
-  </ul>
-  </div>
+  {{ .Scratch.Set "showTaxonomies" true }}
+  {{ partial "read/category-nav.html" . }}  
 
   {{ range where $pages.Sections "Title" (now.Format "2006") }}
 

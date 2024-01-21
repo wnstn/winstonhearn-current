@@ -5,7 +5,8 @@
 <section id="reading">
   <h2 class="small-header">What I read in {{ .Title }}</h2>
   
-  {{ partial "read/category-nav.html" . }}  
+  {{ .Scratch.Set "showTaxonomies" true }}
+  {{ partial "read/category-nav.html" $pages }}  
 
   <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
 

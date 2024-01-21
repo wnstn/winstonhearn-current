@@ -3,6 +3,13 @@
   z-index: 10;
   margin-bottom: 3rem;
 
+  .archive-title {
+    display: flex;
+    flex: 1 1 100%;
+    margin-bottom: 1em;
+    border-bottom: 1px dotted $flourish;
+  }
+
   > ul {
     display: flex;
     flex-wrap: wrap;
@@ -91,31 +98,35 @@
 
 }
 
-.writing-archives .writing-section {
-  flex-wrap: wrap;
-  ul {
+.writing-archives {
+  .writing-section {
+    flex-wrap: wrap;
+  }
+  
+  .post-previews {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-  }
 
-  li{
-    display: flex;
-    align-self: flex-start;
-    flex: 1 100%;
-    flex-wrap: wrap;
-    margin-bottom: 4em;
-    padding-right: 1em;
-    position:relative;
+    li {
+      display: flex;
+      align-self: flex-start;
+      flex: 1 100%;
+      flex-wrap: wrap;
+      margin-bottom: 4em;
+      padding-right: 1em;
+      position:relative;
 
-    @media screen and (min-width:768px) {
-      flex: 1 50%;
-      padding-right: 3em;
+      @media screen and (min-width:768px) {
+        flex: 1 50%;
+        padding-right: 3em;
+      }
     }
   }
 
   time {
     flex: 1 100%;
   }
+
 }
