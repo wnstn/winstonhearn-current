@@ -1,0 +1,48 @@
+
+{{ define "main" }}
+
+<section class="writing-section">
+  <h2 class="small-header">All posts</h2>
+
+  {{ $pages := .Site.GetPage "section" "wrote"}}
+  {{ $menu := dict 
+    "years" $pages.Pages.ByTitle.Reverse 
+    "categories" nil 
+    "active" .Title }}
+
+  {{ partial "shared/category-nav.html" $menu }}  
+
+  {{/*  is this the root section or a subsection  */}}
+  {{ $subsection := false }}
+  {{ with .Site.GetPage "/wrote" }}
+    {{ $subsection = $.IsDescendant . }}
+  {{ end }}
+
+    {{if $subsection}}
+
+      <h3 class="archive-title">{{ .Title }} ({{ .Pages | len }} posts)</h3>
+        <ul class="post-previews">
+          {{ range .Pages }}
+            {{ .Scratch.Set "minimal" false }}
+            {{ partial "wrote/single-post.html" . }}
+          {{ end }}
+      </ul>
+
+    {{ else }}
+
+      {{ range (.Pages.ByParam "Order").Reverse }}
+      <h3  class="archive-title">{{ .Title }} ({{ .Pages | len }} posts)</h3>
+        <ul class="post-previews">
+          {{ range .Pages }}
+            {{ .Scratch.Set "minimal" false }}
+            {{ partial "wrote/single-post.html" . }}
+          {{ end }}
+      </ul>
+      {{ end }}
+
+    {{ end }}
+  
+
+</section>
+
+{{ end }}

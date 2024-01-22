@@ -1,12 +1,26 @@
-
-{{ $current := .Title }}
-
 <div class="category-nav">
   <p>See other years or based on categories:</p>  
+  
+  {{ $active := .active }}
+  {{ $menus := slice .years .categories}}
+  {{ range $menus }}
+    <ul class="years">
+    {{ range . }}
+      {{ if eq $active .Page.Title }}
+        <li class="active">{{ .Page.Title }}</li>
+      {{ else }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    {{ end }}
+    
+  </ul>
+{{ end }}
 
-  <ul class="years">
+  {{/*  <ul class="years">
     {{ range .Pages.ByTitle.Reverse }}
-      {{ if eq $current .Title }}
+    <pre>{{ print $.Page }}</pre>
+    <pre>{{ print .Title }}</pre>
+      {{ if eq $.Title .Title }}
         <li class="active">{{ .Title }}</li>
       {{ else }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
@@ -17,12 +31,12 @@
   {{ if .Scratch.Get "showTaxonomies" }}
   <ul class="years">
     {{ range .Site.Taxonomies.categories }}
-        {{ if eq $current .Page.Title }}
+        {{ if eq $.Title .Page.Title }}
           <li class="active">{{.Page.Title}}</li>
         {{ else }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
         {{ end }}
     {{ end }}
   </ul>
-  {{ end }}
+  {{ end }}  */}}
 </div>

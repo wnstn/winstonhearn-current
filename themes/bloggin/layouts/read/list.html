@@ -6,10 +6,15 @@
 <section id="reading">
 
   {{ if eq .Title $indexPage }}
+
+  {{ $menu := dict 
+    "years" .FirstSection.Sections.ByTitle.Reverse 
+    "categories" .Site.Taxonomies.categories 
+    "active" .Title }}
+
   <h2 class="small-header">What I've been reading</h2>
   
-  {{ .Scratch.Set "showTaxonomies" true }}
-  {{ partial "read/category-nav.html" . }}  
+  {{ partial "shared/category-nav.html" $menu }} 
     {{/*  on the homepage, set the context to current year  */}}
     {{ range where .Sections "Title" (now.Format "2006") }}
       <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
@@ -26,15 +31,20 @@
       </ul> 
 
       {{ if gt .Pages.Len 10 }}
-        {{ .Scratch.Set "showTaxonomies" true }}
-        {{ partial "read/category-nav.html" .FirstSection }}  
+        {{ partial "shared/category-nav.html" $menu }}  
       {{ end }}
     {{ end }}
+
   {{ else }}
+
+  {{ $menu := dict 
+    "years" .FirstSection.Sections.ByTitle.Reverse 
+    "categories" .Site.Taxonomies.categories 
+    "active" .Title }}
+
   <h2 class="small-header">{{printf "What I read in %s" .Title}}</h2>
-  
-  {{ .Scratch.Set "showTaxonomies" true }}
-  {{ partial "read/category-nav.html" .FirstSection }}  
+
+  {{ partial "shared/category-nav.html" $menu }}  
 
       <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
 
@@ -50,8 +60,7 @@
       </ul> 
 
       {{ if gt .Pages.Len 10 }}
-        {{ .Scratch.Set "showTaxonomies" true }}
-        {{ partial "read/category-nav.html" .FirstSection }}  
+        {{ partial "shared/category-nav.html" $menu }}  
       {{ end }}
     {{ end }}
 </section>

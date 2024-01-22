@@ -3,9 +3,15 @@
 {{ $showImages := true }}
 {{ $pages := .Site.GetPage "section" "read"}}
 
+{{ $menu := dict 
+  "years" $pages.Pages.ByTitle.Reverse 
+  "categories" .Site.Taxonomies.categories 
+  "active" .Title }}
+
 <section id="reading">
+
   <h2 class="small-header">All books I have logged</h2>
-  {{ partial "read/category-nav.html" . }}  
+  {{ partial "shared/category-nav.html" $menu }}
 
   {{ range $pages.Sections.ByTitle.Reverse }}
     {{ if eq .Title "All books"}}
@@ -24,7 +30,7 @@
     {{ end }}
   {{ end }}
 
-  {{ partial "read/category-nav.html" . }}  
+  {{ partial "shared/category-nav.html" $menu }}  
 </section>
 
 {{ end }}

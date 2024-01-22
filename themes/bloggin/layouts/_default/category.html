@@ -1,11 +1,15 @@
 {{ define "main" }}
 
-{{ $pages := .Site.GetPage "section" "read"}}
-{{ $active := .Title }}
-
 <section id="reading">
   <h2 class="small-header">All books tagged "{{ .Title }}"</h2>
-  {{ partial "read/category-nav.html" . }}  
+  
+  {{ $pages := .Site.GetPage "section" "read"}}
+  {{ $menu := dict 
+    "years" $pages.Pages.ByTitle.Reverse 
+    "categories" .Site.Taxonomies.categories 
+    "active" .Title }}
+
+  {{ partial "shared/category-nav.html" $menu }}  
 
   <h3>{{ .Title }} ({{ .Pages | len }} books)</h3>
 
@@ -19,7 +23,7 @@
     {{ end }}
   </ul>
 
-  {{ partial "read/category-nav.html" . }}  
+  {{/*  {{ partial "shared/category-nav.html" (.Site.GetPage "/read") }}    */}}
 </section>
 
 {{ end }}
