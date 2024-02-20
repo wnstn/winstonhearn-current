@@ -15,8 +15,12 @@ enableRobotsTXT = true
   hny = ""
   order = 0
 
-[blackfriday]
-  extensions = ["hardLineBreak"]
-
 [frontmatter]
   lastmod = ["lastmod", ":git", "date", "publishDate"]
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.highlight]
+    codeFences = true
+    tabWidth = 2
+    noClasses = false
