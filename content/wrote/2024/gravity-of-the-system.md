@@ -3,7 +3,6 @@ title: "The Gravity of Capitalism"
 date: 2024-02-20T05:47:12-05:00
 category: writing
 description: A theory about how to discuss what systems make easy, and an application of the theory to capitalism, to see if it helps us better imagine futures beyond capitalism.
-
 ---
 
 When I first encountered Systems Thinking (through Donella Meadow's book _Thinking In Systems_) a lot of things clicked into place. All my life I had tried to make sense of patterns and I noticed that the patterns scaled and applied at quite large levels, and finally with Systems Thinking, I had language for all of this. 

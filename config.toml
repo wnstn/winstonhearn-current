@@ -6,6 +6,7 @@ theme = "bloggin"
 enableGitInfo = true
 apiurl = ""
 enableRobotsTXT = true
+copyright = '© 2024 winston hearn'
 
 
 [params]
@@ -14,6 +15,8 @@ enableRobotsTXT = true
   title = "winston hearn"
   hny = ""
   order = 0
+  [params.author]
+    name = 'winston hearn'
 
 [frontmatter]
   lastmod = ["lastmod", ":git", "date", "publishDate"]
@@ -24,3 +27,13 @@ enableRobotsTXT = true
     codeFences = true
     tabWidth = 2
     noClasses = false
+
+[services]
+  [services.rss]
+    limit = 10
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
