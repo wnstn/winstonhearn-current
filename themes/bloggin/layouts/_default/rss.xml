@@ -69,9 +69,10 @@
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
       {{- if .Content }}
-      <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
+      {{- $content := .Content | transform.XMLEscape }}
+      <description>{{ $content | safeHTML }}</description>
       {{- else }}
-      <description>{{ .Summary }}</description>
+      <description>{{ .Description }}</description>
       {{- end }}
     </item>
     {{- end }}
