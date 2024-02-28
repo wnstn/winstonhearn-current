@@ -69,8 +69,7 @@
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
       {{- if $.IsSection }}
-      {{- $content := .Content | transform.XMLEscape }}
-      <description>{{ $content | safeHTML }}</description>
+      <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
       {{- else }}
       <description>{{ .Description | transform.XMLEscape | safeHTML}}</description>
       {{- end }}
