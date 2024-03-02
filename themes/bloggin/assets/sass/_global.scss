@@ -23,6 +23,29 @@ body * {
   @include dark-mode {
     color: invert($text);
   }
+
+  code {
+    font-family: monospace;
+    padding: 1em;
+    overflow-wrap: anywhere;
+  }
+  code * {
+    font-family: monospace;
+    color: #c6d0f5;
+    line-height: 1.2;
+    
+  }
+}
+
+
+sup {
+  vertical-align: super;
+  font-size: 12px;
+  
+  a {
+    padding: 0 2px;
+    margin: 0 2px 0 1px;
+  }
 }
 
 strong {
