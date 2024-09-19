@@ -2,19 +2,19 @@
 	"siteId": "16484bf8-daea-4b14-9ef9-09c1ba32db55",
 	"geolocation": {
 		"data": {
-			"city": "Burnsville",
+			"city": "Chattanooga",
 			"country": {
 				"code": "US",
 				"name": "United States"
 			},
 			"subdivision": {
-				"code": "NC",
-				"name": "North Carolina"
+				"code": "TN",
+				"name": "Tennessee"
 			},
 			"timezone": "America/New_York",
-			"latitude": 35.903,
-			"longitude": -82.2876
+			"latitude": 35.0278,
+			"longitude": -85.1461
 		},
-		"timestamp": 1689956787106
+		"timestamp": 1726756687182
 	}
 }
