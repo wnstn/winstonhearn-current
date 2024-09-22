@@ -18,7 +18,7 @@ class PageAudit {
   }
 
   queue(fn) {
-    requestIdleCallback(fn.bind(this)) 
+    window.requestIdleCallback(fn.bind(this)) 
   }
 
   images() {
