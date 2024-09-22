@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wnstn/winstonhearn-current#readme",
   "dependencies": {
+    "@fingerprintjs/botd": "^1.9.1",
     "@honeycombio/opentelemetry-web": "^0.7.0",
     "@opentelemetry/auto-instrumentations-web": "^0.41.0"
   }

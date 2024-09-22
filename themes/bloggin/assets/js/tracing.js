@@ -9,8 +9,6 @@ const configDefaults = {
   // ]
 }
 
-console.log(params);
-
 const sdk = new HoneycombWebSDK({
   apiKey: params.env.hny, // netlify admin
   serviceName: params.env.service, // netlify admin
