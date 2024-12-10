@@ -3,7 +3,6 @@ import { HoneycombWebSDK } from '@honeycombio/opentelemetry-web';
 import { getWebAutoInstrumentations } from '@opentelemetry/auto-instrumentations-web';
 
 const configDefaults = {
-  ignoreNetworkEvents: true,
   // propagateTraceHeaderCorsUrls: [
   // /.+/g, // Regex to match your backend URLs. Update to the domains you wish to include.
   // ]
