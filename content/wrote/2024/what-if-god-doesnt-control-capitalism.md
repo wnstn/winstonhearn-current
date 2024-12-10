@@ -5,7 +5,7 @@ category: writing
 description: A thinking-in-public post theorizing one way that a core assumption of Christianity might have shaped the core beliefs of capitalism.
 ---
 
-The world I grew up in was suffused with god. Specifically, the Judeo-Christian god that evangelicals describe and worship across the US and in other pockets of the world. It was the air I breathed for my first 25 years.
+The world I grew up in was suffused with god. Specifically, the Christian god that evangelicals describe and worship across the US and in other pockets of the world. It was the air I breathed for my first 25 years.
 
 _[Note: This post is not about my religious trauma, I promise. I am thinking about capitalism and better futures all the time these days, and that has led me to spend a lot of time trying to understand the current system so that I can potentially identify narratives or ideas that might help make it feel less stable. I want something better than what we've built, and I don't know how we begin to shape that without understanding what we're starting from.]_
 
