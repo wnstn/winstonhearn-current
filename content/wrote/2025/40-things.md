@@ -2,7 +2,7 @@
 title: "40 Things That Helped Me Become the Current Version of Myself"
 date: 2025-01-14T17:07:06-05:00
 category: writing
-description: Today I turn 40, so here are 40 things that have had a large impact on my life!
+description: "Today I turn 40, so here are 40 things that have had a large impact on my life!"
 ---
 
 Today I turn 40! I use an exclamation mark there but everyone who taks to me regularly knows I'm not particularly excited about the milestone. I had the same struggle when I turned 30 many years ago, so I guess this is just how I am with the decades.
