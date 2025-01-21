@@ -12,7 +12,7 @@ book:
   title: "The Galaxy and the Ground Within"
   publisher: "Harper Voyager"
   publish_year: 2021
-  year_read: 2024
+  year_read: 2025
   times_read: 2nd
 resources:
   - name: cover
