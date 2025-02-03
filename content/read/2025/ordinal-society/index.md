@@ -5,12 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - Climate Change
   - Tech Industry
-  - Disability Theory
-  - Fiction
-  - Race
-  - Indigenous Issues
   - Cultural Analysis
 book:
   author: "Marion Fourcade, Kieran Healy"
