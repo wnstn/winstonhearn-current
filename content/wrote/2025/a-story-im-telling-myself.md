@@ -1,5 +1,5 @@
 ---
-title: "A Story Im Telling Myself"
+title: "A Story I'm Telling Myself"
 date: 2025-04-06T08:58:36-05:00
 category: writing
 description: We are, in this moment, in a battle between the existence of many complex, richly diverse, thriving futures, and the existence of a simple, complicated, fragile future. The people who have siezed power in the US are actively building the latter vision; but the vast majority of people want the former. I will explain my thinking.
