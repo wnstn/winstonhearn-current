@@ -26,7 +26,7 @@
   {{ $style := resources.Get "sass/makeup.scss" | toCSS $options }}
 
   {{/*  false if building for production  */}}
-  {{ if not (.Site.IsServer) }}
+  {{ if not (hugo.IsServer) }}
     {{ $style := $style | minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
   {{ else }}
