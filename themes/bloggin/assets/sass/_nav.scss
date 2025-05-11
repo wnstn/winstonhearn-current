@@ -78,7 +78,8 @@
     margin-top: -10px;
     margin-left: 2em;
     margin-bottom: 2rem;
-    color: variables.$headers;
+    color: variables.$accent;
+    // color: red;
     opacity: .5;
 
     @include variables.dark-mode {
