@@ -1,7 +1,9 @@
+@use "variables";
+
 #reading {
 
   .categories {
-    border-bottom: 1px solid rgba($purple, .5);
+    border-bottom: 1px solid rgba(variables.$purple, .5);
   }
 
   h2 {
@@ -30,7 +32,7 @@
 }
 
 .recent-books {
-  border-top: 3px solid $flourish;
+  border-top: 3px solid variables.$flourish;
   margin-top: 2rem;
   padding: 2rem 1rem 1rem;
   width: 100%;
@@ -43,7 +45,7 @@
 
 .read hr {
   margin: 3em;
-  color: $flourish;
+  color: variables.$flourish;
 }
 
 .reading-highlights > p {

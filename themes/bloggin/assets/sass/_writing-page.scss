@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 .writing-section {
   display: flex;
   z-index: 10;
@@ -7,7 +10,7 @@
     display: flex;
     flex: 1 1 100%;
     margin-bottom: 1em;
-    border-bottom: 1px dotted $flourish;
+    border-bottom: 1px dotted variables.$flourish;
   }
 
   > ul {
@@ -45,7 +48,7 @@
 
       &:after {
         content: '';
-        border-bottom: 2px solid lighten($background, 5%);
+        border-bottom: 2px solid color.adjust(variables.$background, $lightness: 5%);
         width: 69%;
         display: block;
         margin-left: -8px;

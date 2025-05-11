@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 #bio {
   display: flex;
   align-content: flex-start;
@@ -8,13 +11,13 @@
   margin-bottom: 2rem;
 
 
-  @include dark-mode {
-    border-color: invert($background);
+  @include variables.dark-mode {
+    border-color: color.invert(variables.$background);
   }
 
   &.footer {
-    border-left: 2px dotted $flourish;
-    border-right: 2px dotted $flourish;
+    border-left: 2px dotted variables.$flourish;
+    border-right: 2px dotted variables.$flourish;
     // border-radius: 8px;
     padding: 1rem;
   }
@@ -28,10 +31,10 @@
 
   @media screen and (min-width:768px) {
     width: 100%;
-    border-bottom: 20px solid lighten($background, 5%);
+    border-bottom: 20px solid color.adjust(variables.$background, $lightness: 5%);
 
-    @include dark-mode {
-      border-bottom: 20px solid invert($background);
+    @include variables.dark-mode {
+      border-bottom: 20px solid color.invert(variables.$background);
     }
 
     .site-description {

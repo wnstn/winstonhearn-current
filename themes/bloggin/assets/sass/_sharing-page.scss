@@ -1,3 +1,5 @@
+@use "variables";
+
 .shared blockquote {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -19,7 +21,7 @@
 
 .shared article hr {
   margin: 3em;
-  color: $flourish;
+  color: variables.$flourish;
 }
 
 .recommendations {

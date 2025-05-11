@@ -1,3 +1,5 @@
+@use "variables";
+
 .book {
   flex: 1 1 100%;
   margin-bottom: .69em;
@@ -80,7 +82,7 @@
       content: "";
       position: absolute;
       width: 70%;
-      border-top: 2px dotted $headers;
+      border-top: 2px dotted variables.$headers;
       left: 15%;
       bottom: -1em;
     }
@@ -112,7 +114,7 @@
       // margin-bottom: 1em;
       max-height: 300px;
 
-      @include dark-mode {
+      @include variables.dark-mode {
         opacity: .3;
 
         &:hover,

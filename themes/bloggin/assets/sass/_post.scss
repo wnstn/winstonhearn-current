@@ -1,3 +1,5 @@
+@use "variables";
+
 .wrote .content,
 .recommended .content,
 // only the notes pages for books
@@ -32,7 +34,7 @@
       width: 40%;
       height: 10px;
       position: absolute;
-      border-top: 2px dotted $purple;
+      border-top: 2px dotted variables.$purple;
       left: 30%;
       bottom: -5rem;
       transform: rotate(-6deg);
@@ -43,7 +45,7 @@
       width: 40%;
       height: 10px;
       position: absolute;
-      border-top: 2px dotted $purple;
+      border-top: 2px dotted variables.$purple;
       left: 30%;
       bottom: -5rem;
       transform: rotate(6deg);
@@ -51,7 +53,7 @@
 
     hr {
       border: none;
-      border-bottom: 2px dotted $headers;
+      border-bottom: 2px dotted variables.$headers;
       margin-top: 1em;
       margin-bottom: 2em;
       position: relative;
@@ -59,7 +61,7 @@
       &:after {
         content: "";
         width: 10%;
-        border-top: 2px solid $headers;
+        border-top: 2px solid variables.$headers;
         position: absolute;
         left: 0;
         top: 0;
@@ -68,7 +70,7 @@
       &:before {
         content: "";
         width: 10%;
-        border-top: 2px solid $headers;
+        border-top: 2px solid variables.$headers;
         position: absolute;
         right: 0;
         top: 0;
@@ -76,14 +78,14 @@
     }
 
     h3 {
-      color: $headers;
+      color: variables.$headers;
       margin-top: 1rem;
       margin-bottom: 2rem;
       font-size: 22px;
       display: block;
 
-      @include dark-mode {
-        color: $accent;
+      @include variables.dark-mode {
+        color: variables.$accent;
       }
     }
 
@@ -107,7 +109,7 @@
 
       &:after {
         content: "";
-        border: 1px solid $purple;
+        border: 1px solid variables.$purple;
         position: absolute;
         width: 80%;
         height: 100%;

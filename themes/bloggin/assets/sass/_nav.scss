@@ -1,14 +1,17 @@
+@use "sass:color";
+@use "variables";
+
 .content nav {
   padding: 34.5px 8px 17.25px;
   margin: 0;
   display: block;
   justify-content: center;
   align-content: space-between;
-  background: lighten($background, 5%);
-  border-bottom: 1px dotted $flourish;
+  background: color.adjust(variables.$background, $lightness: 5%);
+  border-bottom: 1px dotted variables.$flourish;
 
-  @include dark-mode {
-    background: invert($background);
+  @include variables.dark-mode {
+    background: color.invert(variables.$background);
   }
 
   @media screen and (min-width: 600px) {
@@ -27,11 +30,11 @@
     font-size: 30px;
     position: relative;
     padding-right: 10px;
-    color: $links;
+    color: variables.$links;
     line-height:1;
 
-    @include dark-mode {
-      color: invert($links);
+    @include variables.dark-mode {
+      color: color.invert(variables.$links);
     }
 
     // a {
@@ -41,19 +44,19 @@
 
     a:link,
     a:visited {
-      color: $links;
+      color: variables.$links;
 
-      @include dark-mode {
-        color: invert($links);
+      @include variables.dark-mode {
+        color: color.invert(variables.$links);
       }
     }
 
     a:hover,
     a:active {
-      border-bottom: 1px solid $purple;
+      border-bottom: 1px solid variables.$purple;
 
-      @include dark-mode {
-        border-color: invert($purple);
+      @include variables.dark-mode {
+        border-color: color.invert(variables.$purple);
       }
     }
 
@@ -75,8 +78,13 @@
     margin-top: -10px;
     margin-left: 2em;
     margin-bottom: 2rem;
-    color: $headers;
+    color: variables.$headers;
     opacity: .5;
+
+    @include variables.dark-mode {
+      border-color: variables.$accent;
+      opacity: 1;
+    }
   }
 
   ul {
@@ -111,7 +119,7 @@
 
   a {
     text-decoration: none;
-    color: $links;
+    color: variables.$links;
     position:relative;
     padding-right: 10px;
     border-bottom: none;
@@ -132,7 +140,7 @@
       height: 1px;
       bottom: -5px;
       right: 0;
-      background-color: $links;
+      background-color: variables.$links;
       width: 100%;
       display: block;
       position: absolute;
@@ -146,15 +154,15 @@
     }
 
     &:visited {
-      color: $links;
+      color: variables.$links;
     }
 
-    @include dark-mode {
-      color: invert($links);
+    @include variables.dark-mode {
+      color: color.invert(variables.$links);
 
       &:after,
       &:visited {
-        background-color: invert($links);
+        background-color: color.invert(variables.$links);
       }
     }
   }

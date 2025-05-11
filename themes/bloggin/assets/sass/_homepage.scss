@@ -1,3 +1,5 @@
+@use "variables";
+
 .winstons-homepage {
 
   .full-archives {
@@ -37,8 +39,8 @@
 
   .recommendations {
     width: 100%;
-    border-top: 3px solid $flourish;
-    border-bottom: 3px solid $flourish;
+    border-top: 3px solid variables.$flourish;
+    border-bottom: 3px solid variables.$flourish;
     padding: 2rem 1rem;
     margin-bottom: 3rem;
 

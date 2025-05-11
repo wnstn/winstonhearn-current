@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 .category-nav {
   position: relative;
   width: 100%;
@@ -6,10 +9,10 @@
   p {
     font-size: 16px;
     margin-bottom: .4em;
-    color: $text;
+    color: variables.$text;
 
-    @include dark-mode {
-      color: invert($text);
+    @include variables.dark-mode {
+      color: color.invert(variables.$text);
     }
 
     @media screen and (min-width:768px) {
@@ -36,16 +39,16 @@
       margin: 0.2em .4em;
       margin-left: 0;
       font-size: 16px;
-      border: 1px dotted $links;
+      border: 1px dotted variables.$links;
       border-radius: 8px;
       padding: .3rem;
 
       &:hover {
-        border: 1px solid $links;
+        border: 1px solid variables.$links;
       }
 
       &.active {
-        border: 1px solid $text;
+        border: 1px solid variables.$text;
         opacity: .8;
       }
 

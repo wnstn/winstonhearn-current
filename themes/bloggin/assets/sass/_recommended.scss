@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 .recommended {
 
   .recommendation-post {
@@ -24,12 +27,12 @@
     display: flex;
     width: 90%;
     flex-wrap: wrap;
-    border: 1px solid $flourish;
+    border: 1px solid variables.$flourish;
     border-radius: 3px;
     margin-bottom: 1em;
 
-    @include dark-mode {
-      border: 1px solid invert($flourish);
+    @include variables.dark-mode {
+      border: 1px solid color.invert(variables.$flourish);
     }
 
     &:hover {
