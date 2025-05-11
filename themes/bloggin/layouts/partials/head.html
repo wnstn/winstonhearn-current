@@ -12,9 +12,6 @@
 
   {{template "_internal/opengraph.html" . }}
 
-  <meta name="twitter:site" content="@suchwinston" />
-  <meta name="twitter:site:id" content="15059001" />
-
   {{ template "_internal/twitter_cards.html" . }}
 
   {{ with .OutputFormats.Get "rss" -}}
@@ -22,16 +19,25 @@
   {{ end }}
 
 
-  {{ $options := (dict "targetPath" "css/makeup.css" "enableSourceMap" true) }}
-  {{ $style := resources.Get "sass/makeup.scss" | toCSS $options }}
+  {{ with resources.Get "sass/makeup.scss" }}
+    {{ $opts := dict
+       "targetPath" "css/makeup.css"
+       "enableSourceMap" true
+       "transpiler" "dartsass"
+       "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
+    }}
+    {{ with . | toCSS $opts }}
+      {{ if hugo.IsDevelopment }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ else }}
+        {{ with . | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+        {{ end }}
+      {{ end }}
+    {{ end }}
 
-  {{/*  false if building for production  */}}
-  {{ if not (hugo.IsServer) }}
-    {{ $style := $style | minify }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
-  {{ else }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="screen">
   {{ end }}
+
 
   {{ $vars := dict "env" .Site.Params }}
   {{ $opts := dict "targetPath" "main.js" "params" $vars }}
