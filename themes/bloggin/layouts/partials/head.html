@@ -1,11 +1,9 @@
 <head>
-
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>winston the third</title>
+  <title>winston hearn | {{ .Page.Title }}</title>
   <meta name="description" content="{{ .Description }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +16,12 @@
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{ end }}
 
-
-  {{ with resources.Get "sass/makeup.scss" }}
+  {{ with resources.Get "scss/makeup.scss" }}
     {{ $opts := dict
        "targetPath" "css/makeup.css"
        "transpiler" "dartsass"
        "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
+       "enableSourceMap" true
     }}
     {{ with . | toCSS $opts }}
       {{ if hugo.IsDevelopment }}
@@ -34,7 +32,6 @@
         {{ end }}
       {{ end }}
     {{ end }}
-
   {{ end }}
 
 
@@ -42,6 +39,4 @@
   {{ $opts := dict "targetPath" "main.js" "params" $vars }}
   {{ $built := resources.Get "js/index.js" | js.Build $opts }}
   <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
-
-
 </head>

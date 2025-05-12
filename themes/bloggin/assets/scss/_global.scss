@@ -104,14 +104,14 @@ h2,
   }
 
   @include variables.dark-mode {
-    color: color.invert(variables.$headers);
+    color: variables.$accent;
 
     &:before {
-      border-bottom: 3px dotted color.invert(variables.$headers);
+      border-bottom: 3px dotted variables.$accent;
     }
 
     &:after {
-      border-bottom: 3px solid color.invert(variables.$headers);
+      border-bottom: 3px solid variables.$accent;
     }
 
   }
@@ -163,12 +163,12 @@ a {
   }
 
   @include variables.dark-mode {
-    color: color.invert(variables.$links);
+    color: variables.$flourish;
 
     &:active,
     &:hover,
     &:visited {
-      border-color: color.invert(variables.$links);
+      border-color: variables.$flourish;
     }
   }
 }

@@ -47,16 +47,16 @@
       color: variables.$links;
 
       @include variables.dark-mode {
-        color: color.invert(variables.$links);
+        color: variables.$accent;
       }
     }
 
     a:hover,
     a:active {
-      border-bottom: 1px solid variables.$purple;
+      border-bottom: 1px solid variables.$accent;
 
       @include variables.dark-mode {
-        border-color: color.invert(variables.$purple);
+        border-color: variables.$accent;
       }
     }
 
@@ -78,13 +78,12 @@
     margin-top: -10px;
     margin-left: 2em;
     margin-bottom: 2rem;
-    color: variables.$accent;
-    // color: red;
+    color: variables.$headers;
     opacity: .5;
 
     @include variables.dark-mode {
-      border-color: variables.$accent;
-      opacity: 1;
+      color: variables.$flourish;
+      opacity: .8;
     }
   }
 
@@ -159,11 +158,12 @@
     }
 
     @include variables.dark-mode {
-      color: color.invert(variables.$links);
+      color: variables.$accent;
 
       &:after,
       &:visited {
-        background-color: color.invert(variables.$links);
+        background-color: variables.$accent;
+        color: variables.$accent;
       }
     }
   }
