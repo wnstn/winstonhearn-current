@@ -11,7 +11,6 @@
     {{- else if compare.Eq .Kind "taxonomy"}}
     {{/* */}}
 	{{- else }}
-    {{ warnidf "warning-winston" .Kind }}
         {{- $socImg = resources.Get "/share/pink-blue-gradient.png" -}}    
         {{- $fontHed := resources.Get "/fonts/Made Sunflower.otf" -}}
 
@@ -56,7 +55,7 @@
 
     {{- $preamble := "blog post:"  -}}    
     {{- $preambleOpts := (dict
-        "color" "#999"
+        "color" "#444444"
         "size" 80
         "alignx" "left"
         "aligny" "center"
