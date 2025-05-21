@@ -8,9 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  {{template "_internal/opengraph.html" . }}
+  {{ partial "opengraph/opengraph.html" . }}
 
-  {{ template "_internal/twitter_cards.html" . }}
+  {{ partial "opengraph/twitter_cards.html" . }}
+
+  {{ partial "head-json-ld.html" }}
 
   {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}

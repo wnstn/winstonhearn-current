@@ -1,0 +1,73 @@
+{{- $fallbackImg := resources.Get "/share/pink-blue-gradient.png" -}}
+{{ $fallbackImg = $fallbackImg.Fit "1280x680" -}}
+{{- $socImg := $fallbackImg -}}{{/* fallback if not Home */}}
+{{- $siteImg := $fallbackImg -}}
+	{{- if .IsHome }}
+		{{/* */}}
+    {{- else if compare.Eq .Kind "section"}}
+    {{/* */}}
+    {{- else if compare.Eq .Kind "term"}}
+    {{/* */}}
+    {{- else if compare.Eq .Kind "taxonomy"}}
+    {{/* */}}
+	{{- else }}
+    {{ warnidf "warning-winston" .Kind }}
+        {{- $socImg = resources.Get "/share/pink-blue-gradient.png" -}}    
+        {{- $fontHed := resources.Get "/fonts/Made Sunflower.otf" -}}
+
+		{{- $titleSize := 150 -}}{{/* pixels */}}
+		{{- if gt (len $.Title) 84 -}}
+			{{- $titleSize = 124 -}}
+		{{- end -}}
+
+        {{- $headline := .Title -}}
+        {{- $headlineOpts := (dict
+			"color" "#ffffff"
+			"size" $titleSize
+			"alignx" "left"
+			"aligny" "top"
+			"linespacing" 5
+			"x" 25
+			"y" 300
+			"font" $fontHed
+		)}}
+
+		{{- $socImg = $socImg.Filter (images.Text $headline $headlineOpts) }}
+        
+	{{- end }}
+
+    {{- $fontSite := resources.Get "/fonts/Neutraface Text Bold.otf" -}}
+    {{- $date := .Date | time.Format ":date_medium" }}
+    {{- $date = print "Published " $date }}
+    {{- $site := print $date " on winstonhearn.com"  -}}    
+    {{- $siteOpts := (dict
+        "color" "#4f21b3"
+        "size" 60
+        "alignx" "left"
+        "aligny" "center"
+        "linespacing" 10
+        "font" $fontSite
+        "x" (mul $siteImg.Width 0.25 | int)
+        "y" 900
+    )}}
+
+    {{- $siteImg = $socImg }}
+    {{- $siteImg = $siteImg.Filter (images.Text $site $siteOpts) }}
+
+    {{- $preamble := "blog post:"  -}}    
+    {{- $preambleOpts := (dict
+        "color" "#999"
+        "size" 80
+        "alignx" "left"
+        "aligny" "center"
+        "linespacing" 10
+        "font" $fontSite
+        "x" 25
+        "y" 200
+    )}}
+
+    {{- $preambleImg := $siteImg }}
+    {{- $preambleImg = $preambleImg.Filter (images.Text $preamble $preambleOpts) }}
+
+
+{{ return $preambleImg }}
