@@ -1,15 +1,22 @@
 {{- with $.Params.images -}}
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="{{ index . 0 | absURL }}"/>
+{{- with partial "_funcs/get-page-images" . }}
+  {{- range . | first 6 }}
+    <meta property="og:image" content="{{ .Permalink }}">
+  {{- end }}
+{{- end }}
 {{ else -}}
 {{- $featured := partial "opengraph/get-featured-image.html" . }}
 {{- with $featured -}}
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="{{ $featured.Permalink }}"/>
+<meta property="og:image" content="{{ $featured.Permalink }}">
 {{- else -}}
 {{- with $.Site.Params.images -}}
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="{{ index . 0 | absURL }}"/>
+<meta property="og:image" content="{{ index . 0 | absURL }}">
 {{ else -}}
 <meta name="twitter:card" content="summary"/>
 {{- end -}}
