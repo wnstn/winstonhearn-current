@@ -6,8 +6,8 @@
 
   {{ if $showImages }}
     {{ $img := (.Resources.GetMatch "cover") }}
-    {{ $img := $img.Resize "500x q90"}}
     {{ if $img }}
+      {{ $img := $img.Resize "500x q90"}}
       <div class="image-wrapper">
         <img loading="lazy" src="{{ $img.Permalink }}" alt="Cover for {{ .Params.book.title}}" />
       </div>

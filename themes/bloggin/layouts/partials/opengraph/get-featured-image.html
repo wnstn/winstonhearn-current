@@ -1,7 +1,40 @@
-{{- $fallbackImg := resources.Get "/share/pink-blue-gradient.png" -}}
-{{ $fallbackImg = $fallbackImg.Fit "1280x680" -}}
-{{- $socImg := $fallbackImg -}}{{/* fallback if not Home */}}
-{{- $siteImg := $fallbackImg -}}
+
+{{/*  First, get the image  */}}
+
+{{- $blankImg := resources.Get "/share/share-lichen.jpg" -}}
+{{ $blankImg = $blankImg.Fit "1280x680" -}}
+{{ $blankImg = $blankImg.Filter (images.GaussianBlur 5) }}
+{{/*  Assign it to the variable we will return no matter what  */}}
+{{- $outputImg := $blankImg -}}
+
+{{/*  gets modified if a book  */}}
+{{- $headline := .Title -}}
+
+{{/*  Assign it to the operating variable  */}}
+{{- $shareImg := $outputImg -}}{{/* fallback if not Home */}}
+
+{{/*  Add site url */}}
+{{- $fontSite := resources.Get "/fonts/Gotham-Book.otf" -}}
+{{- $preamble := "WINSTONHEARN.COM"  -}}    
+{{- $preambleOpts := (dict
+    "color" "#1c180c"
+    "size" 50
+    "alignx" "left"
+    "aligny" "bottom"
+    "linespacing" 10
+    "font" $fontSite
+    "x" 50
+    "y" (mul $shareImg.Height 0.95 | int)
+)}}
+
+{{/*  for whatever reason, filters only work once  */}}
+{{- $preambleImg := $shareImg }}
+{{/*  Add the text  */}}
+{{- $preambleImg = $preambleImg.Filter (images.Text $preamble $preambleOpts) }}
+
+{{- $shareImg = $preambleImg }}
+
+
 	{{- if .IsHome }}
 		{{/* */}}
     {{- else if compare.Eq .Kind "section"}}
@@ -10,63 +43,68 @@
     {{/* */}}
     {{- else if compare.Eq .Kind "taxonomy"}}
     {{/* */}}
-	{{- else }}
-        {{- $socImg = resources.Get "/share/pink-blue-gradient.png" -}}    
+	{{- else }} {{/* content pages */}}
+
+        {{- $workingImg := $shareImg }}
         {{- $fontHed := resources.Get "/fonts/Made Sunflower.otf" -}}
 
-		{{- $titleSize := 150 -}}{{/* pixels */}}
-		{{- if gt (len $.Title) 84 -}}
-			{{- $titleSize = 124 -}}
+        {{- $titleX := 25 }}
+		{{- $titleSize := 120 -}}{{/* pixels */}}
+		{{- if gt (len $.Title) 40 -}}
+			{{- $titleSize = 100 -}}
 		{{- end -}}
 
-        {{- $headline := .Title -}}
+        {{/*  BOOK PAGES  */}}
+        {{- if eq .Section "read"}}
+            {{ $cover := (.Resources.GetMatch "cover") }}
+            {{ $cover = $cover.Resize "250x"}}
+            {{ $cover = $cover.Filter (images.Padding 3 3 "#ffffff") }}
+
+            {{ $coverPadding := 20}}
+            {{ $coverY := (mul $shareImg.Height 0.25 | int) }}
+            {{ $workingImg = $workingImg.Filter (images.Overlay $cover $coverPadding $coverY) }}
+
+            {{/*  default to 100 for book titles  */}}
+            {{ $titleSize = 100 }}
+            {{ $titleX = 300 }}
+
+        {{/*  ALL OTHER CONTENT PAGES  */}}
+        {{ else }}
+
+            {{- $date := .Date | time.Format ":date_medium" }}
+            {{- $date = print "Published " $date }}
+            {{- $siteOpts := (dict
+                "color" "#ffffff"
+                "size" 50
+                "alignx" "right"
+                "aligny" "top"
+                "font" $fontSite
+                "x" (mul $workingImg.Width 0.99 | int)
+                "y" (mul $workingImg.Height 0.08 | int)
+            )}}
+
+            {{- $workingImg = $workingImg.Filter (images.Text $date $siteOpts) }}
+
+        {{- end }}
+
         {{- $headlineOpts := (dict
-			"color" "#ffffff"
+			"color" "#222222"
 			"size" $titleSize
 			"alignx" "left"
 			"aligny" "top"
 			"linespacing" 5
-			"x" 25
-			"y" 300
+			"x" $titleX
+			"y" 260
 			"font" $fontHed
 		)}}
 
-		{{- $socImg = $socImg.Filter (images.Text $headline $headlineOpts) }}
-        
+        {{/*  add the Headline to the image  */}}
+		{{- $workingImg = $workingImg.Filter (images.Text $headline $headlineOpts) }}
+
+        {{ $shareImg = $workingImg }}
+
 	{{- end }}
 
-    {{- $fontSite := resources.Get "/fonts/Neutraface Text Bold.otf" -}}
-    {{- $date := .Date | time.Format ":date_medium" }}
-    {{- $date = print "Published " $date }}
-    {{- $site := print $date " on winstonhearn.com"  -}}    
-    {{- $siteOpts := (dict
-        "color" "#4f21b3"
-        "size" 60
-        "alignx" "left"
-        "aligny" "center"
-        "linespacing" 10
-        "font" $fontSite
-        "x" (mul $siteImg.Width 0.25 | int)
-        "y" 900
-    )}}
+{{ $outputImg = $shareImg }}
 
-    {{- $siteImg = $socImg }}
-    {{- $siteImg = $siteImg.Filter (images.Text $site $siteOpts) }}
-
-    {{- $preamble := "blog post:"  -}}    
-    {{- $preambleOpts := (dict
-        "color" "#444444"
-        "size" 80
-        "alignx" "left"
-        "aligny" "center"
-        "linespacing" 10
-        "font" $fontSite
-        "x" 25
-        "y" 200
-    )}}
-
-    {{- $preambleImg := $siteImg }}
-    {{- $preambleImg = $preambleImg.Filter (images.Text $preamble $preambleOpts) }}
-
-
-{{ return $preambleImg }}
+{{ return $outputImg }}
