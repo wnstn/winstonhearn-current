@@ -1,58 +1,112 @@
+{{/*  {{ warnf (debug.Dump .Params)  }}  */}}
 
 {{/*  First, get the image  */}}
 
 {{- $blankImg := resources.Get "/share/share-building.jpg" -}}
 {{ $blankImg = $blankImg.Fit "1280x680" -}}
-{{/*  {{ $blankImg = $blankImg.Filter (images.GaussianBlur 5) }}  */}}
+{{- $fontSite := resources.Get "/fonts/Gotham-Book.otf" -}}
+{{- $fontHed := resources.Get "/fonts/Made Sunflower.otf" -}}
+
 {{/*  Assign it to the variable we will return no matter what  */}}
 {{- $outputImg := $blankImg -}}
 
 {{/*  gets modified if a book  */}}
 {{- $headline := .Title -}}
+{{- $titleX := 25 }}
+{{- $titleY := 25 }}
+{{- $titleSize := 120 -}}{{/* pixels */}}
+{{- if gt (len $.Title) 40 -}}
+    {{- $titleSize = 100 -}}
+{{- end -}}
 
 {{/*  Assign it to the operating variable  */}}
 {{- $shareImg := $outputImg -}}{{/* fallback if not Home */}}
 
-{{/*  Add site url */}}
-{{- $fontSite := resources.Get "/fonts/Gotham-Book.otf" -}}
-{{- $preamble := "WINSTONHEARN.COM"  -}}    
-{{- $preambleOpts := (dict
-    "color" "#222222"
-    "size" 30
-    "alignx" "right"
-    "aligny" "bottom"
-    "linespacing" 10
-    "font" $fontSite
-    "x" (sub $shareImg.Width 25 | int)
-    "y" (mul $shareImg.Height 0.81 | int)
-)}}
-
-{{/*  for whatever reason, filters only work once  */}}
-{{- $preambleImg := $shareImg }}
-{{/*  Add the text  */}}
-{{- $preambleImg = $preambleImg.Filter (images.Text $preamble $preambleOpts) }}
-
-{{- $shareImg = $preambleImg }}
-
+{{ $watermarkColor := "#222222" }}
 
 	{{- if .IsHome }}
-		{{/* */}}
+
+        {{ $titleSize = 100 }}
+
+        {{- $headlineOpts := (dict
+			"color" "#222222"
+			"size" $titleSize
+			"alignx" "left"
+			"aligny" "top"
+			"linespacing" 10
+			"x" $titleX
+			"y" $titleY
+			"font" $fontHed
+		)}}
+
+        {{ $headline = print "winston hearn's personal blog" }}
+
+        {{/*  add the Headline to the image  */}}
+		{{- $shareImg = $shareImg.Filter (images.Text $headline $headlineOpts) }}
+
+
     {{- else if compare.Eq .Kind "section"}}
-    {{/* */}}
+        {{- $sectionImg := resources.Get "/share/share-trees.jpg" -}}
+        {{ $sectionImg = $sectionImg.Fit "1280x680" }}
+        {{- $sectionHedOpts := (dict
+            "color" "#ffffff"
+            "size" 100
+            "alignx" "center"
+            "aligny" "center"
+            "linespacing" 10
+            "x" (mul $sectionImg.Width .5 | int)
+            "y" (mul $sectionImg.Height .5 | int)
+            "font" $fontHed
+        )}}
+            {{ warnf (debug.Dump .Section)  }}
+          
+        {{- $sectionHed := printf "posts I %s" .Section }}
+        {{ if compare.Eq .Section "read" }}
+            {{- $sectionHed = printf "posts I %s" .Section }}
+            {{ if .Param "share_text" }}
+                {{ $sectionHed = .Param "share_text" }}
+            {{ end }}
+        {{ else if compare.Eq .Section "recommended" }}
+            {{- $sectionHed = printf "recommended books" }}
+        {{ else if compare.Eq .Section "shared" }}
+            {{- $sectionHed = printf "cool things to read" }}
+        {{ else if compare.Eq .Section "wrote" }}
+            {{- $sectionHed = printf "posts I’ve written" }}
+        {{ end }}
+            
+
+        {{ $watermarkColor = "#ffffff" }}
+        {{- $sectionImg = $sectionImg.Filter (images.Text $sectionHed $sectionHedOpts) }}
+        {{/*  set url color to white  */}}
+        {{ $shareImg = $sectionImg }}
+
     {{- else if compare.Eq .Kind "term"}}
-    {{/* */}}
+    {{/*  {{ warnf (debug.Dump .)  }}  */}}
+
+        {{ $titleSize = 100 }}
+
+        {{- $headlineOpts := (dict
+			"color" "#222222"
+			"size" $titleSize
+			"alignx" "left"
+			"aligny" "top"
+			"linespacing" 10
+			"x" $titleX
+			"y" $titleY
+			"font" $fontHed
+		)}}
+
+        {{ $headline = printf "Books tagged \n“%s”" .LinkTitle }}
+
+        {{/*  add the Headline to the image  */}}
+		{{- $shareImg = $shareImg.Filter (images.Text $headline $headlineOpts) }}
+
     {{- else if compare.Eq .Kind "taxonomy"}}
-    {{/* */}}
+    {{/*    */}}
 	{{- else }} {{/* content pages */}}
 
         {{- $workingImg := $shareImg }}
-        {{- $fontHed := resources.Get "/fonts/Made Sunflower.otf" -}}
 
-        {{- $titleX := 25 }}
-		{{- $titleSize := 120 -}}{{/* pixels */}}
-		{{- if gt (len $.Title) 40 -}}
-			{{- $titleSize = 100 -}}
-		{{- end -}}
 
         {{/*  BOOK PAGES  */}}
         {{- if eq .Section "read"}}
@@ -66,6 +120,21 @@
             {{/*  default to 100 for book titles  */}}
             {{ $titleSize = 100 }}
             {{ $titleX = 300 }}
+            {{ $titleY = 60 }}
+
+            {{- $subhed := "Notes and Highlights from" }}
+            {{- $subhedOpts := (dict
+                "color" "#222222"
+                "size" 35
+                "alignx" "left"
+                "aligny" "top"
+                "font" $fontSite
+                "x" 300
+                "y" 20
+            )}}
+            {{/*  "x" (mul $workingImg.Width 0.99 | int)  */}}
+
+            {{- $workingImg = $workingImg.Filter (images.Text $subhed $subhedOpts) }}
 
         {{/*  ALL OTHER CONTENT PAGES  */}}
         {{ else }}
@@ -94,7 +163,7 @@
 			"aligny" "top"
 			"linespacing" 5
 			"x" $titleX
-			"y" 25
+			"y" $titleY
 			"font" $fontHed
 		)}}
 
@@ -104,6 +173,25 @@
         {{ $shareImg = $workingImg }}
 
 	{{- end }}
+
+
+{{/*  Add site url */}}
+
+{{- $preamble := "WINSTONHEARN.COM"  -}}    
+{{- $preambleOpts := (dict
+    "color" $watermarkColor
+    "size" 30
+    "alignx" "right"
+    "aligny" "bottom"
+    "linespacing" 10
+    "font" $fontSite
+    "x" (sub $shareImg.Width 25 | int)
+    "y" (mul $shareImg.Height 0.81 | int)
+)}}
+
+
+{{/*  Add the text  */}}
+{{- $shareImg = $shareImg.Filter (images.Text $preamble $preambleOpts) }}
 
 {{ $outputImg = $shareImg }}
 
