@@ -1,9 +1,9 @@
 
 {{/*  First, get the image  */}}
 
-{{- $blankImg := resources.Get "/share/share-lichen.jpg" -}}
+{{- $blankImg := resources.Get "/share/share-building.jpg" -}}
 {{ $blankImg = $blankImg.Fit "1280x680" -}}
-{{ $blankImg = $blankImg.Filter (images.GaussianBlur 5) }}
+{{/*  {{ $blankImg = $blankImg.Filter (images.GaussianBlur 5) }}  */}}
 {{/*  Assign it to the variable we will return no matter what  */}}
 {{- $outputImg := $blankImg -}}
 
@@ -17,14 +17,14 @@
 {{- $fontSite := resources.Get "/fonts/Gotham-Book.otf" -}}
 {{- $preamble := "WINSTONHEARN.COM"  -}}    
 {{- $preambleOpts := (dict
-    "color" "#1c180c"
-    "size" 50
-    "alignx" "left"
+    "color" "#222222"
+    "size" 30
+    "alignx" "right"
     "aligny" "bottom"
     "linespacing" 10
     "font" $fontSite
-    "x" 50
-    "y" (mul $shareImg.Height 0.95 | int)
+    "x" (sub $shareImg.Width 25 | int)
+    "y" (mul $shareImg.Height 0.81 | int)
 )}}
 
 {{/*  for whatever reason, filters only work once  */}}
@@ -61,8 +61,7 @@
             {{ $cover = $cover.Filter (images.Padding 3 3 "#ffffff") }}
 
             {{ $coverPadding := 20}}
-            {{ $coverY := (mul $shareImg.Height 0.25 | int) }}
-            {{ $workingImg = $workingImg.Filter (images.Overlay $cover $coverPadding $coverY) }}
+            {{ $workingImg = $workingImg.Filter (images.Overlay $cover $coverPadding $coverPadding) }}
 
             {{/*  default to 100 for book titles  */}}
             {{ $titleSize = 100 }}
@@ -74,14 +73,15 @@
             {{- $date := .Date | time.Format ":date_medium" }}
             {{- $date = print "Published " $date }}
             {{- $siteOpts := (dict
-                "color" "#ffffff"
-                "size" 50
+                "color" "#222222"
+                "size" 35
                 "alignx" "right"
-                "aligny" "top"
+                "aligny" "bottom"
                 "font" $fontSite
-                "x" (mul $workingImg.Width 0.99 | int)
-                "y" (mul $workingImg.Height 0.08 | int)
+                "x" (sub $shareImg.Width 25 | int)
+                "y" (mul $shareImg.Height 0.75 | int)
             )}}
+            {{/*  "x" (mul $workingImg.Width 0.99 | int)  */}}
 
             {{- $workingImg = $workingImg.Filter (images.Text $date $siteOpts) }}
 
@@ -94,7 +94,7 @@
 			"aligny" "top"
 			"linespacing" 5
 			"x" $titleX
-			"y" 260
+			"y" 25
 			"font" $fontHed
 		)}}
 
