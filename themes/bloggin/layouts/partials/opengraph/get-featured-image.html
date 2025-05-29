@@ -58,7 +58,7 @@
             "y" (mul $sectionImg.Height .5 | int)
             "font" $fontHed
         )}}
-            {{ warnf (debug.Dump .Section)  }}
+
           
         {{- $sectionHed := printf "posts I %s" .Section }}
         {{ if compare.Eq .Section "read" }}
