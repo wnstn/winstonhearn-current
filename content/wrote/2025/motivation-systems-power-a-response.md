@@ -1,7 +1,6 @@
 ---
 title: "Motivation, Systems, and Power: a Response to Charity Majors"
 date: 2025-07-11T08:42:49-05:00
-draft: true
 category: writing
 description: A response to Charity Major's post "Thoughts on Motivation and my 40-year career"
 ---
