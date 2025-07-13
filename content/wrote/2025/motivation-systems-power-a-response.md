@@ -1,8 +1,8 @@
 ---
-title: "Motivation, Systems, and Power: a Response to Charity Majors"
+title: "Motivation, Systems, and Power"
 date: 2025-07-11T08:42:49-05:00
 category: writing
-description: A response to Charity Major's post "Thoughts on Motivation and my 40-year career"
+description: A response to a recent blog post "Thoughts on Motivation and my 40-year career"
 ---
 
 Yesterday I was going through my RSS feeds and I read [Charity Major's latest blog post](https://charity.wtf/2025/07/09/thoughts-on-motivation-and-my-40-year-career/). It frustrated me so much that I am going to try and sort my frustrations here, in a sort of old-school blogging dialogue.
