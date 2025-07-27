@@ -56,11 +56,13 @@ However, I found the books most generative because of the ways they are complete
 
 Simpson's book starts with the premise that everything capitalism has wrought is contingent, and the power structures that capitalism and colonialism has wrought are designed to occlude reality, to prevent imagination. Simpson does not ask "how can we improve things?" but rather "what does a world worth living in look like?" Her answers do not fit within the civilized world of western society, because that world tries to choke out the many other worlds that inhabit this planet.
 
-> Mashkiig, an overlapping of the terrestrial and water worlds, are sites of tremendous life. I think of the shoreline full of ducks, geese, ospreys and her-ons; fish, frogs and turtles; muskrats, beavers, minks and deer; mosquito larvae and dragonfly nymphs; lily pads and wild rice; and stagnant, decaying organic matter. I think of ecosystems that remove pollutants from water and get rid of 90 percent of water-borne pathogens. Ecosystems that clean the groundwater we rely on to drink. Ecosystems that sequester carbon and hold water like sponges buffering against flood-ing.
+> In our knowledge system, the Michi Saagig Nishnaabeg share everything with all living things and their formations. We are deeply interdependent. We are intercommunal. We are but one form of life in a complex web of cascading lives. We are no more important—and many would say we are less important-than the other beings and systems making up the universe. We have no more “rights” than any other living thing in that web. We are not special, extra or excep-tional. We are not owed the lives of other living things.
 >
-> Capitalism understands otherwise.
+> We are not owed the planet.
+> 
+> We are not owed comfortable lives.
 >
-> In southern Ontario, between 70 percent and 9o percent of original wetlands have been destroyed-draining these worlds for farmland, settlement, industrial development and highway construction. On a planetary scale, we’ve lost one-third of global wetlands in the last forty-five years. The threats don’t stop there, though. Pollution, climate change and the artificial modification of water levels—like that which occurs in the management of the Trent-Severn Waterway—also contribute to the desecration.
+> We believe this not for self-involved reasons-not because our continuance depends upon the earth being healthy, not because our lives depend upon this, even if they do—but because, ethically, who do we think we are? Who are we to place ourselves above all other living things, most of which we don’t understand?
 
 Simpson's short, brilliant book is not concerned with helping us make sense of capitalism, because capitalism is inherently contradictory and irrational. So, through the life of Nibi, Simpson invites us to imagine otherwise. "Together", she writes,
 
