@@ -202,6 +202,15 @@
     list-style: none;
     margin-bottom: 4em;
 
+    p {
+      margin-bottom: 1em;
+    }
+
+    .book-category,
+    .book-publisher {
+      display: none;
+    }
+
     .book-publisher {
       font-size: 11.5px;
     }
