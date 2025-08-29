@@ -24,7 +24,7 @@ But even if we pretend like the polling is useful information, cowardly Dems (bo
 
 The polls show—and that Pew article above emphasizes this—that people's opinions on trans issues are not fixed. They are moveable.
 
-And right now nearly everyone in power has decided the best idea is to let Republicans where the opinions should be moved to.
+And right now nearly everyone in power has decided the best idea is to let Republicans determine where the opinions should be moved to.
 
 I am desperate, genuinely desperate for the people with soft and hard power in the Democratic party to understand that they have immense power to stop this. That the polls are not saying "here's where people are moving" but instead "here's how you're failing." And I'd love them to stop failing. Yesterday.
 
