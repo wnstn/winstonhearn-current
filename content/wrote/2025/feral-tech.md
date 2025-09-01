@@ -162,7 +162,7 @@ Technological progress is thus never a neutral or even purely positive progressi
 
 Feral tech is thus—as I conceive of it—technology that A) brings about consequences that would never be justifiable if accurately weighed in a cost/benefits analysis, and yet B) is so integral once adopted at scale that it becomes difficult to imagine a world without it. Feral technology escapes our control and requires us to adapt to its demands, even as we understand that the costs are unjustifiable and existentially threatening.
 
-I believe that LLMs are such a technology, because they aren't actually the Automated Intelligence people believe them to be, and if we allow their largest boosters to keep promoting this deceptive framing, we are going to create a new world of technological ferality, even before we have dealt with the current one.
+I believe that LLMs are such a technology, because they aren't actually the Artificial Intelligence people believe them to be, and if we allow their largest boosters to keep promoting this deceptive framing, we are going to create a new world of technological ferality, even before we have dealt with the current one.
 
 ## The Future we are Facing
 
