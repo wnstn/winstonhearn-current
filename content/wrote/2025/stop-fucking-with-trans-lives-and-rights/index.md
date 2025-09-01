@@ -1,5 +1,5 @@
 ---
-title: "Stop Fucking Around Trans People"
+title: "Stop Fucking With Trans Lives and Rights"
 date: 2025-08-29T09:59:10-05:00
 category: writing
 description: Trans people of all ages deserve a world where their identities are validated and celebrated. A world where healthcare is obtainable, is not surrounded by a bunch of paternalistic, insulting concern and questioning. A world where they are understood to be the experts on their bodies and their identities, and the rest of us are respectfully curious and celebratory. A world where trans joy flourishes everywhere. 
