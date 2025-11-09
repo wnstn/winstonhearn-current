@@ -35,6 +35,30 @@ The site will be available at `http://localhost:1313/` or an available port.
 
 **Note:** Use `./scripts/hugo-server.sh` or `npm run serve` instead of `hugo server` directly to ensure the copyright year is automatically updated.
 
+## Features
+
+### Mermaid Diagrams
+
+The site supports Mermaid diagrams for creating flowcharts, sequence diagrams, and other visualizations. You can use Mermaid in two ways:
+
+1. **Code blocks** (recommended):
+   ````markdown
+   ```mermaid
+   graph TD
+       A[Start] --> B[End]
+   ```
+   ````
+
+2. **Shortcode**:
+   ```markdown
+   {{< mermaid >}}
+   graph TD
+       A[Start] --> B[End]
+   {{< /mermaid >}}
+   ```
+
+Mermaid.js is automatically loaded and will render diagrams on page load.
+
 ---
 
 Helpful ZSH commands for autocreating posts

@@ -12,3 +12,28 @@
     </div>
 </footer>
 
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default' });
+  
+  // Process code blocks with language-mermaid
+  document.addEventListener('DOMContentLoaded', function() {
+    const mermaidBlocks = document.querySelectorAll('code.language-mermaid, pre code.language-mermaid');
+    mermaidBlocks.forEach(function(block) {
+      const parent = block.parentElement;
+      if (parent && parent.tagName === 'PRE') {
+        const diagram = block.textContent;
+        const mermaidDiv = document.createElement('div');
+        mermaidDiv.className = 'mermaid';
+        mermaidDiv.textContent = diagram;
+        parent.parentNode.replaceChild(mermaidDiv, parent);
+      }
+    });
+    
+    // Re-initialize Mermaid after processing
+    if (mermaidBlocks.length > 0) {
+      mermaid.run();
+    }
+  });
+</script>
+
