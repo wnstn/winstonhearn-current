@@ -10,4 +10,5 @@
       <li class="{{ $class }}"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ul>
+  {{ partial "dark-mode-toggle.html" . }}
 </nav>

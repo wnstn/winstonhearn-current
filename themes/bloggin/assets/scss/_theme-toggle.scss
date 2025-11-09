@@ -1,0 +1,73 @@
+@use "sass:color";
+@use "variables";
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: variables.$background;
+  border: 2px solid variables.$flourish;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  
+  @include variables.dark-mode {
+    background: variables.$dark-background;
+    border-color: variables.$dark-accent;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  @include variables.dark-mode-toggle {
+    background: variables.$dark-background;
+    border-color: variables.$dark-accent;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+    @include variables.dark-mode {
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    }
+    
+    @include variables.dark-mode-toggle {
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  &:active {
+    transform: scale(0.95);
+  }
+  
+  &:focus {
+    outline: 2px solid variables.$links;
+    outline-offset: 2px;
+    
+    @include variables.dark-mode {
+      outline-color: variables.$dark-links;
+    }
+    
+    @include variables.dark-mode-toggle {
+      outline-color: variables.$dark-links;
+    }
+  }
+  
+  .theme-toggle-icon {
+    font-size: 24px;
+    line-height: 1;
+    transition: transform 0.3s ease;
+    display: block;
+    pointer-events: none;
+  }
+}
+

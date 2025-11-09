@@ -37,4 +37,151 @@
   {{ $opts := dict "targetPath" "main.js" "params" $vars }}
   {{ $built := resources.Get "js/index.js" | js.Build $opts }}
   <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+  
+  <style>
+    /* Theme toggle button styles */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #FFF;
+      border: 2px solid #FF8DC7;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 0;
+      margin: 0;
+    }
+    
+    .theme-toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .theme-toggle:active {
+      transform: scale(0.95);
+    }
+    
+    .theme-toggle:focus {
+      outline: 2px solid #57C5B6;
+      outline-offset: 2px;
+    }
+    
+    .theme-toggle-icon {
+      font-size: 24px;
+      line-height: 1;
+      transition: transform 0.3s ease;
+      display: block;
+      pointer-events: none;
+    }
+    
+    /* Dark mode enabled */
+    body.dark-mode .theme-toggle {
+      background: #1A1A1A;
+      border-color: #57C5B6;
+      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+    }
+    
+    body.dark-mode .theme-toggle:hover {
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    }
+    /* Dark mode body styles */
+    body.dark-mode {
+      background-color: #1A1A1A !important;
+      color: #E0E0E0 !important;
+    }
+    
+    body.dark-mode * {
+      color: #E0E0E0 !important;
+    }
+    
+    body.dark-mode a {
+      color: #57C5B6 !important;
+    }
+    
+    body.dark-mode .content {
+      background-color: #1A1A1A !important;
+      overflow: visible !important;
+    }
+    
+    body.dark-mode .content * {
+      background-color: #1A1A1A !important;
+    }
+    
+    body.dark-mode .content nav * {
+      color: #E0E0E0 !important;
+    }
+    
+    body.dark-mode .winstons-homepage .content nav,
+    body.dark-mode .winstons-homepage .content nav * {
+      background-color: #1A1A1A !important;
+      color: #E0E0E0 !important;
+    }
+    
+    body.dark-mode .left-nav,
+    body.dark-mode .winstons-homepage .content nav .left-nav {
+      background-color: #1A1A1A !important;
+    }
+    
+    body.dark-mode .left-nav * {
+      background-color: #1A1A1A !important;
+    }
+    
+    body.dark-mode .site-title,
+    body.dark-mode .site-title a {
+      color: #57C5B6 !important;
+      background-color: #1A1A1A !important;
+      margin-bottom: 0.25em !important;
+      padding-bottom: 0.125em !important;
+    }
+    
+    body.dark-mode .site-subtitle {
+      color: #FF8DC7 !important;
+      background-color: #1A1A1A !important;
+      opacity: 0.8;
+      margin-top: 0.25em !important;
+      padding-top: 0.125em !important;
+    }
+    
+    body.dark-mode h2,
+    body.dark-mode .small-header {
+      color: #57C5B6 !important;
+    }
+    
+    body.dark-mode footer,
+    body.dark-mode footer * {
+      color: #E0E0E0 !important;
+    }
+    
+    body.dark-mode footer a {
+      color: #57C5B6 !important;
+    }
+    
+    body.dark-mode #bio,
+    body.dark-mode #bio * {
+      background-color: #1A1A1A !important;
+      color: #E0E0E0 !important;
+    }
+    
+    body.dark-mode #bio.footer {
+      border-left-color: #FF8DC7 !important;
+      border-right-color: #FF8DC7 !important;
+    }
+    
+    body.dark-mode #bio {
+      border-bottom-color: #1A1A1A !important;
+    }
+    
+    body.dark-mode .site-description {
+      background-color: #1A1A1A !important;
+      color: #E0E0E0 !important;
+    }
+  </style>
 </head>

@@ -21,3 +21,197 @@
 @use 'sharing-page';
 @use 'recommended';
 @use 'syntax';
+
+// Dark mode styles - using body.dark-mode selector (matches example pattern)
+body.dark-mode {
+  background-color: variables.$dark-background !important;
+  
+  &,
+  * {
+    color: variables.$dark-text !important;
+  }
+  
+  .content {
+    background-color: variables.$dark-background !important;
+    overflow: visible !important;
+    
+    * {
+      background-color: variables.$dark-background !important;
+    }
+  }
+  
+  .content nav {
+    background: variables.$dark-background !important;
+    border-bottom-color: variables.$dark-flourish !important;
+    
+    * {
+      color: variables.$dark-text !important;
+    }
+  }
+  
+  .winstons-homepage {
+    .content nav {
+      background: variables.$dark-background !important;
+      border-bottom-color: variables.$dark-flourish !important;
+      
+      * {
+        color: variables.$dark-text !important;
+        background-color: variables.$dark-background !important;
+      }
+      
+      .left-nav {
+        background-color: variables.$dark-background !important;
+        
+        * {
+          background-color: variables.$dark-background !important;
+        }
+      }
+      
+      .site-title,
+      .site-subtitle {
+        background-color: variables.$dark-background !important;
+      }
+    }
+  }
+  
+  .left-nav {
+    background-color: variables.$dark-background !important;
+    
+    * {
+      background-color: variables.$dark-background !important;
+    }
+  }
+  
+  .site-title {
+    color: variables.$dark-links !important;
+    background-color: variables.$dark-background !important;
+    margin-bottom: 0.25em !important;
+    padding-bottom: 0.125em !important;
+    
+    a {
+      color: variables.$dark-links !important;
+      background-color: variables.$dark-background !important;
+    }
+  }
+  
+  .site-subtitle {
+    color: variables.$dark-flourish !important;
+    opacity: 0.8;
+    background-color: variables.$dark-background !important;
+    margin-top: 0.25em !important;
+    padding-top: 0.125em !important;
+  }
+  
+  h2,
+  .small-header {
+    color: variables.$dark-headers !important;
+  }
+  
+  h3,
+  h4 {
+    color: variables.$dark-text !important;
+  }
+  
+  a {
+    color: variables.$dark-links !important;
+    
+    &:link,
+    &:visited {
+      color: variables.$dark-links !important;
+    }
+    
+    &:hover,
+    &:active {
+      border-color: variables.$dark-links !important;
+      color: variables.$dark-links !important;
+    }
+  }
+  
+  .header-link {
+    a {
+      color: variables.$dark-links !important;
+    }
+  }
+  
+  .category-nav p {
+    color: variables.$dark-text !important;
+  }
+  
+  .book-covers {
+    border-color: variables.$dark-flourish !important;
+  }
+  
+  ul,
+  li {
+    color: variables.$dark-text !important;
+  }
+  
+  p {
+    color: variables.$dark-text !important;
+  }
+  
+  footer {
+    background-color: variables.$dark-background !important;
+    
+    * {
+      color: variables.$dark-text !important;
+    }
+    
+    a {
+      color: variables.$dark-links !important;
+      
+      &:link,
+      &:visited {
+        color: variables.$dark-links !important;
+      }
+      
+      &:hover,
+      &:active {
+        color: variables.$dark-links !important;
+        border-color: variables.$dark-links !important;
+      }
+    }
+    
+    .footer-links {
+      li {
+        color: variables.$dark-text !important;
+      }
+    }
+    
+    .credits {
+      color: variables.$dark-text !important;
+      
+      a {
+        color: variables.$dark-links !important;
+      }
+    }
+  }
+  
+  #bio {
+    background-color: variables.$dark-background !important;
+    
+    * {
+      color: variables.$dark-text !important;
+    }
+    
+    &.footer {
+      background-color: variables.$dark-background !important;
+      border-left-color: variables.$dark-flourish !important;
+      border-right-color: variables.$dark-flourish !important;
+    }
+    
+    .site-description {
+      color: variables.$dark-text !important;
+      background-color: variables.$dark-background !important;
+    }
+    
+    @media screen and (min-width: 768px) {
+      border-bottom-color: variables.$dark-background !important;
+    }
+  }
+  
+  .site-description {
+    color: variables.$dark-text !important;
+    background-color: variables.$dark-background !important;
+  }
+}

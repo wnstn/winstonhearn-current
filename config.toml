@@ -11,18 +11,18 @@ theme = "bloggin"
 enableGitInfo = true
 apiurl = ""
 enableRobotsTXT = true
-copyright = '© 2025 Harrie Bickle'
+copyright = '© 2025 Harrie'
 ignoreLogs = ['warning-goldmark-raw-html']
 
 
 [params]
   description = "Harrie's personal blog"
   images = ["share.png"]
-  title = "winston hearn"
+  title = "Technobunnies"
   hny = ""
   order = 0
   [params.author]
-    name = 'winston hearn'
+    name = 'Technobunnies'
 
 [frontmatter]
   lastmod = ["lastmod", ":git", "date", "publishDate"]

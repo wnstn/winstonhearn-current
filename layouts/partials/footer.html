@@ -1,6 +1,6 @@
 <footer>
     <ul class="footer-links">
-        <li>&#169;{{ dateFormat "2006" now }} Harrie Bickle</li>
+        <li>&#169;{{ dateFormat "2006" now }} Harrie</li>
         <li><a href="https://github.com/m4sterbunny/">GitHub</a></li>
         <!-- <li><a href="https://twitter.com/suchwinston/">LinkedIn</a></li> -->
         <!-- <li><a href="mailto:hello+blog@wnstn.com">hello@wnstn.com</a></li> -->
@@ -12,9 +12,119 @@
     </div>
 </footer>
 
+<script>
+  // Function to update Mermaid theme - will be called after mermaid is loaded
+  window.updateMermaidTheme = function(isDark) {
+    if (!window.mermaid) return;
+    
+    const theme = isDark ? 'dark' : 'default';
+    window.mermaid.initialize({ 
+      startOnLoad: false, 
+      theme: theme
+    });
+    
+    // Re-render all Mermaid diagrams
+    const mermaidElements = document.querySelectorAll('.mermaid');
+    mermaidElements.forEach(function(element) {
+      // Get the original diagram content from data attribute
+      const diagram = element.getAttribute('data-diagram');
+      if (diagram && diagram.trim()) {
+        try {
+          // Clear the element completely
+          element.innerHTML = '';
+          element.textContent = diagram;
+          element.removeAttribute('data-processed');
+          element.removeAttribute('id');
+          
+          // Re-render with new theme
+          window.mermaid.run({
+            nodes: [element]
+          });
+        } catch (error) {
+          console.warn('Error re-rendering Mermaid diagram:', error);
+        }
+      }
+    });
+  };
+  
+  const toggleEl = document.querySelector('.js-toggle');
+  const themeIcon = document.querySelector('.theme-toggle-icon');
+  
+  if (toggleEl) {
+    // Check localStorage for saved preference
+    const savedMode = localStorage.getItem('dark-mode');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDark = savedMode === 'true' || (savedMode === null && prefersDark);
+    
+    // Apply initial mode
+    if (isDark) {
+      document.body.classList.add('dark-mode');
+      if (themeIcon) {
+        themeIcon.textContent = '☀️';
+      }
+    }
+    
+    // Toggle function
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.contains('dark-mode');
+      
+      if (isDarkMode) {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('dark-mode', 'false');
+        if (themeIcon) {
+          themeIcon.textContent = '🌙';
+        }
+        // Update Mermaid theme after a short delay to ensure it's loaded
+        setTimeout(function() {
+          if (window.updateMermaidTheme) {
+            window.updateMermaidTheme(false);
+          }
+        }, 200);
+      } else {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('dark-mode', 'true');
+        if (themeIcon) {
+          themeIcon.textContent = '☀️';
+        }
+        // Update Mermaid theme after a short delay to ensure it's loaded
+        setTimeout(function() {
+          if (window.updateMermaidTheme) {
+            window.updateMermaidTheme(true);
+          }
+        }, 200);
+      }
+    }
+    
+    // Click handler
+    toggleEl.addEventListener('click', toggleDarkMode);
+    
+    // Keyboard handler
+    toggleEl.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleDarkMode();
+      }
+    });
+  }
+</script>
+
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true, theme: 'default' });
+  
+  // Check initial theme preference
+  const savedMode = localStorage.getItem('dark-mode');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = savedMode === 'true' || (savedMode === null && prefersDark);
+  const initialTheme = isDark ? 'dark' : 'default';
+  
+  // Initialize Mermaid with appropriate theme
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: initialTheme
+  });
+  
+  // Make mermaid available globally for theme switching
+  window.mermaid = mermaid;
   
   // Process code blocks with language-mermaid
   document.addEventListener('DOMContentLoaded', function() {
@@ -22,16 +132,32 @@
     mermaidBlocks.forEach(function(block) {
       const parent = block.parentElement;
       if (parent && parent.tagName === 'PRE') {
-        const diagram = block.textContent;
-        const mermaidDiv = document.createElement('div');
-        mermaidDiv.className = 'mermaid';
-        mermaidDiv.textContent = diagram;
-        parent.parentNode.replaceChild(mermaidDiv, parent);
+        const diagram = block.textContent.trim();
+        if (diagram) {
+          const mermaidDiv = document.createElement('div');
+          mermaidDiv.className = 'mermaid';
+          mermaidDiv.textContent = diagram;
+          // Store original diagram content for theme switching
+          mermaidDiv.setAttribute('data-diagram', diagram);
+          parent.parentNode.replaceChild(mermaidDiv, parent);
+        }
+      }
+    });
+    
+    // Also store diagram content for existing .mermaid elements
+    const existingMermaidElements = document.querySelectorAll('.mermaid');
+    existingMermaidElements.forEach(function(element) {
+      if (!element.getAttribute('data-diagram')) {
+        const diagram = element.textContent.trim();
+        // Only store if it looks like Mermaid syntax (not already rendered SVG)
+        if (diagram && !diagram.startsWith('<') && !diagram.includes('svg')) {
+          element.setAttribute('data-diagram', diagram);
+        }
       }
     });
     
     // Re-initialize Mermaid after processing
-    if (mermaidBlocks.length > 0) {
+    if (mermaidBlocks.length > 0 || existingMermaidElements.length > 0) {
       mermaid.run();
     }
   });
