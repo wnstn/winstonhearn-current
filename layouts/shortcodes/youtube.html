@@ -1,0 +1,43 @@
+{{- $input := .Get 0 | default (.Get "id") | default (.Get "url") -}}
+{{- $id := "" -}}
+
+{{- if $input -}}
+  {{- if in $input "youtu.be/" -}}
+    {{- $parts := split $input "youtu.be/" -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $id = index $parts 1 -}}
+      {{- $id = index (split $id "?") 0 -}}
+      {{- $id = index (split $id "&") 0 -}}
+    {{- end -}}
+  {{- else if in $input "youtube.com/watch" -}}
+    {{- $parts := split $input "v=" -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $id = index $parts 1 -}}
+      {{- $id = index (split $id "&") 0 -}}
+    {{- end -}}
+  {{- else if in $input "youtube.com/embed/" -}}
+    {{- $parts := split $input "embed/" -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $id = index $parts 1 -}}
+      {{- $id = index (split $id "?") 0 -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $id = $input -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $id -}}
+<div class="youtube-embed" style="position: relative !important; width: 100% !important; max-width: 800px !important; margin: 1.5em auto !important; padding-bottom: 56.25% !important; height: 0 !important; overflow: hidden !important; background: #000 !important;">
+  <iframe 
+    style="position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; border: 0 !important; display: block !important;" 
+    src="https://www.youtube.com/embed/{{ $id }}?rel=0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    title="YouTube video player"
+    width="560"
+    height="315">
+  </iframe>
+</div>
+{{- else -}}
+<p style="color: red; padding: 1em; border: 1px solid red;"><strong>YouTube Error:</strong> Could not parse video ID from "{{ $input }}"</p>
+{{- end -}}

@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section id="reading">
+  <h2 class="small-header">All books I have logged</h2>
+  
+  {{ $pages := .Site.GetPage "section" "read"}}
+  {{ $menu := dict 
+    "years" $pages.Pages.ByTitle.Reverse 
+    "categories" .Site.Taxonomies.categories 
+    "active" .Title }}
+
+  {{ partial "shared/category-nav.html" $menu }}  
+
+  {{ $allBooks := $pages.RegularPagesRecursive }}
+  <h3>All books ({{ $allBooks | len }} books)</h3>
+
+  {{ $showImages := true }}
+  <ul>
+    {{ range $allBooks }}
+    {{ .Scratch.Set "showImages" $showImages }}
+    {{ .Scratch.Set "showNotes" true }}
+    {{ .Scratch.Set "showHighlights" (isset .Params "highlights") }}
+    {{ partial "read/book.html" . }}
+    {{ end }}
+  </ul>
+
+  {{/*  {{ partial "shared/category-nav.html" (.Site.GetPage "/read") }}    */}}
+</section>
+
+{{ end }}
+
