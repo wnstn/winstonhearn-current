@@ -4,7 +4,10 @@
   "description": "personal blog",
   "main": "./themes/bloggin/assets/js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-copyright": "./scripts/update-copyright.sh",
+    "build": "./scripts/update-copyright.sh && export PATH=\"$PWD/dart-sass:$PATH\" && hugo",
+    "serve": "./scripts/update-copyright.sh && export PATH=\"$PWD/dart-sass:$PATH\" && hugo server"
   },
   "repository": {
     "type": "git",

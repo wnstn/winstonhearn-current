@@ -25,12 +25,15 @@ curl -LJO https://github.com/sass/dart-sass/releases/download/1.87.0/dart-sass-1
 tar -xf dart-sass-1.87.0-linux-x64.tar.gz
 rm dart-sass-1.87.0-linux-x64.tar.gz
 
-# Start the development server
-export PATH="$PWD/dart-sass:$PATH"
-hugo server
+# Start the development server (automatically updates copyright year)
+./scripts/hugo-server.sh
+# OR use npm script:
+# npm run serve
 ```
 
 The site will be available at `http://localhost:1313/` or an available port.
+
+**Note:** Use `./scripts/hugo-server.sh` or `npm run serve` instead of `hugo server` directly to ensure the copyright year is automatically updated.
 
 ---
 
@@ -67,8 +70,8 @@ function post() {
 
 ## Attribution
 
-Attribution is to [wnstn/winstonhearn-current](https://github.com/wnstn/winstonhearn-current) 2025/08/01 various changes have been made since forking.
+Attribution is to [wnstn/winstonhearn-current](https://github.com/wnstn/winstonhearn-current) 2025/08/01 various changes, tinkers, and adaptations, have been made since forking.
 
 Per the original intent of the license (Creative commons 3), this repo's tooling, including themes and other modifications is licensed under [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/deed.en).
 
-The content held within the /content folder, however, is the intellectual property (IP) of either the author or the author's clients. This IP is not for use.
+The content held within the /content folder, however, is the intellectual property (IP) of either the author or the author's clients. Content is owned by the author or client, is not licensed for use, copying, or distribution, and any use requires explicit permission.

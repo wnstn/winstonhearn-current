@@ -3,20 +3,20 @@
 # Dart Sass: 1.87.0
 # Node.js: 22+
 
-baseURL = "https://www.winstonhearn.com/"
+baseURL = "https://www.technobunnies.com/"
 languageCode = "en-us"
-title = "Winston Hearn (the third)"
-description = "Winston Hearn's personal blogging website dedicated to reading and such."
+title = "Technobunnies"
+description = "Harrie's blog and showcase website."
 theme = "bloggin"
 enableGitInfo = true
 apiurl = ""
 enableRobotsTXT = true
-copyright = '© 2025 winston hearn'
+copyright = '© 2025 Harrie Bickle'
 ignoreLogs = ['warning-goldmark-raw-html']
 
 
 [params]
-  description = "winston hearn's personal blog"
+  description = "Harrie's personal blog"
   images = ["share.png"]
   title = "winston hearn"
   hny = ""

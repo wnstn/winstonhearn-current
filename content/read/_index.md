@@ -2,7 +2,7 @@
 title: reading
 bodyClass: 'reading-list'
 layout: list
-description: Reading logs from 2017 through now
+description: Reading logs
 params:
     share_text: |
         Current Year 

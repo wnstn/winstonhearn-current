@@ -13,7 +13,7 @@
   <h2 class="small-header">All books I have logged</h2>
   {{ partial "shared/category-nav.html" $menu }}
 
-  {{ range $pages.Sections.ByTitle.Reverse }}
+  {{ range .FirstSection.Sections.ByTitle.Reverse }}
     {{ if eq .Title "All books"}}
         <!-- no output for the all books -->
     {{ else }}
