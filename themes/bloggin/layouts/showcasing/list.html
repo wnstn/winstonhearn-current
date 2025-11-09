@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<section class="recommendations">
+  <h2 class="small-header">Showcasing</h2>
+  <p>A showcase across more than a decade of technical writing, documentation, data, editing, and beyond.</p>
+  
+  {{ $menu := dict 
+    "years" .FirstSection.Sections.ByTitle.Reverse 
+    "categories" (where .Site.Taxonomies.categories "Page.Section" "showcasing") 
+    "active" .Title }}
+  
+  {{ partial "showcasing/category-nav.html" $menu }}
+  
+  <ul>
+    {{ range .Pages }}
+    {{ partial "showcasing/single.html" . }}
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}

@@ -1,5 +1,13 @@
 Personal site for blogging and keeping track of all reading.
 
+## Quick Start
+
+To run the development server:
+
+```bash
+./scripts/hugo-server.sh
+```
+
 ## Get Started
 
 ### Prerequisites

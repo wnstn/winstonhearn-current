@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section class="recommendations">
+  <h2 class="small-header">Showcasing: {{ .Title }}</h2>
+  
+  {{ $pages := .Site.GetPage "section" "showcasing"}}
+  {{ $menu := dict 
+    "years" $pages.Pages.ByTitle.Reverse 
+    "categories" .Site.Taxonomies.categories 
+    "active" .Title }}
+
+  {{ partial "showcasing/category-nav.html" $menu }}  
+
+  <h3>{{ .Title }} ({{ .Pages | len }} items)</h3>
+
+  <ul>
+    {{ range .Pages }}
+    {{ partial "showcasing/single.html" . }}
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}
+

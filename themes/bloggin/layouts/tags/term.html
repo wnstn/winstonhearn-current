@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+{{ $wrotePages := where .Pages "Section" "wrote" }}
+{{ if gt (len $wrotePages) 0 }}
+<section class="writing-section">
+  <h2 class="small-header">All posts</h2>
+  
+  {{ $wroteSection := .Site.GetPage "section" "wrote"}}
+  {{ $menu := dict 
+    "years" $wroteSection.Sections.ByTitle.Reverse 
+    "categories" (where .Site.Taxonomies.tags "Page.Section" "wrote") 
+    "active" .Title }}
+
+  {{ partial "shared/category-nav.html" $menu }}  
+
+  <h3 class="archive-title">{{ .Title }} ({{ $wrotePages | len }} posts)</h3>
+
+  <ul class="post-previews">
+    {{ range $wrotePages }}
+    {{ .Scratch.Set "minimal" false }}
+    {{ partial "wrote/single-post.html" . }}
+    {{ end }}
+  </ul>
+</section>
+{{ else }}
+  {{/* Simple default taxonomy term template */}}
+  <section>
+    <h2>{{ .Title }}</h2>
+    <ul>
+      {{ range .Pages }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
+
+{{ end }}
+

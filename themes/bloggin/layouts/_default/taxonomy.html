@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-{{- partial "head.html" . -}}
+  {{- partial "head.html" . -}}
+  {{ $bodyClass := .Params.BodyClass }}
+  {{ if eq .Kind "term" }}
+    {{ $wrotePages := where .Pages "Section" "wrote" }}
+    {{ if gt (len $wrotePages) 0 }}
+      {{ $bodyClass = "writing-archives" }}
+    {{ end }}
+  {{ end }}
+  <body class="{{ .Type }} {{ $bodyClass }}">
+    <div class="content">
+      {{- partial "header.html" . -}}
 
-<body class="{{ .Type }} {{ .Params.BodyClass }}">
-  <div class="content">
-    {{- partial "header.html" . -}}
-    <main id="page-content">
-      {{- block "main" . }}{{- end }}
-    </main>
-  </div>
-  {{- partial "footer.html" . -}}
-</body>
+      <main id="page-content">
+        {{- block "main" . }}{{- end }}
 
+        {{ .Scratch.Set "footer" true }}
+        {{- partial "bio.html" . -}}
+      </main>
+    
+    </div>  
+    {{- partial "footer.html" . -}}
+  </body>
 </html>

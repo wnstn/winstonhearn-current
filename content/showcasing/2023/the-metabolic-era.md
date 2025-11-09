@@ -1,7 +1,7 @@
 ---
 title: "The Metabolic Era"
 date: 2023-07-16T12:18:17-04:00
-category: sharing
+category: showcasing
 share:
   name: "The World is Toxic. Welcome to the Metabolic Era"
   url: "https://www.wired.com/story/the-world-is-toxic-welcome-to-the-metabolic-era"

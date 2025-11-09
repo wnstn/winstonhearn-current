@@ -68,7 +68,7 @@
             {{ end }}
         {{ else if compare.Eq .Section "recommended" }}
             {{- $sectionHed = printf "recommended books" }}
-        {{ else if compare.Eq .Section "shared" }}
+        {{ else if compare.Eq .Section "showcasing" }}
             {{- $sectionHed = printf "cool things to read" }}
         {{ else if compare.Eq .Section "wrote" }}
             {{- $sectionHed = printf "posts I’ve written" }}

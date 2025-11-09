@@ -1,0 +1,18 @@
+<div class="category-nav">
+  <p>Filters:</p>  
+  
+  {{ $active := .active }}
+  {{ $menus := slice .years .categories}}
+  {{ range $menus }}
+    <ul class="years">
+    {{ range . }}
+      {{ if eq $active .Page.Title }}
+        <li class="active">{{ .Page.Title }}</li>
+      {{ else }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    {{ end }}
+    
+  </ul>
+{{ end }}
+</div>

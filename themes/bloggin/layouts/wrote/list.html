@@ -1,48 +1,59 @@
-
 {{ define "main" }}
 
+{{ $indexPage := "writing" }}
+{{/*  this is the main writing section page  */}}
 <section class="writing-section">
-  <h2 class="small-header">All posts</h2>
 
-  {{ $pages := .Site.GetPage "section" "wrote"}}
+  {{ if eq .Title $indexPage }}
+
   {{ $menu := dict 
-    "years" $pages.Pages.ByTitle.Reverse 
-    "categories" nil 
+    "years" .FirstSection.Sections.ByTitle.Reverse 
+    "categories" (where .Site.Taxonomies.tags "Page.Section" "wrote") 
     "active" .Title }}
+
+  <h2 class="small-header">All posts</h2>
+  
+  {{ partial "shared/category-nav.html" $menu }} 
+    {{/*  on the homepage, set the context to current year  */}}
+    {{ range where .Sections "Title" (now.Format "2006") }}
+      <h3 class="archive-title">{{ .Title }} ({{ .Pages | len }} posts)</h3>
+
+      <ul class="post-previews">
+        {{ range .Pages }}
+          {{ .Scratch.Set "minimal" false }}
+          {{ partial "wrote/single-post.html" . }}
+        {{ end }}
+      </ul> 
+
+      {{ if gt .Pages.Len 10 }}
+        {{ partial "shared/category-nav.html" $menu }}  
+      {{ end }}
+    {{ end }}
+
+  {{ else }}
+
+  {{ $menu := dict 
+    "years" .FirstSection.Sections.ByTitle.Reverse 
+    "categories" (where .Site.Taxonomies.tags "Page.Section" "wrote") 
+    "active" .Title }}
+
+  <h2 class="small-header">{{printf "Posts from %s" .Title}}</h2>
 
   {{ partial "shared/category-nav.html" $menu }}  
 
-  {{/*  is this the root section or a subsection  */}}
-  {{ $subsection := false }}
-  {{ with .Site.GetPage "/wrote" }}
-    {{ $subsection = $.IsDescendant . }}
-  {{ end }}
-
-    {{if $subsection}}
-
       <h3 class="archive-title">{{ .Title }} ({{ .Pages | len }} posts)</h3>
-        <ul class="post-previews">
-          {{ range .Pages }}
-            {{ .Scratch.Set "minimal" false }}
-            {{ partial "wrote/single-post.html" . }}
-          {{ end }}
-      </ul>
 
-    {{ else }}
+      <ul class="post-previews">
+        {{ range .Pages }}
+          {{ .Scratch.Set "minimal" false }}
+          {{ partial "wrote/single-post.html" . }}
+        {{ end }}
+      </ul> 
 
-      {{ range (.Pages.ByParam "Order").Reverse }}
-      <h3  class="archive-title">{{ .Title }} ({{ .Pages | len }} posts)</h3>
-        <ul class="post-previews">
-          {{ range .Pages }}
-            {{ .Scratch.Set "minimal" false }}
-            {{ partial "wrote/single-post.html" . }}
-          {{ end }}
-      </ul>
+      {{ if gt .Pages.Len 10 }}
+        {{ partial "shared/category-nav.html" $menu }}  
       {{ end }}
-
     {{ end }}
-  
-
 </section>
 
 {{ end }}

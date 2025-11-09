@@ -2,6 +2,8 @@
 title: "ENS v2"
 date: 2024-10-16T20:49:32-04:00
 category: writing
+tags:
+  - web3
 description: I interviewed at ENS and they gave me a writing test to explain the difference between v1 and v2 for a developer with little existing knowledge of v1.
 ---
 
