@@ -14,10 +14,6 @@
 
   {{ partial "head-json-ld.html" }}
 
-  {{ with .OutputFormats.Get "rss" -}}
-  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
-  {{ end }}
-
   {{ with resources.Get "scss/makeup.scss" }}
     {{ $opts := dict
        "targetPath" "css/makeup.css"

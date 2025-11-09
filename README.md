@@ -8,6 +8,10 @@ Personal site for blogging and keeping track of all reading.
 
 ### Setup
 
+This is for going from the [forked repo](https://github.com/wnstn/winstonhearn-current) to locally-hosted site.
+
+[see internal docs for explainers](/internal-docs/get-started.md)
+
 ```bash
 # Clone the repository
 git clone https://github.com/wnstn/winstonhearn-current
@@ -60,3 +64,11 @@ function post() {
   fi
 }
 ```
+
+## Attribution
+
+Attribution is to [wnstn/winstonhearn-current](https://github.com/wnstn/winstonhearn-current) 2025/08/01 various changes have been made since forking.
+
+Per the original intent of the license (Creative commons 3), this repo's tooling, including themes and other modifications is licensed under [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/deed.en).
+
+The content held within the /content folder, however, is the intellectual property (IP) of either the author or the author's clients. This IP is not for use.

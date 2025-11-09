@@ -1,3 +1,8 @@
+# Build Requirements:
+# Hugo Extended: 0.152.2+
+# Dart Sass: 1.87.0
+# Node.js: 22+
+
 baseURL = "https://www.winstonhearn.com/"
 languageCode = "en-us"
 title = "Winston Hearn (the third)"
@@ -29,12 +34,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
     tabWidth = 2
     noClasses = false
 
-[services]
-  [services.rss]
-    limit = 20
-
 [outputs]
-  home = ['html', 'rss']
-  section = ['html', 'rss']
+  home = ['html']
+  section = ['html']
   taxonomy = ['html']
   term = ['html']
