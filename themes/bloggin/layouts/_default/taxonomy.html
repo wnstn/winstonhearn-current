@@ -4,8 +4,11 @@
   {{ $bodyClass := .Params.BodyClass }}
   {{ if eq .Kind "term" }}
     {{ $wrotePages := where .Pages "Section" "wrote" }}
+    {{ $recommendedPages := where .Pages "Section" "recommended" }}
     {{ if gt (len $wrotePages) 0 }}
       {{ $bodyClass = "writing-archives" }}
+    {{ else if gt (len $recommendedPages) 0 }}
+      {{ $bodyClass = "recommended-archives" }}
     {{ end }}
   {{ end }}
   <body class="{{ .Type }} {{ $bodyClass }}">

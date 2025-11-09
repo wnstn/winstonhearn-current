@@ -1,13 +1,57 @@
 {{ define "main" }}
 
+{{ $indexPage := "recommending" }}
+{{/*  this is the main recommended section page  */}}
 <section class="recommendations">
+
+  {{ if eq .Title $indexPage }}
+
+  {{ $menu := dict 
+    "years" .FirstSection.Sections.ByTitle.Reverse 
+    "categories" (where .Site.Taxonomies.tags "Page.Section" "recommended") 
+    "active" .Title }}
+
   <h2 class="small-header">Recommendations</h2>
-  <p>My most recommended content across various topics.</p>
-  <ul>
-    {{ range .Pages }}
-      {{ partial "recommended/single.html" . }}
+  
+  {{ partial "shared/category-nav.html" $menu }} 
+    {{/*  on the homepage, set the context to current year  */}}
+    {{ range where .Sections "Title" (now.Format "2006") }}
+      <h3 class="archive-title">{{ .Title }} ({{ .Pages | len }} items)</h3>
+
+      <ul>
+        {{ range .Pages }}
+          {{ partial "recommended/single.html" . }}
+        {{ end }}
+      </ul> 
+
+      {{ if gt .Pages.Len 10 }}
+        {{ partial "shared/category-nav.html" $menu }}  
+      {{ end }}
     {{ end }}
-  </ul>
+
+  {{ else }}
+
+  {{ $menu := dict 
+    "years" .FirstSection.Sections.ByTitle.Reverse 
+    "categories" (where .Site.Taxonomies.tags "Page.Section" "recommended") 
+    "active" .Title }}
+
+  <h2 class="small-header">{{printf "Recommendations from %s" .Title}}</h2>
+
+  {{ partial "shared/category-nav.html" $menu }}  
+
+      <h3 class="archive-title">{{ .Title }} ({{ .Pages | len }} items)</h3>
+
+      <ul>
+        {{ range .Pages }}
+          {{ partial "recommended/single.html" . }}
+        {{ end }}
+      </ul> 
+
+      {{ if gt .Pages.Len 10 }}
+        {{ partial "shared/category-nav.html" $menu }}  
+      {{ end }}
+    {{ end }}
 </section>
 
 {{ end }}

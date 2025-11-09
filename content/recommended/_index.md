@@ -1,7 +1,7 @@
 ---
 title: recommending
-layout: recommended
-description: My most recommended content.
+bodyClass: 'recommended-archives'
+order: 0
 ---
 
 My most recommended books, pods, and videos across various topics.

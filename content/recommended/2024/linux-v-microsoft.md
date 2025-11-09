@@ -1,7 +1,10 @@
 ---
-title: "Big tech getting it wrong"
+title: "Linux vs Microsoft"
 date: 2024-03-21T15:19:10-04:00
 category: recommended
+tags:
+  - Linux
+  - Big Tech
 description: Big tech doesn't always get it right.
 coverBooks: 
 ----

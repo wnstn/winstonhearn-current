@@ -137,3 +137,8 @@
 body.tags .writing-section {
   flex-direction: column;
 }
+
+body.tags .recommendations {
+  display: flex;
+  flex-direction: column;
+}

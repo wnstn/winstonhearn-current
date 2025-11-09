@@ -1,6 +1,8 @@
 {{ define "main" }}
 
 {{ $wrotePages := where .Pages "Section" "wrote" }}
+{{ $recommendedPages := where .Pages "Section" "recommended" }}
+
 {{ if gt (len $wrotePages) 0 }}
 <section class="writing-section">
   <h2 class="small-header">All posts</h2>
@@ -19,6 +21,26 @@
     {{ range $wrotePages }}
     {{ .Scratch.Set "minimal" false }}
     {{ partial "wrote/single-post.html" . }}
+    {{ end }}
+  </ul>
+</section>
+{{ else if gt (len $recommendedPages) 0 }}
+<section class="recommendations">
+  <h2 class="small-header">Recommendations</h2>
+  
+  {{ $recommendedSection := .Site.GetPage "section" "recommended"}}
+  {{ $menu := dict 
+    "years" $recommendedSection.Sections.ByTitle.Reverse 
+    "categories" (where .Site.Taxonomies.tags "Page.Section" "recommended") 
+    "active" .Title }}
+
+  {{ partial "shared/category-nav.html" $menu }}  
+
+  <h3 class="archive-title">{{ .Title }} ({{ $recommendedPages | len }} items)</h3>
+
+  <ul>
+    {{ range $recommendedPages }}
+    {{ partial "recommended/single.html" . }}
     {{ end }}
   </ul>
 </section>
