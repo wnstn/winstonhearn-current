@@ -18,7 +18,7 @@ There are a bunch of other tests that seem simple but the federal government is 
 * Do law enforcement agents have complete impunity to terrorize any commmunity because they are whiny bitches?
 * Does the government have the right to knock down doors and drag people out of their houses because an armed man doesn't like the look of the people inside?
 
-The answer to all of these questions in a functioning democracy is no. If a country believes in freedom, and supposedly has built up a large set of norms and laws to perpetuate freedom, then the people who live inside that country are not at risk of being kidnapped, beat up, tear gassed, or shot in the goddamn face when they leave their houses. People do not shelter in place to avoid masked paramilitary forces in a free country.
+In a functioning democratic country, the answers to these questions are yes, no, no, and no. If a country believes in freedom, and supposedly has built up a large set of norms and laws to perpetuate freedom, then the people who live inside that country are not at risk of being kidnapped, beat up, tear gassed, or shot in the goddamn face when they leave their houses. People do not shelter in place to avoid masked paramilitary forces in a free country.
 
 They do that in a country that is not free. Which means, right now in Minnesota, we are not free. And since Minnesota is a state of the United States, the country itself is not free.
 
