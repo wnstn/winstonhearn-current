@@ -5,13 +5,7 @@ category: reading
 notes: "post-file-name"
 highlights: false
 categories:
-  - Climate Change
-  - Tech Industry
-  - Disability Theory
   - Fiction
-  - Race
-  - Indigenous Issues
-  - Cultural Analysis
 book:
   author: "Cameron Reed"
   url: "https://bookshop.org/p/books/the-fortunate-fall-cameron-reed/f247ae51e6511c24"
