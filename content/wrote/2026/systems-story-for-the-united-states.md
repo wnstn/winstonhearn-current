@@ -175,7 +175,7 @@ The financial industry took over the economy and has figured out how to use all 
 
 There you have it, my system story for understanding the function of the United States. I think the country was invented to preserve (stolen) wealth, and then about 200 years after it was created the way money is created changed, generating opportunities for wealth generation that had previously been impossible. The financial industry has now taken over our economy, and we are beholden to its logic and incentives.
 
-The logic of the financial system is that it's too expensive to rethink the shape of the world to address the very present risks that climate change presents while, at the very same time, we cannot afford to not invest in the extremely unlikely possibility that AI succeeds. Both addressing the climate crisis and missing out on the possibility that AI becomes an infinite wealth machine are serious threats to the money, and the US is treating each risk as such.
+The logic of the financial system is that it's too expensive to rethink the shape of the world to address the very present risks that climate change presents while, at the very same time, we cannot afford to not reshape the world in service of the extremely unlikely possibility that AI succeeds. Both addressing the climate crisis and missing out on the possibility that AI becomes an infinite wealth machine are serious threats to the money, and the US is treating each risk as such.
 
 This theory has been extremely generative for me as I've pieced it together, and there is so much more I hope to write about it in the future. In the meantime, some concluding thoughts.
 
