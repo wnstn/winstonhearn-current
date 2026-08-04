@@ -191,8 +191,8 @@ Humans are resilient too; we have created all of our culture and systems and sca
 
 As a species, we know _so much_. We have so many skills, and so many talents, and so many things that we've built up. Our resilience, our skills, our knowledge, our creativity & love & adaptability & _everything that's already built_ are the raw materials we're working with if we decide to move beyond this wealth preserving system (which is called capitalism, although I have intentionally avoided that name).
 
-Today, everything happens so much in a single system. That system is large, and frankly, it sucks. What I'm eternally curious to understand now is: what if we tried different everythings, what if we employed all of our absurdity and creativity to evolve this world into more that we have now?
+Today, everything happens so much in a single system. That system is large, and frankly, it sucks. What I'm eternally curious to understand now is: what if we tried different everythings, what if we employed all of our absurdity and creativity to evolve this world into more than we have now?
 
-What if we explored the everything else, so much more? What if new things happened so much? 
+What if we explored the everything else, so much more? **What if new things happened so much**? 
 
-I like to dream about building that future, and I hope this story makes you curious to dream similar dreams. Thanks for reading.
+I like to dream about building that future and I hope this story makes you curious to dream similar dreams. Thanks for reading.
