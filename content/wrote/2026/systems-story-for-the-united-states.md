@@ -189,7 +189,7 @@ Last of all, I believe pretty strongly that we should be looking to the myriad w
 
 Humans are resilient too; we have created all of our culture and systems and scaled them up over time. It's now very clear that our systems are not serving the majority of us. The country is refusing to deal with the climate change crisis and setting us all up for lots of misery and disaster, all because otherwise the rich people might get less rich, and our system finds loss of wealth more unbearable than mass misery and death.
 
-As a species, we know _so much_. We have so many skills, and so many talents, and so many things that we've built up. Our resilience, our skills, our knowledge, our creativity & love & adaptability & _everything that's already built_ are the raw materials we're working with if we decide to move beyond this wealth preserving system (which is called capitalism, although I have intentionally avoided that word until now).
+As a species, we know _so much_. We have so many skills, and so many talents, and so many things that we've built up. Our resilience, our skills, our knowledge, our creativity & love & adaptability & _everything that's already built_ are the raw materials we're working with if we decide to move beyond this wealth preserving system (which is called capitalism, although I have intentionally avoided that name).
 
 Today, everything happens so much in a single system. That system is large, and frankly, it sucks. What I'm eternally curious to understand now is: what if we tried different everythings, what if we employed all of our absurdity and creativity to evolve this world into more that we have now?
 
