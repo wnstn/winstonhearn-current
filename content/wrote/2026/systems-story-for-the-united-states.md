@@ -1,5 +1,5 @@
 ---
-title: "Systems Story for the United States"
+title: "A Systems Story for the United States"
 date: 2026-08-04T13:49:39-05:00
 category: writing
 description: "A post trying to make sense of why the US refuses to respond to the climate crisis—which I believe is an existential threat for large portions of humanity, that also provides an explanation for the AI boom."
