@@ -1,5 +1,5 @@
 ---
-title: "Whos Afraid of Gender"
+title: "Who's Afraid of Gender"
 date: 2026-08-20T10:01:51-05:00
 category: reading
 highlights: true
