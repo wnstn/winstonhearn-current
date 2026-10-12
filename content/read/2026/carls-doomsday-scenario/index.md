@@ -8,7 +8,7 @@ categories:
   - Fiction
 book:
   author: "Matt Dinniman"
-  url: "https://bookshop.org/p/books/carl-s-doomsday-scenario-matt-dinniman/f62cd04ed29db65c"
+  url: "https://bookshop.org/a/129511/9780593820261"
   title: "Carl's Doomsday Scenario"
   publisher: "Ace"
   publish_year: 2024
