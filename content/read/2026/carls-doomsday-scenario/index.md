@@ -17,4 +17,3 @@ resources:
   - name: cover
     src: images/cover.jpg
 ---
-
