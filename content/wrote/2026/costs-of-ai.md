@@ -34,7 +34,7 @@ Alas, I don't see our systems of power actually grappling with the costs of AI, 
 The way that AI technology is being built and deployed in the US is actively costing us:
 1. Rapid exacerbation of the harms from climate change,
 2. Rapid increases in economic precarity for most of the middle-class, and 
-3. Rapidly introduction of more chaos into institutions and systems that are already destabilized
+3. Rapid introduction of more chaos into institutions and systems that are already destabilized
 
 All of this for the low, low financial cost of more money than we've ever spent on any new technology,
 
